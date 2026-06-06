@@ -2,6 +2,6 @@ node_modules/
 npm-debug.log*
 .DS_Store
 *.local
-input.css
-tailwind.config.js
 download_assets.py
+gen_css.py
+build.js
