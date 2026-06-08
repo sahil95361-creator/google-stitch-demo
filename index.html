@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
 <title>Amalfi Jets | Private Jet Charter &amp; Management</title>
+<meta name="description" content="Amalfi Jets — Premium private jet charter and management. Access 3,500+ aircraft across 170+ countries with a 24/7 concierge team."/>
 <!-- Critical CSS to prevent layout flash -->
 <style>
     *, ::after, ::before { box-sizing: border-box; }
@@ -15,8 +16,102 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="styles.css"/>
-
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#131313",
+                        "outline": "#8e9192",
+                        "secondary-fixed-dim": "#c6c7bf",
+                        "tertiary-fixed": "#e4e2e1",
+                        "background": "#131313",
+                        "surface-container-low": "#1b1b1b",
+                        "on-background": "#e2e2e2",
+                        "surface-container-lowest": "#0e0e0e",
+                        "tertiary": "#ffffff",
+                        "error-container": "#93000a",
+                        "secondary-fixed": "#e2e3da",
+                        "primary-fixed": "#e2e2e2",
+                        "on-secondary-fixed": "#1a1c17",
+                        "surface-container-highest": "#353535",
+                        "smoke": "#F5F5F7",
+                        "surface-variant": "#353535",
+                        "error": "#ffb4ab",
+                        "surface-container-high": "#2a2a2a",
+                        "inverse-primary": "#5d5f5f",
+                        "on-primary-fixed": "#1a1c1c",
+                        "on-surface-variant": "#c4c7c8",
+                        "onyx-grey": "#222222",
+                        "inverse-on-surface": "#303030",
+                        "on-secondary-container": "#b4b6ae",
+                        "surface-container": "#1f1f1f",
+                        "primary-container": "#e2e2e2",
+                        "secondary-container": "#454841",
+                        "on-secondary-fixed-variant": "#454841",
+                        "on-error": "#690005",
+                        "primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "on-primary-container": "#636565",
+                        "on-tertiary-container": "#656464",
+                        "primary-fixed-dim": "#c6c6c7",
+                        "inverse-surface": "#e2e2e2",
+                        "on-secondary": "#2f312b",
+                        "muted-silver": "#8C8C8C",
+                        "tertiary-container": "#e4e2e1",
+                        "surface-tint": "#c6c6c7",
+                        "on-primary": "#2f3131",
+                        "on-primary-fixed-variant": "#454747",
+                        "on-tertiary-fixed": "#1b1c1c",
+                        "on-error-container": "#ffdad6",
+                        "on-surface": "#e2e2e2",
+                        "surface-dim": "#131313",
+                        "on-tertiary": "#303030",
+                        "surface-bright": "#393939",
+                        "secondary": "#c6c7bf",
+                        "outline-variant": "#444748",
+                        "tertiary-fixed-dim": "#c8c6c5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-gap": "160px",
+                        "unit": "8px",
+                        "margin-desktop": "80px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "container-max": "1440px"
+                    },
+                    "fontFamily": {
+                        "display-hero-mobile": ["'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"],
+                        "body-md": ["'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"],
+                        "headline-lg": ["'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"],
+                        "headline-md": ["'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"],
+                        "button": ["'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"],
+                        "label-caps": ["'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"],
+                        "display-hero": ["'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"],
+                        "body-lg": ["'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"]
+                    },
+                    "fontSize": {
+                        "display-hero-mobile": ["32px", {"lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "500"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "500"}],
+                        "button": ["15px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "display-hero": ["74px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "500"}],
+                        "body-lg": ["20px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
 <style>
         :root {
             --section-gap: 160px;
@@ -192,7 +287,7 @@
 </div>
 <!-- HERO SECTION -->
 <header class="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden">
-<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/image_978092a368f8c7eeaa0d4a667d551cd0.jpg');">
+<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWf4rWJRw8q4ygyJlJe1aGjpWHb6eD_DSu2uWdD6ZN7Z2qcKGCRx9s_yU_hffyV1VH8pkeC-ChE06Q183PQyVLxiieQqn0M6NvATjfPm80NkEdzjchEs-tsormoSBy3FRHuRcrdJbm4JT1w1_9ZjDQ_yC_qtJqjAFEtDD-v1IOfuHZiHkp-lYsK2zcwsjny4rxNLA1YpPGPMTVn1_6Ug6tgVecyZR_r-8K6rDEYxMTabUp-PSuHIqG6-rZqc7vaJXZQvttYzGi1XQ');">
 <div class="absolute inset-0 bg-black/40"></div>
 </div>
 <div class="relative z-10 px-6 max-w-5xl mb-24 md:mb-48 mt-[-10vh]">
@@ -276,7 +371,7 @@
 <div class="w-full flex-shrink-0 px-2">
 <div class="bg-white rounded-2xl overflow-hidden flex flex-col md:flex-row min-h-[600px] md:h-[680px]">
 <div class="md:w-[55.8%] h-[300px] md:h-full">
-<img alt="Benchmark" class="w-full h-full object-cover" src="assets/image_fe75d52cfcc687c6b160f67fc6ba0627.jpg"/>
+<img alt="Benchmark" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPxb7sAZU3-oTwm5H6K4jvF24Ogxr-gNunfIqiTbN5DL7f3MAnodwHOhurKRdUWfj7Z8UVgBIEdCX5Qv_8h-xBxbfeb__AsP3G6NaxxlNH0-jsCJH_4RsH8GRjv7j5jddPm9KNLZiPL835qk8CNeYNKqYFQERqkg_nWS3xsGuxurkf3W8uNQf9rCGjB_c3SwBcSuUqlMouMgTgZW69DVYtWAic8IB07BWuknjza1VdImHN0faC2hDnfgVK-uUe8c28IJ-Qzg9AY2o"/>
 </div>
 <div class="md:w-[44.2%] p-8 md:p-[60px] flex flex-col justify-center items-start bg-white">
 <h3 class="font-headline-md text-black mb-6 leading-tight">A New Benchmark in Private Aviation</h3>
@@ -293,7 +388,7 @@
 <div class="w-full flex-shrink-0 px-2">
 <div class="bg-white rounded-2xl overflow-hidden flex flex-col md:flex-row min-h-[600px] md:h-[680px]">
 <div class="md:w-[55.8%] h-[300px] md:h-full">
-<img alt="Global Charters" class="w-full h-full object-cover" src="assets/image_bb79539b5f3a6efa11909ce60c6a1773.jpg"/>
+<img alt="Global Charters" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf_nhpS80pCKNLY322_4zgDKrexRPGXVsWeddNx3J5CHYZtIuXc7qFCzUkIUYeS8tUNYCx9tsnS-d5xg0BC9CSzAuyNOJYP0HaNVDIKBhoOHAQph4wpaYSbX4kQYiO9xjbuPQ5HAQXf0Fw5O6AS8kdzPYTPqgApJX6-q-OvhHx7CoGlqyl3n7pwP1RMd4IR9ttH2iSA9Zy20cUD0_unrooVQXhyPmbKlCdKwQdBrN6Auv474uVkyOXLC-M-vYoBEw5T93Im5eEN7A"/>
 </div>
 <div class="md:w-[44.2%] p-8 md:p-[60px] flex flex-col justify-center items-start bg-white">
 <h3 class="font-headline-md text-black mb-6 leading-tight">Global Network of Private Jet Charters</h3>
@@ -310,7 +405,7 @@
 <div class="w-full flex-shrink-0 px-2">
 <div class="bg-white rounded-2xl overflow-hidden flex flex-col md:flex-row min-h-[600px] md:h-[680px]">
 <div class="md:w-[55.8%] h-[300px] md:h-full">
-<img alt="Industry Leading" class="w-full h-full object-cover" src="assets/image_662c3382401cff6f020d115ff8fcb524.jpg"/>
+<img alt="Industry Leading" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU6L6nCuQHTc6t87oM0pNbuG8-sg9B5eyfeQy823kry0ma_8gSiSlQPIzZaxvbqBE_JF71fHhou8e7-kBavABQYH6-oU9RnmdIFGxukTtEeEGd1ZlLcaGdblnR9gZ9iAVgVnt8R8n9cEMiiUyWz-lGEHmPbFhvj1X8dSnNo95eZh8DFJidqzQv-gf_LjNbzNd54ufd1aJpkA7BMD45EfF-Sr9LuVvw6-xEh7V2l3eYdJIyNMziJHhIJQqdsnYR4Gsecl0arCaJMaU"/>
 </div>
 <div class="md:w-[44.2%] p-8 md:p-[60px] flex flex-col justify-center items-start bg-white">
 <h3 class="font-headline-md text-black mb-6 leading-tight">Industry-Leading Safety Standards</h3>
@@ -426,7 +521,7 @@
 </section>
 <!-- SECTION 4: High-Quality Aircraft, Anywhere -->
 <section class="relative h-[420px] md:h-[900px] flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/image_140d6ba90db91934394815cc2ea4e585.jpg');">
+<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBHp9xZ8ldGkKWc1MmcGSDu-53tSE3feqfyblFYPlO_S5NUyvUUHBykogPVs0JauwoGBlCrggrn4qg79eh5bv7MBDMS7PmgnaxHxns8UtAEhfiGnCh_KaXmyXLOuEtmJ9APnAtASrFpR-UtLsYEDVCm39XfkECG1dMlSBr8GswG-1hsKMAhlTcjXzPJ_YKuE1Sf1Xh2tMhwPooWA57bfntcec0jkBPVSWrgD81xJJyB4rZ7BDE6h12dUPBdZmCN9Zge1gjLN9kSrRI');">
 <div class="absolute inset-0" style="background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 40%, rgba(255, 255, 255, 0) 100%);"></div>
 </div>
 <div class="relative z-10 text-center px-6 max-w-4xl mt-[-40px] md:mt-[-80px]">
@@ -445,7 +540,7 @@
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 <!-- Card 1 -->
 <div class="relative h-[400px] md:h-[600px] rounded-2xl overflow-hidden group transition-transform duration-500 hover:scale-[1.02]">
-<img alt="Led by Excellence" class="absolute inset-0 w-full h-full object-cover" src="assets/image_7dadf56de47547ce57c0d21861830d68.jpg"/>
+<img alt="Led by Excellence" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC9fshFJRdmCwZ3YenLl_-cNPE031_fMCt4bziCqDZzxtO76TcE2wWoKFDOh1hH-E-f5d5w-1Daq9BPKYDuu39fdV0ktBPpPC5GYlM0GvYIQSrxIFBAtyLoKBk_jGrES0QYtGUtyZ0ncFZqXwIFUAKsAfE-_bQvJNe8hsAj9nrQcGof-_3aQztDwM0xg6lGOU3_3_uES0zdbcIdRPinJo9fSckQthyn2jVxdz4awn_1Vl5ipPM8c5mc2wBEOBCYCuTLbik95YKopc"/>
 <div class="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-500"></div>
 <div class="absolute bottom-8 md:bottom-12 left-8 md:left-12 right-8 md:right-12">
 <span class="text-[12px] text-white/70 uppercase tracking-widest mb-3 block">Led by Excellence</span>
@@ -454,7 +549,7 @@
 </div>
 <!-- Card 2 -->
 <div class="relative h-[400px] md:h-[600px] rounded-2xl overflow-hidden group transition-transform duration-500 hover:scale-[1.02]">
-<img alt="Our Programs" class="absolute inset-0 w-full h-full object-cover" src="assets/image_8812188a28d71e0e9cd8483e2b988477.jpg"/>
+<img alt="Our Programs" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0oOmNSY8TTni0Q_28XDf6TnBx8Lc_yVUtIndYFOAAEmtkdhYUBrZpGSonjaAU7WGBlbdBw58GDZsv8-KPlp326WBhySv8Ec_LF92pBqC1aj-MUhLomBpSpDQ3NraIKHuhkNkKGwi5_9uEVF4DnSIdCXnl-K4U4RmikZjWDDEUvqkszfp7hQU5YoSkCs1yQZQrSsqw_iJWSGW8xcYv_RH5vH0pDVStlkmHhI_0awU_e_m1t5fqNX3_L0wh2sco2KnCY2ZBvwN4pPA"/>
 <div class="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-500"></div>
 <div class="absolute bottom-8 md:bottom-12 left-8 md:left-12 right-8 md:right-12 flex flex-col items-start">
 <span class="text-[12px] text-white/70 uppercase tracking-widest mb-3 block">Our Programs</span>
