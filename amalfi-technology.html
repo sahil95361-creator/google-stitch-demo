@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Amalfi Technology | Revolutionizing Private Aviation</title>
+<!-- Preconnects for performance -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        body {
+            background-color: #131313;
+            color: #e2e2e2;
+            -webkit-font-smoothing: antialiased;
+            font-family: 'Inter Tight', sans-serif;
+        }
+        .glass-card {
+            background: rgba(26, 26, 26, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(68, 71, 72, 0.2);
+        }
+        .iphone-shadow {
+            box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.5);
+        }
+        .gradient-overlay {
+            background: linear-gradient(to bottom, transparent 0%, #131313 100%);
+        }
+        /* Active page indicator style */
+        .nav-link-active {
+            color: #ffffff !important;
+            position: relative;
+        }
+        .nav-link-active::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #ffffff;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                "on-background": "#e2e2e2",
+                "secondary-fixed": "#e5e2e1",
+                "secondary": "#c8c6c5",
+                "surface-container-high": "#2a2a2a",
+                "on-tertiary-fixed": "#1a1c1c",
+                "surface-dim": "#131313",
+                "secondary-fixed-dim": "#c8c6c5",
+                "on-primary-container": "#636565",
+                "surface-container-highest": "#353535",
+                "error": "#ffb4ab",
+                "gray-900": "#111111",
+                "on-secondary-fixed": "#1c1b1b",
+                "on-primary-fixed-variant": "#454747",
+                "inverse-surface": "#e2e2e2",
+                "surface": "#131313",
+                "secondary-container": "#4a4949",
+                "tertiary": "#ffffff",
+                "on-surface": "#e2e2e2",
+                "surface-variant": "#353535",
+                "gray-400": "#8c8c8c",
+                "primary-container": "#e2e2e2",
+                "on-tertiary-fixed-variant": "#454747",
+                "primary-fixed-dim": "#c6c6c7",
+                "background": "#131313",
+                "outline": "#8e9192",
+                "inverse-primary": "#5d5f5f",
+                "gray-500": "#6b7280",
+                "on-primary-fixed": "#1a1c1c",
+                "tertiary-fixed-dim": "#c6c6c7",
+                "on-surface-variant": "#c4c7c8",
+                "text-muted": "#5e5e5e",
+                "surface-bright": "#393939",
+                "tertiary-fixed": "#e2e2e2",
+                "surface-container-low": "#1b1b1b",
+                "gray-100": "#f5f5f7",
+                "gray-300": "#d1d5d9",
+                "gray-800": "#1a1a1a",
+                "on-tertiary-container": "#636565",
+                "surface-tint": "#c6c6c7",
+                "error-container": "#93000a",
+                "on-secondary": "#313030",
+                "on-primary": "#2f3131",
+                "surface-container-lowest": "#0e0e0e",
+                "on-secondary-container": "#bab8b7",
+                "surface-container": "#1f1f1f",
+                "on-error": "#690005",
+                "outline-variant": "#444748",
+                "tertiary-container": "#e2e2e2",
+                "inverse-on-surface": "#303030",
+                "on-secondary-fixed-variant": "#474646",
+                "text-dim": "rgba(255, 255, 255, 0.6)",
+                "primary-fixed": "#e2e2e2",
+                "on-error-container": "#ffdad6",
+                "primary": "#ffffff",
+                "gray-700": "#27272a",
+                "on-tertiary": "#2f3131"
+              },
+              "spacing": {
+                "unit-xl": "64px",
+                "unit-sm": "8px",
+                "margin-mobile": "20px",
+                "unit-xs": "4px",
+                "unit-md": "16px",
+                "max-width": "1280px",
+                "gutter": "24px",
+                "margin-desktop": "64px",
+                "unit-lg": "32px"
+              },
+              "fontFamily": {
+                "headline-lg": ["Inter Tight"],
+                "display-lg": ["Inter Tight"],
+                "headline-xl": ["Inter Tight"],
+                "display-lg-mobile": ["Inter Tight"],
+                "body-base": ["Inter Tight"],
+                "title-lg": ["Inter Tight"],
+                "label-xs": ["Inter Tight"],
+                "body-lg": ["Inter Tight"],
+                "display-xl": ["Inter Tight"],
+                "display-2xl": ["Inter Tight"],
+                "label-sm": ["Inter Tight"]
+              },
+              "fontSize": {
+                "headline-lg": ["28px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                "display-lg": ["44px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                "headline-xl": ["36px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                "body-base": ["15px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "title-lg": ["22px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                "label-xs": ["11px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                "display-xl": ["60px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300"}],
+                "display-2xl": ["74px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300"}],
+                "label-sm": ["13px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}]
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="font-body-base overflow-x-hidden">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent border-b border-transparent" id="global-header">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop h-20 flex items-center">
+<!-- Left Zone: Navigation Links -->
+<div class="flex-1 flex items-center gap-unit-md lg:gap-unit-lg">
+<div class="relative group hidden lg:block">
+<button class="flex items-center gap-1 font-label-sm text-label-sm uppercase tracking-widest text-text-dim hover:text-white transition-colors">
+          Programs
+          <span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+<div class="absolute top-full left-0 mt-2 w-48 bg-surface-container-high border border-outline-variant/20 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 backdrop-blur-md">
+<div class="py-2">
+<a class="block px-4 py-2 text-label-sm text-on-surface-variant hover:text-white hover:bg-white/5 transition-colors" href="programs.html">Amalfi One Card</a>
+<a class="block px-4 py-2 text-label-sm text-on-surface-variant hover:text-white hover:bg-white/5 transition-colors" href="corporate.html">Corporate Accounts</a>
+</div>
+</div>
+</div>
+<a class="hidden sm:block font-label-sm text-label-sm uppercase tracking-widest text-text-dim hover:text-white transition-colors" href="on-demand.html">On-Demand</a>
+<a class="hidden sm:block font-label-sm text-label-sm uppercase tracking-widest text-text-dim hover:text-white transition-colors" href="fleet.html">Fleet</a>
+<button class="sm:hidden text-white" id="mobile-menu-toggle">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<!-- Center Zone: Logo -->
+<div class="flex-shrink-0">
+<a class="font-label-sm text-label-sm tracking-[0.3em] font-black text-white uppercase" href="index.html">
+        AMALFI JETS
+      </a>
+</div>
+<!-- Right Zone: CTA -->
+<div class="flex-1 flex justify-end items-center gap-unit-md lg:gap-unit-lg">
+<a class="hidden md:block font-label-sm text-label-sm uppercase tracking-widest nav-link-active" href="technology.html">Technology</a>
+<a class="bg-white text-black font-label-sm text-label-sm px-unit-md lg:px-unit-lg py-unit-xs rounded-full hover:bg-gray-200 transition-all active:scale-95 flex items-center justify-center" href="request-a-quote.html">
+        Request a Quote
+      </a>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex flex-col items-center justify-start pt-unit-xl overflow-hidden bg-black">
+<div class="z-10 text-center max-w-4xl px-margin-mobile pt-32">
+<h1 class="font-display-2xl text-display-lg md:text-display-2xl text-white mb-unit-md tracking-tighter">Amalfi Technology</h1>
+<p class="font-body-lg text-body-lg text-gray-400 mb-unit-lg max-w-2xl mx-auto px-4 md:px-0">Revolutionize The Way You Fly Private with the world's most sophisticated aviation booking platform.</p>
+<div class="flex flex-col sm:flex-row gap-gutter justify-center items-center">
+<a class="bg-white text-black px-unit-xl py-unit-md rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:bg-gray-200 transition-all transform hover:scale-105" href="#">
+                    Download App
+                </a>
+</div>
+</div>
+<!-- App Mockups Cluster -->
+<div class="relative w-full max-w-6xl mt-unit-xl h-[500px] md:h-[800px] flex justify-center items-end">
+<!-- Left Mockup: Partner Screen -->
+<div class="absolute left-1/2 -translate-x-[110%] md:-translate-x-[120%] bottom-0 w-64 md:w-72 lg:w-80 transition-transform hover:-translate-y-4 duration-500 z-10 hidden md:block">
+<div class="relative rounded-[3rem] border-8 border-gray-800 bg-gray-900 overflow-hidden iphone-shadow aspect-[9/19.5]">
+<img class="w-full h-full object-cover grayscale brightness-50" data-alt="A professional user interface on a smartphone screen showing a luxury private jet membership dashboard." loading="lazy" onerror="this.src='https://placehold.co/400x867/111111/FFFFFF?text=Interface'" src="assets/asset_311405899.jpg">
+<div class="absolute inset-0 p-6 flex flex-col justify-end">
+<p class="text-white font-headline-lg text-headline-lg">Partner Benefits</p>
+<div class="h-1 w-12 bg-white mt-4"></div>
+</div>
+</div>
+</div>
+<!-- Center Mockup: App Home -->
+<div class="absolute left-1/2 -translate-x-1/2 bottom-[-100px] md:bottom-[-150px] w-72 md:w-80 lg:w-96 transition-transform hover:-translate-y-4 duration-500 z-30">
+<div class="relative rounded-[3rem] border-8 border-gray-800 bg-black overflow-hidden iphone-shadow aspect-[9/19.5]">
+<img class="w-full h-full object-cover opacity-60" data-alt="The main interface of a private jet booking application displayed on a sleek smartphone." loading="lazy" onerror="this.src='https://placehold.co/400x867/111111/FFFFFF?text=Main+App'" src="assets/asset_1460129617.jpg">
+<div class="absolute inset-0 p-8 flex flex-col">
+<div class="flex justify-between items-center mb-12">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">menu</span>
+<span class="material-symbols-outlined text-white">account_circle</span>
+</div>
+<h3 class="text-white font-display-lg text-display-lg-mobile mb-4">Where to next?</h3>
+<div class="bg-gray-800/80 backdrop-blur-sm p-4 border border-gray-700 rounded-xl mb-6">
+<p class="text-gray-500 text-label-xs uppercase tracking-widest mb-1">Departure</p>
+<p class="text-white font-body-base">VNY - Los Angeles</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Mockup: Aircraft List -->
+<div class="absolute left-1/2 translate-x-[10%] md:translate-x-[20%] bottom-0 w-64 md:w-72 lg:w-80 transition-transform hover:-translate-y-4 duration-500 z-20 hidden md:block">
+<div class="relative rounded-[3rem] border-8 border-gray-800 bg-gray-900 overflow-hidden iphone-shadow aspect-[9/19.5]">
+<img class="w-full h-full object-cover brightness-50 contrast-125" data-alt="A smartphone screen displaying a curated list of private aircraft for selection." loading="lazy" onerror="this.src='https://placehold.co/400x867/111111/FFFFFF?text=Fleet+List'" src="assets/asset_1158534944.jpg">
+<div class="absolute inset-0 p-6 flex flex-col justify-end">
+<p class="text-white font-headline-lg text-headline-lg">Premium Fleet</p>
+<div class="h-1 w-12 bg-white mt-4"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 w-full h-64 gradient-overlay z-40"></div>
+</section>
+<!-- App Features Grid -->
+<section class="bg-black py-unit-xl px-margin-mobile md:px-margin-desktop">
+<div class="max-w-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Feature 1 -->
+<div class="bg-[#161617] min-h-[480px] p-unit-lg flex flex-col justify-between border border-gray-700/50 group hover:border-white/50 transition-all duration-300 rounded-sm">
+<div>
+<span class="material-symbols-outlined text-white text-4xl mb-unit-md" style="font-variation-settings: 'FILL' 0;">bolt</span>
+<h3 class="font-headline-xl text-headline-xl text-white mb-unit-md">Book a Flight in Seconds</h3>
+<p class="text-gray-400 font-body-base">Our intelligent algorithm matches your requirements with the global fleet in real-time, delivering instant pricing and availability.</p>
+</div>
+<div class="mt-8 h-48 w-full bg-black/40 overflow-hidden relative">
+<img class="w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-700" data-alt="A technical, high-precision image showing a flight dashboard with a map and route path." loading="lazy" onerror="this.src='https://placehold.co/400x200/000000/FFFFFF?text=Algorithm'" src="assets/asset_136658158.jpg">
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="bg-[#161617] min-h-[480px] p-unit-lg flex flex-col justify-between border border-gray-700/50 group hover:border-white/50 transition-all duration-300 rounded-sm">
+<div>
+<span class="material-symbols-outlined text-white text-4xl mb-unit-md" style="font-variation-settings: 'FILL' 0;">location_searching</span>
+<h3 class="font-headline-xl text-headline-xl text-white mb-unit-md">Live Flight Tracking</h3>
+<p class="text-gray-400 font-body-base">Monitor your aircraft's positioning, weather patterns, and ETA with military-grade precision and real-time data streaming.</p>
+</div>
+<div class="mt-8 h-48 w-full bg-black/40 overflow-hidden relative">
+<img class="w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-700" data-alt="An abstract aerial view of clouds and atmosphere at high altitude." loading="lazy" onerror="this.src='https://placehold.co/400x200/000000/FFFFFF?text=Tracking'" src="assets/asset_2022931616.jpg">
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="bg-[#161617] min-h-[480px] p-unit-lg flex flex-col justify-between border border-gray-700/50 group hover:border-white/50 transition-all duration-300 rounded-sm">
+<div>
+<span class="material-symbols-outlined text-white text-4xl mb-unit-md" style="font-variation-settings: 'FILL' 0;">dashboard_customize</span>
+<h3 class="font-headline-xl text-headline-xl text-white mb-unit-md">Manage Everything</h3>
+<p class="text-gray-400 font-body-base">From dietary preferences to ground transportation and manifest managementâ€”control every detail of your journey.</p>
+</div>
+<div class="mt-8 h-48 w-full bg-black/40 overflow-hidden relative">
+<img class="w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-700" data-alt="A close-up shot of a high-end, minimalist workspace with a smartphone." loading="lazy" onerror="this.src='https://placehold.co/400x200/000000/FFFFFF?text=Management'" src="assets/asset_1270414834.jpg">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Download Section -->
+<section class="bg-gray-900 py-unit-xl px-margin-mobile md:px-margin-desktop border-t border-gray-800">
+<div class="max-w-max-width mx-auto flex flex-col items-center text-center">
+<h2 class="font-headline-xl text-headline-xl text-white mb-unit-lg tracking-tight">Available on iOS and Android</h2>
+<p class="font-body-base text-gray-400 max-w-xl mb-unit-xl px-4 md:px-0">The Amalfi Jets mobile platform is designed for the modern executive, providing full control over your private aviation needs while on the move.</p>
+<div class="flex flex-col sm:flex-row gap-gutter">
+<!-- Apple App Store -->
+<a class="flex items-center gap-unit-md bg-black border border-gray-700 px-unit-lg py-4 rounded-xl hover:border-white transition-all group" href="#">
+<img alt="Apple Store" class="w-8 h-8 opacity-80 group-hover:opacity-100" loading="lazy" src="assets/asset_1405542109.jpg">
+<div class="text-left">
+<p class="text-[10px] text-gray-500 uppercase tracking-widest leading-none">Download on the</p>
+<p class="text-xl text-white font-semibold leading-tight">App Store</p>
+</div>
+</a>
+<!-- Google Play Store -->
+<a class="flex items-center gap-unit-md bg-black border border-gray-700 px-unit-lg py-4 rounded-xl hover:border-white transition-all group" href="#">
+<img alt="Play Store" class="w-8 h-8 opacity-80 group-hover:opacity-100" loading="lazy" src="assets/asset_1924372670.jpg">
+<div class="text-left">
+<p class="text-[10px] text-gray-500 uppercase tracking-widest leading-none">Get it on</p>
+<p class="text-xl text-white font-semibold leading-tight">Google Play</p>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Footer Shell -->
+<footer class="bg-black border-t border-[#292929]">
+  <div class="max-w-[1280px] mx-auto px-10 pt-20 pb-10">
+    <div class="flex flex-col lg:flex-row justify-between items-start gap-12 mb-20">
+      <!-- ZONE 1: Brand & Social -->
+      <div class="flex flex-col gap-8 w-full lg:w-auto">
+        <a href="index.html" class="font-label-sm text-label-sm tracking-[0.3em] font-black text-white uppercase">AMALFI JETS</a>
+        <div class="flex gap-4">
+          <a href="#" class="w-8 h-8 rounded-full border border-[#292929] flex items-center justify-center text-[#8c8c8c] hover:text-white hover:border-white transition-colors">
+            <span class="material-symbols-outlined text-[18px]">brand_awareness</span>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full border border-[#292929] flex items-center justify-center text-[#8c8c8c] hover:text-white hover:border-white transition-colors">
+            <span class="material-symbols-outlined text-[18px]">public</span>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full border border-[#292929] flex items-center justify-center text-[#8c8c8c] hover:text-white hover:border-white transition-colors">
+            <span class="material-symbols-outlined text-[18px]">group</span>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full border border-[#292929] flex items-center justify-center text-[#8c8c8c] hover:text-white hover:border-white transition-colors">
+            <span class="material-symbols-outlined text-[18px]">close</span>
+          </a>
+        </div>
+        <div class="flex flex-col gap-3">
+          <a href="#" class="bg-black border border-[#292929] rounded-lg px-4 py-2 flex items-center gap-3 hover:border-white transition-colors w-48">
+            <img src="assets/asset_1405542109.jpg" class="w-6 h-6 grayscale brightness-200" alt="App Store">
+            <div class="flex flex-col">
+              <span class="text-[8px] text-[#8c8c8c] uppercase tracking-widest">Download on the</span>
+              <span class="text-sm text-white font-semibold">App Store</span>
+            </div>
+          </a>
+          <a href="#" class="bg-black border border-[#292929] rounded-lg px-4 py-2 flex items-center gap-3 hover:border-white transition-colors w-48">
+            <img src="assets/asset_1924372670.jpg" class="w-6 h-6 grayscale brightness-200" alt="Google Play">
+            <div class="flex flex-col">
+              <span class="text-[8px] text-[#8c8c8c] uppercase tracking-widest">Get it on</span>
+              <span class="text-sm text-white font-semibold">Google Play</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- ZONE 2: Center CTA -->
+      <div class="flex flex-col items-center justify-center w-full lg:w-auto">
+        <a href="request-a-quote.html" class="h-[44px] px-8 bg-white text-black rounded-full font-label-sm text-label-sm uppercase tracking-widest flex items-center justify-center hover:bg-gray-200 transition-all active:scale-95">
+          Request a Quote
+        </a>
+      </div>
+      <!-- ZONE 3: Link Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 w-full lg:w-auto">
+        <div class="flex flex-col gap-4">
+          <h4 class="text-white font-label-sm text-label-sm uppercase tracking-widest">Programs</h4>
+          <ul class="flex flex-col gap-2">
+            <li class=""><a href="programs.html" class="text-[13px] text-[#8c8c8c] hover:text-white transition-colors">Amalfi One</a></li>
+            <li class=""><a href="corporate.html" class="text-[13px] text-[#8c8c8c] hover:text-white transition-colors">Corporate</a></li>
+            <li class=""><a href="#" class="text-[13px] text-[#8c8c8c] hover:text-white transition-colors">Jet Card</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h4 class="text-white font-label-sm text-label-sm uppercase tracking-widest">Aircraft</h4>
+          <ul class="flex flex-col gap-2">
+            <li class=""><a href="fleet.html" class="text-[13px] text-[#8c8c8c] hover:text-white transition-colors">Light Jets</a></li>
+            <li class=""><a href="fleet.html" class="text-[13px] text-[#8c8c8c] hover:text-white transition-colors">Midsize Jets</a></li>
+            <li class=""><a href="fleet.html" class="text-[13px] text-[#8c8c8c] hover:text-white transition-colors">Heavy Jets</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h4 class="text-white font-label-sm text-label-sm uppercase tracking-widest">Why Amalfi</h4>
+          <ul class="flex flex-col gap-2">
+            <li class=""><a href="#" class="text-[13px] text-[#8c8c8c] hover:text-white transition-colors">Safety</a></li>
+            <li class=""><a href="#" class="text-[13px] text-[#8c8c8c] hover:text-white transition-colors">Service</a></li>
+            <li class=""><a href="technology.html" class="text-[13px] text-[#8c8c8c] hover:text-white transition-colors">Technology</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h4 class="text-white font-label-sm text-label-sm uppercase tracking-widest">Company</h4>
+          <ul class="flex flex-col gap-2">
+            <li class=""><a href="#" class="text-[13px] text-[#8c8c8c] hover:text-white transition-colors">About Us</a></li>
+            <li class=""><a href="#" class="text-[13px] text-[#8c8c8c] hover:text-white transition-colors">Leadership</a></li>
+            <li class=""><a href="#" class="text-[13px] text-[#8c8c8c] hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- BOTTOM: Legal -->
+    <div class="pt-8 border-t border-[#292929] flex flex-col gap-6">
+      <p class="text-[11px] text-[#3a3a3a] leading-relaxed text-center lg:text-left">
+        Amalfi Jets is an air charter broker and not a direct air carrier. All flights are operated by FAA Part 135 air carriers or foreign equivalent. Amalfi Jets does not own or operate any aircraft.
+      </p>
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-[12px] text-[#3a3a3a]">Â© 2024 Amalfi Jets. All rights reserved.</p>
+        <div class="flex gap-8">
+          <a href="privacy.html" class="text-[12px] text-[#3a3a3a] hover:text-white transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="text-[12px] text-[#3a3a3a] hover:text-white transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+    // Header transition logic
+    window.addEventListener('scroll', () => {
+        const header = document.getElementById('global-header');
+        if (window.scrollY > 50) {
+            header.classList.add('bg-black/80', 'backdrop-blur-md', 'border-outline-variant/20');
+            header.classList.remove('bg-transparent', 'border-transparent');
+        } else {
+            header.classList.remove('bg-black/80', 'backdrop-blur-md', 'border-outline-variant/20');
+            header.classList.add('bg-transparent', 'border-transparent');
+        }
+    });
+
+    // Parallax logic for mockups
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const phones = document.querySelectorAll('.iphone-shadow');
+        phones.forEach((phone, index) => {
+            const speed = 0.05 * (index + 1);
+            const yPos = scrolled * speed;
+            // Limit the parallax slightly for better UX
+            if (window.innerWidth > 768) {
+                phone.style.transform = `translateY(${yPos}px)`;
+            }
+        });
+    });
+
+    // Card hover states
+    const cards = document.querySelectorAll('.bg-[#161617]');
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+            card.style.backgroundColor = '#1a1a1a';
+        });
+        card.addEventListener('mouseleave', () => {
+            card.style.backgroundColor = '#161617';
+        });
+    });
+</script>
+
+
+
+
+</body></html>
