@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html><html class="dark" lang="en"><head>
+<!DOCTYPE html><html class="dark" lang="en"><head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Programs Overview | Amalfi Jets</title>
@@ -125,40 +125,69 @@
     </style>
 </head>
 <body class="bg-background text-on-background selection:bg-primary selection:text-black">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 transition-all duration-300 px-margin-desktop py-6 bg-transparent" id="global-header">
-<div class="max-w-max-width mx-auto grid grid-cols-3 items-center">
-<!-- Left: Navigation Links -->
-<div class="flex items-center gap-8">
-<div class="relative group">
-<button class="flex items-center gap-1 font-label-sm text-label-sm uppercase tracking-widest text-white hover:opacity-70 transition-opacity">
-          Programs
-          <span class="material-symbols-outlined text-[18px]">expand_more</span>
-</button>
-<!-- Dropdown placeholder -->
-<div class="absolute top-full left-0 mt-4 w-48 bg-surface-container-high border border-outline-variant/20 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-2">
-<a class="block px-4 py-2 text-label-sm hover:bg-white/10 rounded-md transition-colors" href="#">On-Demand</a>
-<a class="block px-4 py-2 text-label-sm hover:bg-white/10 rounded-md transition-colors" href="#">Jet Card</a>
-<a class="block px-4 py-2 text-label-sm hover:bg-white/10 rounded-md transition-colors" href="#">Reserve</a>
-</div>
-</div>
-<a class="font-label-sm text-label-sm uppercase tracking-widest text-white hover:opacity-70 transition-opacity" href="#">Fleet</a>
-<a class="font-label-sm text-label-sm uppercase tracking-widest text-white hover:opacity-70 transition-opacity" href="#">Why Amalfi</a>
-</div>
-<!-- Center: Logo -->
-<div class="flex justify-center">
-<a class="font-label-sm text-label-sm tracking-[0.3em] font-black text-white uppercase" href="/">
-        AMALFI JETS
+<header class="fixed top-0 left-0 w-full h-[64px] z-[1000] transition-all duration-300 bg-transparent" id="site-header">
+  <div class="max-w-[1280px] mx-auto h-full px-5 md:px-16 flex items-center justify-between">
+    <div class="hidden lg:flex items-center gap-8 flex-1">
+      <div class="relative group">
+        <button class="flex items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.1em] text-white/75 hover:text-white transition-colors">Programs <span class="material-symbols-outlined text-[16px]">expand_more</span></button>
+        <div class="absolute top-full left-0 mt-3 w-56 bg-[#0d0d0d] border border-white/10 rounded-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[1001]">
+          <div class="p-2 flex flex-col gap-0.5">
+            <a class="px-4 py-2.5 text-[13px] text-white/65 hover:bg-white/5 hover:text-white rounded-lg transition-colors" href="on-demand-charter.html">On-Demand Charter</a>
+            <a class="px-4 py-2.5 text-[13px] text-white/65 hover:bg-white/5 hover:text-white rounded-lg transition-colors" href="amalfi-one-jet-card.html">Amalfi One Jet Card</a>
+            <a class="px-4 py-2.5 text-[13px] text-white/65 hover:bg-white/5 hover:text-white rounded-lg transition-colors" href="amalfi-exclusive-golf-experiences.html">Golf Experiences</a>
+            <a class="px-4 py-2.5 text-[13px] text-white/65 hover:bg-white/5 hover:text-white rounded-lg transition-colors" href="amalfi-reserve-membership.html">Reserve Membership</a>
+          </div>
+        </div>
+      </div>
+      <a class="text-[11px] font-semibold uppercase tracking-[0.1em] text-white/75 hover:text-white transition-colors" href="aircraft-comparison.html">Aircraft</a>
+      <div class="relative group">
+        <button class="flex items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.1em] text-white/75 hover:text-white transition-colors">Why Amalfi <span class="material-symbols-outlined text-[16px]">expand_more</span></button>
+        <div class="absolute top-full left-0 mt-3 w-48 bg-[#0d0d0d] border border-white/10 rounded-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[1001]">
+          <div class="p-2 flex flex-col gap-0.5">
+            <a class="px-4 py-2.5 text-[13px] text-white/65 hover:bg-white/5 hover:text-white rounded-lg transition-colors" href="why-amalfi.html">Why Amalfi</a>
+            <a class="px-4 py-2.5 text-[13px] text-white/65 hover:bg-white/5 hover:text-white rounded-lg transition-colors" href="amalfi-technology.html">Amalfi Technology</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-1 flex justify-start lg:justify-center">
+      <a class="flex items-center gap-2" href="index.html">
+        <span class="material-symbols-outlined text-white text-xl">change_history</span>
+        <span class="text-[14px] font-black tracking-[0.2em] text-white uppercase">Amalfi Jets</span>
       </a>
+    </div>
+    <div class="flex-1 flex justify-end items-center gap-5">
+      <a class="hidden xl:block text-[11px] font-semibold text-white/65 hover:text-white transition-colors" href="tel:+18776262534">+1 (877) 626-2534</a>
+      <a class="hidden md:block bg-white text-black px-5 py-2 rounded-full text-[11px] font-semibold uppercase tracking-[0.08em] hover:opacity-90 transition-all" href="request-a-quote.html">Request a Quote</a>
+      <button class="lg:hidden text-white" onclick="document.getElementById('mobile-drawer').classList.remove('translate-x-full')"><span class="material-symbols-outlined text-3xl">menu</span></button>
+    </div>
+  </div>
+</header>
+<div class="fixed inset-0 z-[2000] translate-x-full transition-transform duration-300" id="mobile-drawer">
+  <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')"></div>
+  <div class="absolute right-0 top-0 h-full w-72 bg-[#0a0a0a] border-l border-white/10 flex flex-col">
+    <div class="flex items-center justify-between px-6 py-5 border-b border-white/10">
+      <span class="text-[14px] font-black tracking-[0.2em] text-white uppercase">Amalfi Jets</span>
+      <button onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')" class="text-white/50 hover:text-white"><span class="material-symbols-outlined">close</span></button>
+    </div>
+    <nav class="flex-1 overflow-y-auto px-4 py-6 space-y-1">
+      <div class="px-4 py-2 text-[10px] text-white/30 uppercase tracking-[0.2em]">Programs</div>
+      <a class="block px-4 py-2.5 text-white/65 hover:text-white hover:bg-white/5 rounded-lg text-[13px] transition-colors" href="on-demand-charter.html">On-Demand Charter</a>
+      <a class="block px-4 py-2.5 text-white/65 hover:text-white hover:bg-white/5 rounded-lg text-[13px] transition-colors" href="amalfi-one-jet-card.html">Amalfi One Jet Card</a>
+      <a class="block px-4 py-2.5 text-white/65 hover:text-white hover:bg-white/5 rounded-lg text-[13px] transition-colors" href="amalfi-exclusive-golf-experiences.html">Golf Experiences</a>
+      <a class="block px-4 py-2.5 text-white/65 hover:text-white hover:bg-white/5 rounded-lg text-[13px] transition-colors" href="amalfi-reserve-membership.html">Reserve Membership</a>
+      <div class="px-4 pt-4 pb-2 text-[10px] text-white/30 uppercase tracking-[0.2em]">Explore</div>
+      <a class="block px-4 py-2.5 text-white/65 hover:text-white hover:bg-white/5 rounded-lg text-[13px] transition-colors" href="aircraft-comparison.html">Aircraft</a>
+      <a class="block px-4 py-2.5 text-white/65 hover:text-white hover:bg-white/5 rounded-lg text-[13px] transition-colors" href="why-amalfi.html">Why Amalfi</a>
+      <a class="block px-4 py-2.5 text-white/65 hover:text-white hover:bg-white/5 rounded-lg text-[13px] transition-colors" href="amalfi-technology.html">Technology</a>
+    </nav>
+    <div class="px-6 py-6 border-t border-white/10 space-y-3">
+      <a class="block text-center bg-white text-black px-5 py-3 rounded-full text-[11px] font-semibold uppercase tracking-[0.1em] hover:opacity-90" href="request-a-quote.html">Request a Quote</a>
+      <a class="block text-center text-white/50 text-[12px]" href="tel:+18776262534">+1 (877) 626-2534</a>
+    </div>
+  </div>
 </div>
-<!-- Right: CTA -->
-<div class="flex justify-end">
-<button class="bg-white text-black font-label-sm text-label-sm px-6 py-2.5 rounded-full hover:bg-gray-100 transition-colors active:scale-95">
-        Request a Quote
-      </button>
-</div>
-</div>
-</nav>
+
 <!-- Main Content -->
 <main>
 <!-- Hero Header -->
@@ -183,7 +212,7 @@
 <span class="font-label-xs text-label-xs text-primary bg-black/40 backdrop-blur-md px-3 py-1 rounded-full uppercase mb-unit-md inline-block">Service</span>
 <h2 class="font-headline-xl text-headline-xl text-white mb-unit-xs">On-Demand Charter</h2>
 <p class="font-body-base text-body-base text-gray-300 mb-unit-lg max-w-md">The most flexible way to fly globally, with no long-term commitment required.</p>
-<a class="learn-more-pill inline-flex items-center gap-2 font-label-sm text-label-sm border border-white text-white px-8 py-3 rounded-full transition-all duration-300" href="#">
+<a class="learn-more-pill inline-flex items-center gap-2 font-label-sm text-label-sm border border-white text-white px-8 py-3 rounded-full transition-all duration-300" href="on-demand-charter.html">
                                 Learn More
                                 <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
@@ -197,7 +226,7 @@
 <span class="font-label-xs text-label-xs text-primary bg-black/40 backdrop-blur-md px-3 py-1 rounded-full uppercase mb-unit-md inline-block">Membership</span>
 <h2 class="font-headline-xl text-headline-xl text-white mb-unit-xs">Amalfi One Jet Card</h2>
 <p class="font-body-base text-body-base text-gray-300 mb-unit-lg max-w-md">Prepaid flight hours at fixed hourly rates with guaranteed availability.</p>
-<a class="learn-more-pill inline-flex items-center gap-2 font-label-sm text-label-sm border border-white text-white px-8 py-3 rounded-full transition-all duration-300" href="#">
+<a class="learn-more-pill inline-flex items-center gap-2 font-label-sm text-label-sm border border-white text-white px-8 py-3 rounded-full transition-all duration-300" href="amalfi-one-jet-card.html">
                                 Learn More
                                 <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
@@ -211,10 +240,10 @@
 <span class="font-label-xs text-label-xs text-primary bg-black/40 backdrop-blur-md px-3 py-1 rounded-full uppercase mb-unit-md inline-block">Lifestyle</span>
 <h2 class="font-headline-xl text-headline-xl text-white mb-unit-xs">Golf Experiences</h2>
 <p class="font-body-base text-body-base text-gray-300 mb-unit-lg max-w-md">Bespoke itineraries to the world's most prestigious courses via private jet.</p>
-<a class="learn-more-pill inline-flex items-center gap-2 font-label-sm text-label-sm border border-white text-white px-8 py-3 rounded-full transition-all duration-300" href="#">
-                                Learn More
-                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
+<div class="flex gap-3 flex-wrap">
+<a class="learn-more-pill inline-flex items-center gap-2 font-label-sm text-label-sm border border-white text-white px-6 py-3 rounded-full transition-all duration-300" href="amalfi-exclusive-golf-experiences.html">Learn More <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+<a class="inline-flex items-center gap-2 font-label-sm text-label-sm bg-white/10 text-white px-6 py-3 rounded-full hover:bg-white/20 transition-all" href="amalfi-exclusive-golf-experiences.html">Download Brochure</a>
+</div>
 </div>
 </div>
 <!-- Card 4: Reserve Membership -->
@@ -225,7 +254,7 @@
 <span class="font-label-xs text-label-xs text-primary bg-black/40 backdrop-blur-md px-3 py-1 rounded-full uppercase mb-unit-md inline-block">Tiered Access</span>
 <h2 class="font-headline-xl text-headline-xl text-white mb-unit-xs">Reserve Membership</h2>
 <p class="font-body-base text-body-base text-gray-300 mb-unit-lg max-w-md">Our most exclusive tier offering priority scheduling and bespoke concierge services.</p>
-<a class="learn-more-pill inline-flex items-center gap-2 font-label-sm text-label-sm border border-white text-white px-8 py-3 rounded-full transition-all duration-300" href="#">
+<a class="learn-more-pill inline-flex items-center gap-2 font-label-sm text-label-sm border border-white text-white px-8 py-3 rounded-full transition-all duration-300" href="amalfi-reserve-membership.html">
                                 Learn More
                                 <span class="material-symbols-outlined text-sm">arrow_forward</span>
 </a>
@@ -240,77 +269,17 @@
 <h3 class="font-headline-xl text-headline-xl text-white mb-unit-md">Ready to elevate your travel?</h3>
 <p class="font-body-lg text-body-lg text-text-dim mb-unit-lg">Our specialists are available 24/7 to help you choose the program that fits your lifestyle perfectly.</p>
 <div class="flex flex-col md:flex-row gap-gutter justify-center items-center">
-<button class="bg-primary text-black font-label-sm text-label-sm px-10 py-4 rounded-lg hover:opacity-90 transition-opacity w-full md:w-auto">Request a Quote</button>
-<button class="border border-white text-white font-label-sm text-label-sm px-10 py-4 rounded-lg hover:bg-white/10 transition-colors w-full md:w-auto">Speak to an Advisor</button>
+<a class="bg-white text-black font-label-sm text-label-sm px-10 py-4 rounded-full hover:opacity-90 transition-opacity w-full md:w-auto text-center" href="request-a-quote.html">Book a Flight</a>
+<a class="border border-white text-white font-label-sm text-label-sm px-10 py-4 rounded-full hover:bg-white/10 transition-colors w-full md:w-auto text-center" href="tel:+18776262534">Contact Us</a>
 </div>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-black border-t border-gray-800">
-  <div class="max-w-max-width mx-auto px-margin-desktop py-unit-xl">
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-unit-xl">
-      <!-- Zone 1: Brand -->
-      <div class="md:col-span-3">
-        <a href="/" class="font-label-sm text-label-sm tracking-[0.3em] font-black text-white uppercase mb-unit-md block">AMALFI JETS</a>
-        <p class="text-gray-400 text-label-xs leading-relaxed max-w-xs">Redefining the standards of private aviation through precision, safety, and exclusivity.</p>
-      </div>
-      <!-- Zone 2: CTA -->
-      <div class="md:col-span-5 flex flex-col justify-center">
-        <h4 class="text-white font-headline-lg mb-4">Ready to fly?</h4>
-        <div class="flex flex-wrap gap-4">
-          <button class="bg-white text-black font-label-sm px-6 py-2.5 rounded-full hover:bg-gray-100 transition-colors">Request a Quote</button>
-          <button class="border border-white text-white font-label-sm px-6 py-2.5 rounded-full hover:bg-white/10 transition-colors">Contact Us</button>
-        </div>
-      </div>
-      <!-- Zone 3: Links Grid -->
-      <div class="md:col-span-4 grid grid-cols-2 gap-8">
-        <div>
-          <p class="font-label-sm uppercase tracking-widest text-white mb-4">Explore</p>
-          <ul class="space-y-2">
-            <li class=""><a href="#" class="text-gray-400 hover:text-white transition-colors text-body-base">Programs</a></li>
-            <li class=""><a href="#" class="text-gray-400 hover:text-white transition-colors text-body-base">Fleet</a></li>
-            <li class=""><a href="#" class="text-gray-400 hover:text-white transition-colors text-body-base">Why Amalfi</a></li>
-          </ul>
-        </div>
-        <div>
-          <p class="font-label-sm uppercase tracking-widest text-white mb-4">Company</p>
-          <ul class="space-y-2">
-            <li class=""><a href="#" class="text-gray-400 hover:text-white transition-colors text-body-base">Safety</a></li>
-            <li class=""><a href="#" class="text-gray-400 hover:text-white transition-colors text-body-base">News</a></li>
-            <li class=""><a href="#" class="text-gray-400 hover:text-white transition-colors text-body-base">Legal</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- DOT Disclaimer -->
-    <div class="pt-unit-md border-t border-gray-800 mb-unit-md">
-      <p class="text-[11px] leading-relaxed text-[#3a3a3a] uppercase tracking-wider">
-        Amalfi Jets is an air charter broker. Amalfi Jets is not a direct air carrier and does not own or operate any aircraft. All flights are operated by FAA-certified Part 135 or Part 121 air carriers or foreign equivalent.
-      </p>
-    </div>
-    <!-- Copyright Bar -->
-    <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-4">
-      <p class="text-label-xs text-gray-500">Â© 2024 Amalfi Jets. All Rights Reserved.</p>
-      <div class="flex gap-gutter">
-        <a href="#" class="text-label-xs text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
-        <a href="#" class="text-label-xs text-gray-500 hover:text-white transition-colors">Terms of Service</a>
-      </div>
-    </div>
-  </div>
-</footer>
+
 <script>
         // Interactive Header scroll effect
-        window.addEventListener('scroll', () => {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('bg-black/90', 'py-unit-sm');
-                nav.classList.remove('py-unit-md');
-            } else {
-                nav.classList.remove('bg-black/90', 'py-unit-sm');
-                nav.classList.add('py-unit-md');
-            }
-        });
+        
 
         // Simple Intersection Observer for scroll animations
         const observer = new IntersectionObserver((entries) => {
@@ -329,4 +298,58 @@
     </script>
 
 
+<footer class="bg-black border-t border-[#1a1a1a]">
+  <div class="max-w-[1280px] mx-auto px-5 md:px-16 pt-16 pb-8">
+    <div class="flex flex-col lg:flex-row justify-between gap-12 mb-14">
+      <div class="flex flex-col gap-6 max-w-[220px]">
+        <a class="flex items-center gap-2" href="index.html">
+          <span class="material-symbols-outlined text-white text-xl">change_history</span>
+          <span class="text-[14px] font-black tracking-[0.2em] text-white uppercase">Amalfi Jets</span>
+        </a>
+        <div class="flex items-center gap-2">
+          <a href="#" class="w-8 h-8 rounded-full border border-white/15 flex items-center justify-center text-white/40 hover:text-white hover:border-white/40 transition-all"><svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05A6.34 6.34 0 003.15 15.3a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.88a8.27 8.27 0 004.84 1.55V7a4.85 4.85 0 01-1.08-.31z"/></svg></a>
+          <a href="https://www.facebook.com/AmalfiJets/" target="_blank" class="w-8 h-8 rounded-full border border-white/15 flex items-center justify-center text-white/40 hover:text-white hover:border-white/40 transition-all"><svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="https://www.linkedin.com/company/amalfi-jets/" target="_blank" class="w-8 h-8 rounded-full border border-white/15 flex items-center justify-center text-white/40 hover:text-white hover:border-white/40 transition-all"><svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+          <a href="https://www.instagram.com/amalfijets/" target="_blank" class="w-8 h-8 rounded-full border border-white/15 flex items-center justify-center text-white/40 hover:text-white hover:border-white/40 transition-all"><svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+          <a href="https://twitter.com/AmalfiJets" target="_blank" class="w-8 h-8 rounded-full border border-white/15 flex items-center justify-center text-white/40 hover:text-white hover:border-white/40 transition-all"><svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.736-8.856L1.669 2.25H8.42l4.265 5.637L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg></a>
+        </div>
+        <div class="flex gap-2">
+          <a href="#" class="bg-[#0e0e0e] border border-white/10 rounded-lg px-3 py-2 flex items-center gap-2 hover:border-white/25 transition-all"><svg class="w-4 h-4 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg><div><p class="text-[8px] text-white/35 uppercase leading-none">Download on the</p><p class="text-[11px] text-white font-bold leading-none">App Store</p></div></a>
+          <a href="#" class="bg-[#0e0e0e] border border-white/10 rounded-lg px-3 py-2 flex items-center gap-2 hover:border-white/25 transition-all"><svg class="w-4 h-4 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M3.18 23.76c.37.21.8.22 1.18.06l12.61-7.29-2.73-2.73-11.06 9.96zM.5 1.32C.18 1.69 0 2.2 0 2.86v18.28c0 .66.18 1.17.5 1.54l.08.08 10.24-10.24v-.24L.58 1.24.5 1.32zm18.82 10.65l-2.73-1.58-3.07 3.07 3.07 3.07 2.75-1.59c.79-.46.79-1.52-.02-1.97zM4.36.18L16.97 7.47l-2.73 2.73-11.06-9.96A1.04 1.04 0 004.36.18z"/></svg><div><p class="text-[8px] text-white/35 uppercase leading-none">Get it on</p><p class="text-[11px] text-white font-bold leading-none">Google Play</p></div></a>
+        </div>
+      </div>
+      <div class="flex items-center lg:justify-center">
+        <a class="bg-white text-black px-8 h-[44px] flex items-center rounded-full text-[11px] font-semibold uppercase tracking-[0.1em] hover:opacity-90 transition-opacity whitespace-nowrap" href="request-a-quote.html">Request a Quote</a>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div><h5 class="text-white text-[11px] font-semibold uppercase tracking-[0.1em] mb-4">Our Programs</h5><ul class="space-y-2.5"><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="on-demand-charter.html">On-Demand Charter</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="amalfi-one-jet-card.html">Amalfi One Jet Card</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="amalfi-reserve-membership.html">Amalfi Reserve</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="amalfi-exclusive-golf-experiences.html">Amalfi Golf Package</a></li></ul></div>
+        <div><h5 class="text-white text-[11px] font-semibold uppercase tracking-[0.1em] mb-4">Aircraft</h5><ul class="space-y-2.5"><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="aircraft-comparison.html">Turboprop Jets</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="aircraft-comparison.html">Light Jets</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="aircraft-comparison.html">Midsize Jets</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="aircraft-comparison.html">Super Midsize Jets</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="aircraft-comparison.html">Heavy Jets</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="aircraft-comparison.html">Ultra Long Haul Jets</a></li></ul></div>
+        <div><h5 class="text-white text-[11px] font-semibold uppercase tracking-[0.1em] mb-4">Why Amalfi</h5><ul class="space-y-2.5"><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="why-amalfi.html">Leadership Team</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="amalfi-technology.html">Amalfi Technology</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="#">Amalfi News</a></li></ul></div>
+        <div><h5 class="text-white text-[11px] font-semibold uppercase tracking-[0.1em] mb-4">Contact Us</h5><ul class="space-y-2.5"><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="tel:+18776262534">+1 (877) 626-2534</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="mailto:info@amalfijets.com">General Enquiries</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="mailto:marketing@amalfijets.com">Marketing</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="mailto:media@amalfijets.com">Media</a></li></ul></div>
+      </div>
+    </div>
+    <div class="border-t border-[#181818] pt-6">
+      <p class="text-[11px] text-[#333] leading-relaxed mb-4">Amalfi Jets is an air charter broker and not a direct air carrier. All flights are operated by FAA Part 135 or foreign equivalent air carriers who maintain full operational control of each flight at all times. Amalfi Jets does not own or operate any aircraft.</p>
+      <div class="flex flex-col md:flex-row justify-between items-center gap-3">
+        <p class="text-[12px] text-[#333]">© 2024 Amalfi Jets. All Rights Reserved.</p>
+        <div class="flex flex-wrap gap-5"><a class="text-[12px] text-[#333] hover:text-white transition-colors" href="#">Amalfi Reserve Subscription Terms</a><a class="text-[12px] text-[#333] hover:text-white transition-colors" href="#">Privacy Policy</a><a class="text-[12px] text-[#333] hover:text-white transition-colors" href="#">Terms of Service</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+  window.addEventListener('scroll', () => {
+    const h = document.getElementById('site-header');
+    if (!h) return;
+    if (window.scrollY > 20) {
+      h.style.background = 'rgba(0,0,0,0.92)';
+      h.style.backdropFilter = 'blur(16px)';
+      h.style.borderBottom = '1px solid rgba(255,255,255,0.06)';
+    } else {
+      h.style.background = 'transparent';
+      h.style.backdropFilter = 'none';
+      h.style.borderBottom = '1px solid transparent';
+    }
+  });
+</script>
 </body></html>
