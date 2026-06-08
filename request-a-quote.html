@@ -124,157 +124,229 @@
     </style>
 </head>
 <body class="bg-background text-on-background selection:bg-primary selection:text-black">
-<header class="fixed top-0 left-0 w-full h-[64px] z-[1000] transition-all duration-300 bg-transparent" id="site-header">
-  <div class="max-w-[1280px] mx-auto h-full px-5 md:px-16 flex items-center justify-between">
-    <div class="hidden lg:flex items-center gap-8 flex-1">
-      <div class="relative group">
-        <button class="flex items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.1em] text-white/75 hover:text-white transition-colors">Programs <span class="material-symbols-outlined text-[16px]">expand_more</span></button>
-        <div class="absolute top-full left-0 mt-3 w-56 bg-[#0d0d0d] border border-white/10 rounded-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[1001]">
-          <div class="p-2 flex flex-col gap-0.5">
-            <a class="px-4 py-2.5 text-[13px] text-white/65 hover:bg-white/5 hover:text-white rounded-lg transition-colors" href="on-demand-charter.html">On-Demand Charter</a>
-            <a class="px-4 py-2.5 text-[13px] text-white/65 hover:bg-white/5 hover:text-white rounded-lg transition-colors" href="amalfi-one-jet-card.html">Amalfi One Jet Card</a>
-            <a class="px-4 py-2.5 text-[13px] text-white/65 hover:bg-white/5 hover:text-white rounded-lg transition-colors" href="amalfi-exclusive-golf-experiences.html">Golf Experiences</a>
-            <a class="px-4 py-2.5 text-[13px] text-white/65 hover:bg-white/5 hover:text-white rounded-lg transition-colors" href="amalfi-reserve-membership.html">Reserve Membership</a>
+<style>
+  #site-header { font-family: 'Inter Tight', sans-serif; }
+  .nav-mega-panel {
+    position: absolute; top: 100%; left: 0; width: 100vw;
+    background: #000; padding: 24px 64px 32px;
+    opacity: 0; visibility: hidden; pointer-events: none;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .nav-item:hover .nav-mega-panel,
+  .nav-mega-panel:hover { opacity: 1; visibility: visible; pointer-events: auto; }
+  .mega-card {
+    position: relative; overflow: hidden; border-radius: 12px;
+    aspect-ratio: 4/3; cursor: pointer;
+    transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  }
+  .mega-card:hover { transform: scale(1.03); }
+  .mega-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+  .mega-card:hover img { transform: scale(1.08); }
+  .mega-card-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.1) 55%, transparent 100%);
+  }
+  .mega-card-label {
+    position: absolute; bottom: 16px; left: 16px; right: 16px;
+    display: flex; align-items: center; justify-content: space-between;
+    color: #fff; font-size: 14px; font-weight: 500; letter-spacing: 0;
+  }
+  .mega-programs-btn button { position: relative; }
+  .mega-programs-btn:hover .nav-mega-panel { opacity: 1; visibility: visible; pointer-events: auto; }
+  /* Request a Quote hover */
+  .nav-quote-btn { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .nav-quote-btn:hover { transform: scale(1.05); box-shadow: 0 4px 20px rgba(255,255,255,0.25); }
+  /* Chevron rotate */
+  .nav-chevron { transition: transform 0.2s ease; display: inline-block; font-size: 16px; vertical-align: -3px; }
+  .nav-item:hover .nav-chevron { transform: rotate(180deg); }
+</style>
+
+<header class="fixed top-0 left-0 w-full z-[1000] transition-colors duration-300" id="site-header" style="background:transparent;">
+  <div style="max-width:1280px; margin:0 auto; height:61px; padding:0 64px; display:flex; align-items:center; justify-content:space-between; position:relative;">
+
+    <!-- LEFT NAV -->
+    <nav style="display:flex; align-items:center; gap:40px; flex:1;">
+
+      <!-- Programs mega menu -->
+      <div class="nav-item" style="position:static;">
+        <button style="display:flex; align-items:center; gap:4px; font-size:14px; font-weight:500; color:rgba(255,255,255,0.8); letter-spacing:0; background:none; border:none; cursor:pointer; white-space:nowrap; padding:20px 0;" 
+                onmouseenter="this.style.color='#fff'" onmouseleave="this.style.color='rgba(255,255,255,0.8)'">
+          Programs
+          <svg class="nav-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-mega-panel" style="left:calc(-1 * (100vw - 1280px)/2 - 64px);">
+          <div style="max-width:1280px; margin:0 auto;">
+            <p style="font-size:12px; color:rgba(255,255,255,0.45); margin-bottom:16px; letter-spacing:0.08em;">Our Programs</p>
+            <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:16px;">
+              <a class="mega-card" href="on-demand-charter.html" style="text-decoration:none;">
+                <img src="assets/asset_658954853.jpg" alt="On Demand Charter" onerror="this.src='https://placehold.co/400x300/111/fff?text=Charter'">
+                <div class="mega-card-overlay"></div>
+                <div class="mega-card-label">
+                  <span>On Demand Charter</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </div>
+              </a>
+              <a class="mega-card" href="amalfi-one-jet-card.html" style="text-decoration:none;">
+                <img src="assets/asset_442584603.jpg" alt="Amalfi One Jet Card" onerror="this.src='https://placehold.co/400x300/111/fff?text=Jet+Card'">
+                <div class="mega-card-overlay"></div>
+                <div class="mega-card-label">
+                  <span>The Amalfi One Jet Card Program</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </div>
+              </a>
+              <a class="mega-card" href="amalfi-exclusive-golf-experiences.html" style="text-decoration:none;">
+                <img src="assets/asset_1050037764.jpg" alt="Golf Experiences" onerror="this.src='https://placehold.co/400x300/111/fff?text=Golf'">
+                <div class="mega-card-overlay"></div>
+                <div class="mega-card-label">
+                  <span>Amalfi Exclusive Golf Experiences</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </div>
+              </a>
+              <a class="mega-card" href="amalfi-reserve-membership.html" style="text-decoration:none;">
+                <img src="assets/asset_1373776532.jpg" alt="Amalfi Reserve Membership" onerror="this.src='https://placehold.co/400x300/111/fff?text=Reserve'">
+                <div class="mega-card-overlay"></div>
+                <div class="mega-card-label">
+                  <span>Amalfi Reserve Membership</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <a class="text-[11px] font-semibold uppercase tracking-[0.1em] text-white/75 hover:text-white transition-colors" href="aircraft-comparison.html">Aircraft</a>
-      <div class="relative group">
-        <button class="flex items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.1em] text-white/75 hover:text-white transition-colors">Why Amalfi <span class="material-symbols-outlined text-[16px]">expand_more</span></button>
-        <div class="absolute top-full left-0 mt-3 w-48 bg-[#0d0d0d] border border-white/10 rounded-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[1001]">
-          <div class="p-2 flex flex-col gap-0.5">
-            <a class="px-4 py-2.5 text-[13px] text-white/65 hover:bg-white/5 hover:text-white rounded-lg transition-colors" href="why-amalfi.html">Why Amalfi</a>
-            <a class="px-4 py-2.5 text-[13px] text-white/65 hover:bg-white/5 hover:text-white rounded-lg transition-colors" href="amalfi-technology.html">Amalfi Technology</a>
+
+      <!-- Aircraft -->
+      <a href="aircraft-comparison.html" style="font-size:14px; font-weight:500; color:rgba(255,255,255,0.8); text-decoration:none; white-space:nowrap;"
+         onmouseenter="this.style.color='#fff'" onmouseleave="this.style.color='rgba(255,255,255,0.8)'">Aircraft</a>
+
+      <!-- Why Amalfi mega menu -->
+      <div class="nav-item" style="position:static;">
+        <button style="display:flex; align-items:center; gap:4px; font-size:14px; font-weight:500; color:rgba(255,255,255,0.8); letter-spacing:0; background:none; border:none; cursor:pointer; white-space:nowrap; padding:20px 0;"
+                onmouseenter="this.style.color='#fff'" onmouseleave="this.style.color='rgba(255,255,255,0.8)'">
+          Why Amalfi
+          <svg class="nav-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-mega-panel" style="left:calc(-1 * (100vw - 1280px)/2 - 64px);">
+          <div style="max-width:1280px; margin:0 auto;">
+            <p style="font-size:12px; color:rgba(255,255,255,0.45); margin-bottom:16px; letter-spacing:0.08em;">Why Amalfi</p>
+            <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:16px; max-width:660px;">
+              <a class="mega-card" href="why-amalfi.html" style="text-decoration:none;">
+                <img src="assets/asset_1253999017.jpg" alt="Leadership Team" onerror="this.src='https://placehold.co/400x300/111/fff?text=Leadership'">
+                <div class="mega-card-overlay"></div>
+                <div class="mega-card-label">
+                  <span>Leadership Team</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </div>
+              </a>
+              <a class="mega-card" href="amalfi-technology.html" style="text-decoration:none;">
+                <img src="assets/asset_629558153.jpg" alt="Amalfi Technology" onerror="this.src='https://placehold.co/400x300/111/fff?text=Technology'">
+                <div class="mega-card-overlay"></div>
+                <div class="mega-card-label">
+                  <span>Amalfi Technology</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="flex-1 flex justify-start lg:justify-center">
-      <a class="flex items-center gap-2" href="index.html">
-        <span class="material-symbols-outlined text-white text-xl">change_history</span>
-        <span class="text-[14px] font-black tracking-[0.2em] text-white uppercase">Amalfi Jets</span>
+
+    </nav>
+
+    <!-- CENTER LOGO -->
+    <div style="position:absolute; left:50%; transform:translateX(-50%);">
+      <a href="index.html" style="display:flex; align-items:center; gap:6px; text-decoration:none;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2L22 20H2L12 2Z"/></svg>
+        <span style="font-size:14px; font-weight:800; letter-spacing:0.18em; color:#dedede; text-transform:uppercase;">Amalfi Jets</span>
       </a>
     </div>
-    <div class="flex-1 flex justify-end items-center gap-5">
-      <a class="hidden xl:block text-[11px] font-semibold text-white/65 hover:text-white transition-colors" href="tel:+18776262534">+1 (877) 626-2534</a>
-      <a class="hidden md:block bg-white text-black px-5 py-2 rounded-full text-[11px] font-semibold uppercase tracking-[0.08em] hover:opacity-90 transition-all" href="request-a-quote.html">Request a Quote</a>
-      <button class="lg:hidden text-white" onclick="document.getElementById('mobile-drawer').classList.remove('translate-x-full')"><span class="material-symbols-outlined text-3xl">menu</span></button>
+
+    <!-- RIGHT: phone + CTA -->
+    <div style="display:flex; align-items:center; gap:24px; flex:1; justify-content:flex-end;">
+      <a href="tel:+18776262534" style="display:flex; align-items:center; gap:6px; font-size:14px; font-weight:500; color:rgba(255,255,255,0.75); text-decoration:none;"
+         onmouseenter="this.style.color='#fff'" onmouseleave="this.style.color='rgba(255,255,255,0.75)'">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.03 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        +1 (877) 626-2534
+      </a>
+      <a href="request-a-quote.html" class="nav-quote-btn" 
+         style="background:#fff; color:#000; padding:10px 22px; border-radius:9999px; font-size:14px; font-weight:500; text-decoration:none; white-space:nowrap;">
+        Request a Quote
+      </a>
+      <!-- Mobile hamburger -->
+      <button id="mobile-menu-btn" style="display:none; background:none; border:none; cursor:pointer; color:white;" onclick="document.getElementById('mobile-drawer').classList.remove('translate-x-full')">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
     </div>
   </div>
 </header>
+
+<!-- Mobile Drawer -->
 <div class="fixed inset-0 z-[2000] translate-x-full transition-transform duration-300" id="mobile-drawer">
-  <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')"></div>
-  <div class="absolute right-0 top-0 h-full w-72 bg-[#0a0a0a] border-l border-white/10 flex flex-col">
+  <div class="absolute inset-0 bg-black/70" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')"></div>
+  <div class="absolute right-0 top-0 h-full w-72 bg-[#0a0a0a] border-l border-white/10 flex flex-col" style="font-family:'Inter Tight',sans-serif;">
     <div class="flex items-center justify-between px-6 py-5 border-b border-white/10">
-      <span class="text-[14px] font-black tracking-[0.2em] text-white uppercase">Amalfi Jets</span>
-      <button onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')" class="text-white/50 hover:text-white"><span class="material-symbols-outlined">close</span></button>
+      <a href="index.html" class="flex items-center gap-2" style="text-decoration:none;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M12 2L22 20H2L12 2Z"/></svg>
+        <span style="font-size:13px; font-weight:800; letter-spacing:0.18em; color:#dedede; text-transform:uppercase;">Amalfi Jets</span>
+      </a>
+      <button onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')" style="background:none; border:none; cursor:pointer; color:rgba(255,255,255,0.5);">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
     </div>
-    <nav class="flex-1 overflow-y-auto px-4 py-6 space-y-1">
-      <div class="px-4 py-2 text-[10px] text-white/30 uppercase tracking-[0.2em]">Programs</div>
-      <a class="block px-4 py-2.5 text-white/65 hover:text-white hover:bg-white/5 rounded-lg text-[13px] transition-colors" href="on-demand-charter.html">On-Demand Charter</a>
-      <a class="block px-4 py-2.5 text-white/65 hover:text-white hover:bg-white/5 rounded-lg text-[13px] transition-colors" href="amalfi-one-jet-card.html">Amalfi One Jet Card</a>
-      <a class="block px-4 py-2.5 text-white/65 hover:text-white hover:bg-white/5 rounded-lg text-[13px] transition-colors" href="amalfi-exclusive-golf-experiences.html">Golf Experiences</a>
-      <a class="block px-4 py-2.5 text-white/65 hover:text-white hover:bg-white/5 rounded-lg text-[13px] transition-colors" href="amalfi-reserve-membership.html">Reserve Membership</a>
-      <div class="px-4 pt-4 pb-2 text-[10px] text-white/30 uppercase tracking-[0.2em]">Explore</div>
-      <a class="block px-4 py-2.5 text-white/65 hover:text-white hover:bg-white/5 rounded-lg text-[13px] transition-colors" href="aircraft-comparison.html">Aircraft</a>
-      <a class="block px-4 py-2.5 text-white/65 hover:text-white hover:bg-white/5 rounded-lg text-[13px] transition-colors" href="why-amalfi.html">Why Amalfi</a>
-      <a class="block px-4 py-2.5 text-white/65 hover:text-white hover:bg-white/5 rounded-lg text-[13px] transition-colors" href="amalfi-technology.html">Technology</a>
+    <nav class="flex-1 overflow-y-auto px-4 py-5">
+      <div style="font-size:10px; color:rgba(255,255,255,0.3); letter-spacing:0.2em; text-transform:uppercase; padding:8px 16px;">Programs</div>
+      <a class="block px-4 py-3 rounded-lg text-sm transition-colors" style="color:rgba(255,255,255,0.65); text-decoration:none;" href="on-demand-charter.html" onmouseenter="this.style.color='#fff';this.style.background='rgba(255,255,255,0.05)'" onmouseleave="this.style.color='rgba(255,255,255,0.65)';this.style.background='transparent'">On Demand Charter</a>
+      <a class="block px-4 py-3 rounded-lg text-sm transition-colors" style="color:rgba(255,255,255,0.65); text-decoration:none;" href="amalfi-one-jet-card.html" onmouseenter="this.style.color='#fff';this.style.background='rgba(255,255,255,0.05)'" onmouseleave="this.style.color='rgba(255,255,255,0.65)';this.style.background='transparent'">Amalfi One Jet Card</a>
+      <a class="block px-4 py-3 rounded-lg text-sm transition-colors" style="color:rgba(255,255,255,0.65); text-decoration:none;" href="amalfi-exclusive-golf-experiences.html" onmouseenter="this.style.color='#fff';this.style.background='rgba(255,255,255,0.05)'" onmouseleave="this.style.color='rgba(255,255,255,0.65)';this.style.background='transparent'">Golf Experiences</a>
+      <a class="block px-4 py-3 rounded-lg text-sm transition-colors" style="color:rgba(255,255,255,0.65); text-decoration:none;" href="amalfi-reserve-membership.html" onmouseenter="this.style.color='#fff';this.style.background='rgba(255,255,255,0.05)'" onmouseleave="this.style.color='rgba(255,255,255,0.65)';this.style.background='transparent'">Reserve Membership</a>
+      <div style="font-size:10px; color:rgba(255,255,255,0.3); letter-spacing:0.2em; text-transform:uppercase; padding:8px 16px; margin-top:12px;">Explore</div>
+      <a class="block px-4 py-3 rounded-lg text-sm" style="color:rgba(255,255,255,0.65); text-decoration:none;" href="aircraft-comparison.html">Aircraft</a>
+      <a class="block px-4 py-3 rounded-lg text-sm" style="color:rgba(255,255,255,0.65); text-decoration:none;" href="why-amalfi.html">Why Amalfi</a>
+      <a class="block px-4 py-3 rounded-lg text-sm" style="color:rgba(255,255,255,0.65); text-decoration:none;" href="amalfi-technology.html">Technology</a>
     </nav>
     <div class="px-6 py-6 border-t border-white/10 space-y-3">
-      <a class="block text-center bg-white text-black px-5 py-3 rounded-full text-[11px] font-semibold uppercase tracking-[0.1em] hover:opacity-90" href="request-a-quote.html">Request a Quote</a>
-      <a class="block text-center text-white/50 text-[12px]" href="tel:+18776262534">+1 (877) 626-2534</a>
+      <a href="request-a-quote.html" class="block text-center py-3 rounded-full text-sm font-semibold" style="background:#fff; color:#000; text-decoration:none;">Request a Quote</a>
+      <a href="tel:+18776262534" class="block text-center text-xs" style="color:rgba(255,255,255,0.4); text-decoration:none;">+1 (877) 626-2534</a>
     </div>
   </div>
 </div>
 
-<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop h-20 flex items-center justify-between">
-<!-- Left Zone: Navigation Links -->
-<div class="hidden lg:flex items-center gap-8 flex-1">
-<div class="group relative">
-<button class="flex items-center gap-1 font-label-sm text-label-sm uppercase tracking-widest text-white/90 hover:text-white transition-colors">
-          Programs <span class="material-symbols-outlined text-[18px]">expand_more</span>
-</button>
-<div class="absolute top-full left-0 mt-2 w-48 bg-surface-container-high border border-white/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-<div class="py-2">
-<a class="block px-4 py-2 text-label-sm uppercase tracking-widest text-white/70 hover:text-white hover:bg-white/5" href="#">Amalfi One</a>
-<a class="block px-4 py-2 text-label-sm uppercase tracking-widest text-white/70 hover:text-white hover:bg-white/5" href="#">Corporate</a>
-</div>
-</div>
-</div>
-<a class="font-label-sm text-label-sm uppercase tracking-widest text-white/90 hover:text-white transition-colors" href="#">On-Demand</a>
-<a class="font-label-sm text-label-sm uppercase tracking-widest text-white/90 hover:text-white transition-colors" href="#">Fleet</a>
-</div>
-<!-- Center Zone: Logo -->
-<div class="flex-shrink-0 flex justify-center">
-<a class="font-label-sm text-label-sm tracking-[0.3em] font-black text-white uppercase" href="/">
-        AMALFI JETS
-      </a>
-</div>
-<!-- Right Zone: CTA -->
-<div class="flex-1 flex justify-end items-center gap-6">
-<a class="hidden md:block font-label-sm text-label-sm uppercase tracking-widest text-white/90 hover:text-white transition-colors" href="#">Why Amalfi</a>
-<button class="bg-white text-black px-6 py-2.5 rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:bg-gray-200 transition-all active:scale-95">
-        Request a Quote
-      </button>
-</div>
-</div>
-</nav>
-<!-- Hero Section -->
-<header class="relative h-screen flex flex-col items-center justify-center text-center px-margin-mobile overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img alt="" class="w-full h-full object-cover" data-alt="A wide-angle, cinematic view of a sleek, modern private jet stationed on a pristine airport tarmac during the golden hour. The soft, warm light glimmers off the polished white fuselage and large windows of the aircraft. In the background, a minimalist terminal building is visible under a clear, transitioning sky. The overall mood is one of extreme luxury, technical precision, and quiet exclusivity, echoing a high-end aviation lifestyle." src="assets/asset_1092395878.jpg">
-<div class="absolute inset-0 hero-overlay"></div>
-</div>
-<div class="relative z-10 max-w-4xl mx-auto space-y-unit-lg">
-<h1 class="font-display-2xl text-[52px] leading-tight md:text-display-2xl tracking-tight text-white">Request a Quote</h1>
-<p class="font-body-lg text-body-lg text-white/80 max-w-2xl mx-auto">
-                Connect with our dedicated global sales team for your private charter needs. Rates starting at $5,000 per hour.
-            </p>
-<!-- Booking Widget -->
-<div class="mt-unit-xl booking-widget-container bg-black/40 border border-white/10 p-unit-md md:p-unit-lg rounded-lg shadow-2xl max-w-6xl mx-auto w-full">
-<div class="flex flex-col md:flex-row gap-6 items-center mb-6">
-<div class="flex bg-gray-900 border border-gray-700 p-1 rounded-none">
-<button class="px-6 py-2 font-label-sm text-label-sm uppercase bg-white text-black">Round Trip</button>
-<button class="px-6 py-2 font-label-sm text-label-sm uppercase text-white/50 hover:text-white transition-colors">One Way</button>
-</div>
-<div class="flex items-center gap-4 text-white">
-<span class="material-symbols-outlined text-gray-400" data-icon="person">person</span>
-<div class="flex items-center border-b border-gray-700 pb-1">
-<button class="text-white hover:text-primary" onclick="this.nextElementSibling.stepDown()">-</button>
-<input class="w-12 bg-transparent text-center border-none focus:ring-0 font-body-base text-body-base" max="19" min="1" type="number" value="1">
-<button class="text-white hover:text-primary" onclick="this.previousElementSibling.stepUp()">+</button>
-</div>
-<span class="font-label-sm text-label-sm uppercase text-gray-400">Passengers</span>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-5 gap-px bg-gray-700 border border-gray-700 rounded-none overflow-hidden">
-<div class="bg-gray-900 p-4 flex flex-col items-start group">
-<label class="text-label-xs uppercase text-gray-500 mb-1">From</label>
-<input class="bg-transparent border-none p-0 w-full focus:ring-0 text-white placeholder-gray-600 font-body-base" placeholder="Origin City or Airport" type="text">
-</div>
-<div class="bg-gray-900 p-4 flex flex-col items-start group">
-<label class="text-label-xs uppercase text-gray-500 mb-1">To</label>
-<input class="bg-transparent border-none p-0 w-full focus:ring-0 text-white placeholder-gray-600 font-body-base" placeholder="Destination" type="text">
-</div>
-<div class="bg-gray-900 p-4 flex flex-col items-start">
-<label class="text-label-xs uppercase text-gray-500 mb-1">Depart</label>
-<input class="bg-transparent border-none p-0 w-full focus:ring-0 text-white font-body-base appearance-none" type="date">
-</div>
-<div class="bg-gray-900 p-4 flex flex-col items-start">
-<label class="text-label-xs uppercase text-gray-500 mb-1">Return</label>
-<input class="bg-transparent border-none p-0 w-full focus:ring-0 text-white font-body-base appearance-none" type="date">
-</div>
-<button class="bg-white text-black font-label-sm text-label-sm uppercase tracking-widest hover:bg-gray-200 transition-colors flex items-center justify-center gap-2">
-<span class="material-symbols-outlined" data-icon="search">search</span> Search
-                    </button>
-</div>
-</div>
-</div>
-<div class="absolute bottom-unit-lg left-1/2 -translate-x-1/2 animate-bounce opacity-40">
-<span class="material-symbols-outlined text-white" data-icon="expand_more">expand_more</span>
-</div>
-</header>
-<!-- Detailed Request Form Section -->
+<script>
+(function() {
+  // Scroll handler: transparent -> solid black (no blur, no border — matches official)
+  var h = document.getElementById('site-header');
+  function onScroll() {
+    if (window.scrollY > 10) {
+      h.style.background = '#000';
+      h.style.borderBottom = '1px solid rgba(255,255,255,0.06)';
+    } else {
+      h.style.background = 'transparent';
+      h.style.borderBottom = 'none';
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Mobile responsive: show/hide hamburger
+  function checkMobile() {
+    var btn = document.getElementById('mobile-menu-btn');
+    if (!btn) return;
+    var isMobile = window.innerWidth < 1024;
+    btn.style.display = isMobile ? 'block' : 'none';
+    // Hide desktop nav on mobile
+    var desktopNav = h.querySelector('nav');
+    if (desktopNav) desktopNav.style.display = isMobile ? 'none' : 'flex';
+    // Hide phone on small screens
+    var phoneLink = h.querySelector('a[href^="tel:"]');
+    if (phoneLink) phoneLink.style.display = isMobile ? 'none' : 'flex';
+  }
+  checkMobile();
+  window.addEventListener('resize', checkMobile);
+})();
+</script>
+
+
 <section class="bg-white text-gray-900 py-unit-xl px-margin-mobile md:px-margin-desktop">
 <div class="max-w-max-width mx-auto">
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-unit-xl">
@@ -408,19 +480,5 @@
     </div>
   </div>
 </footer>
-<script>
-  window.addEventListener('scroll', () => {
-    const h = document.getElementById('site-header');
-    if (!h) return;
-    if (window.scrollY > 20) {
-      h.style.background = 'rgba(0,0,0,0.92)';
-      h.style.backdropFilter = 'blur(16px)';
-      h.style.borderBottom = '1px solid rgba(255,255,255,0.06)';
-    } else {
-      h.style.background = 'transparent';
-      h.style.backdropFilter = 'none';
-      h.style.borderBottom = '1px solid transparent';
-    }
-  });
-</script>
+
 </body></html>
