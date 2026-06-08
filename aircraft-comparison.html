@@ -64,10 +64,10 @@
 </style>
 
 <header class="fixed top-0 left-0 w-full z-[1000] transition-colors duration-300" id="site-header" style="background:transparent;">
-  <div style="max-width:1280px; margin:0 auto; height:61px; padding:0 64px; display:flex; align-items:center; justify-content:space-between; position:relative;">
+  <div style="max-width:1280px; margin:0 auto; height:61px; display:flex; align-items:center; justify-content:space-between; position:relative; width: 100%;" class="px-5 lg:px-16">
 
     <!-- LEFT NAV -->
-    <nav style="display:flex; align-items:center; gap:40px; flex:1;">
+    <nav class="hidden lg:flex" style="align-items:center; gap:40px; flex:1;">
 
       <!-- Programs mega menu -->
       <div class="nav-item" style="position:static;">
@@ -156,7 +156,7 @@
     </nav>
 
     <!-- CENTER LOGO -->
-    <div style="position:absolute; left:50%; transform:translateX(-50%);">
+    <div class="lg:absolute lg:left-1/2 lg:-translate-x-1/2 flex items-center">
       <a href="index.html" style="display:flex; align-items:center; gap:6px; text-decoration:none;">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2L22 20H2L12 2Z"/></svg>
         <span style="font-size:14px; font-weight:800; letter-spacing:0.18em; color:#dedede; text-transform:uppercase;">Amalfi Jets</span>
@@ -165,17 +165,17 @@
 
     <!-- RIGHT: phone + CTA -->
     <div style="display:flex; align-items:center; gap:24px; flex:1; justify-content:flex-end;">
-      <a href="tel:+18776262534" style="display:flex; align-items:center; gap:6px; font-size:14px; font-weight:500; color:rgba(255,255,255,0.75); text-decoration:none;"
+      <a href="tel:+18776262534" class="hidden lg:flex" style="display:flex; align-items:center; gap:6px; font-size:14px; font-weight:500; color:rgba(255,255,255,0.75); text-decoration:none;"
          onmouseenter="this.style.color='#fff'" onmouseleave="this.style.color='rgba(255,255,255,0.75)'">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.03 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
         +1 (877) 626-2534
       </a>
-      <a href="request-a-quote.html" class="nav-quote-btn" 
+      <a href="request-a-quote.html" class="nav-quote-btn hidden lg:inline-block" 
          style="background:#fff; color:#000; padding:10px 22px; border-radius:9999px; font-size:14px; font-weight:500; text-decoration:none; white-space:nowrap;">
         Request a Quote
       </a>
       <!-- Mobile hamburger -->
-      <button id="mobile-menu-btn" style="display:none; background:none; border:none; cursor:pointer; color:white;" onclick="document.getElementById('mobile-drawer').classList.remove('translate-x-full')">
+      <button id="mobile-menu-btn" class="block lg:hidden" style=" background:none; border:none; cursor:pointer; color:white;" onclick="document.getElementById('mobile-drawer').classList.remove('translate-x-full')">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
     </div>
@@ -230,7 +230,7 @@
   onScroll();
 
   // Mobile responsive: show/hide hamburger
-  function checkMobile() {
+  function checkMobile() { return; // disabled in favor of tailwind
     var btn = document.getElementById('mobile-menu-btn');
     if (!btn) return;
     var isMobile = window.innerWidth < 1024;
@@ -386,8 +386,8 @@
 
 <footer class="bg-black border-t border-[#1a1a1a]">
   <div class="max-w-[1280px] mx-auto px-5 md:px-16 pt-16 pb-8">
-    <div class="flex flex-col lg:flex-row justify-between gap-12 mb-14">
-      <div class="flex flex-col gap-6 max-w-[220px]">
+    <div class="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-12 mb-14 text-center lg:text-left">
+      <div class="flex flex-col items-center lg:items-start gap-6 max-w-[220px]">
         <a class="flex items-center gap-2" href="index.html">
           <span class="material-symbols-outlined text-white text-xl">change_history</span>
           <span class="text-[14px] font-black tracking-[0.2em] text-white uppercase">Amalfi Jets</span>
@@ -404,10 +404,10 @@
           <a href="#" class="bg-[#0e0e0e] border border-white/10 rounded-lg px-3 py-2 flex items-center gap-2 hover:border-white/25 transition-all"><svg class="w-4 h-4 text-white flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M3.18 23.76c.37.21.8.22 1.18.06l12.61-7.29-2.73-2.73-11.06 9.96zM.5 1.32C.18 1.69 0 2.2 0 2.86v18.28c0 .66.18 1.17.5 1.54l.08.08 10.24-10.24v-.24L.58 1.24.5 1.32zm18.82 10.65l-2.73-1.58-3.07 3.07 3.07 3.07 2.75-1.59c.79-.46.79-1.52-.02-1.97zM4.36.18L16.97 7.47l-2.73 2.73-11.06-9.96A1.04 1.04 0 004.36.18z"/></svg><div><p class="text-[8px] text-white/35 uppercase leading-none">Get it on</p><p class="text-[11px] text-white font-bold leading-none">Google Play</p></div></a>
         </div>
       </div>
-      <div class="flex items-center lg:justify-center">
+      <div class="flex items-center justify-center lg:justify-start">
         <a class="bg-white text-black px-8 h-[44px] flex items-center rounded-full text-[11px] font-semibold uppercase tracking-[0.1em] hover:opacity-90 transition-opacity whitespace-nowrap" href="request-a-quote.html">Request a Quote</a>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 w-full lg:w-auto">
         <div><h5 class="text-white text-[11px] font-semibold uppercase tracking-[0.1em] mb-4">Our Programs</h5><ul class="space-y-2.5"><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="on-demand-charter.html">On-Demand Charter</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="amalfi-one-jet-card.html">Amalfi One Jet Card</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="amalfi-reserve-membership.html">Amalfi Reserve</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="amalfi-exclusive-golf-experiences.html">Amalfi Golf Package</a></li></ul></div>
         <div><h5 class="text-white text-[11px] font-semibold uppercase tracking-[0.1em] mb-4">Aircraft</h5><ul class="space-y-2.5"><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="aircraft-comparison.html">Turboprop Jets</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="aircraft-comparison.html">Light Jets</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="aircraft-comparison.html">Midsize Jets</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="aircraft-comparison.html">Super Midsize Jets</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="aircraft-comparison.html">Heavy Jets</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="aircraft-comparison.html">Ultra Long Haul Jets</a></li></ul></div>
         <div><h5 class="text-white text-[11px] font-semibold uppercase tracking-[0.1em] mb-4">Why Amalfi</h5><ul class="space-y-2.5"><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="why-amalfi.html">Leadership Team</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="amalfi-technology.html">Amalfi Technology</a></li><li><a class="text-[#555] hover:text-white text-[13px] transition-colors" href="#">Amalfi News</a></li></ul></div>

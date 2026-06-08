@@ -53,10 +53,10 @@
 </style>
 
 <header class="fixed top-0 left-0 w-full z-[1000] transition-colors duration-300" id="site-header" style="background:transparent;">
-  <div style="max-width:1280px; margin:0 auto; height:61px; padding:0 64px; display:flex; align-items:center; justify-content:space-between; position:relative;">
+  <div style="max-width:1280px; margin:0 auto; height:61px; display:flex; align-items:center; justify-content:space-between; position:relative; width: 100%;" class="px-5 lg:px-16">
 
     <!-- LEFT NAV -->
-    <nav style="display:flex; align-items:center; gap:40px; flex:1;">
+    <nav class="hidden lg:flex" style="align-items:center; gap:40px; flex:1;">
 
       <!-- Programs mega menu -->
       <div class="nav-item" style="position:static;">
@@ -145,7 +145,7 @@
     </nav>
 
     <!-- CENTER LOGO -->
-    <div style="position:absolute; left:50%; transform:translateX(-50%);">
+    <div class="lg:absolute lg:left-1/2 lg:-translate-x-1/2 flex items-center">
       <a href="index.html" style="display:flex; align-items:center; gap:6px; text-decoration:none;">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2L22 20H2L12 2Z"/></svg>
         <span style="font-size:14px; font-weight:800; letter-spacing:0.18em; color:#dedede; text-transform:uppercase;">Amalfi Jets</span>
@@ -154,17 +154,17 @@
 
     <!-- RIGHT: phone + CTA -->
     <div style="display:flex; align-items:center; gap:24px; flex:1; justify-content:flex-end;">
-      <a href="tel:+18776262534" style="display:flex; align-items:center; gap:6px; font-size:14px; font-weight:500; color:rgba(255,255,255,0.75); text-decoration:none;"
+      <a href="tel:+18776262534" class="hidden lg:flex" style="display:flex; align-items:center; gap:6px; font-size:14px; font-weight:500; color:rgba(255,255,255,0.75); text-decoration:none;"
          onmouseenter="this.style.color='#fff'" onmouseleave="this.style.color='rgba(255,255,255,0.75)'">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.03 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
         +1 (877) 626-2534
       </a>
-      <a href="request-a-quote.html" class="nav-quote-btn" 
+      <a href="request-a-quote.html" class="nav-quote-btn hidden lg:inline-block" 
          style="background:#fff; color:#000; padding:10px 22px; border-radius:9999px; font-size:14px; font-weight:500; text-decoration:none; white-space:nowrap;">
         Request a Quote
       </a>
       <!-- Mobile hamburger -->
-      <button id="mobile-menu-btn" style="display:none; background:none; border:none; cursor:pointer; color:white;" onclick="document.getElementById('mobile-drawer').classList.remove('translate-x-full')">
+      <button id="mobile-menu-btn" class="block lg:hidden" style=" background:none; border:none; cursor:pointer; color:white;" onclick="document.getElementById('mobile-drawer').classList.remove('translate-x-full')">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
     </div>
@@ -219,7 +219,7 @@
   onScroll();
 
   // Mobile responsive: show/hide hamburger
-  function checkMobile() {
+  function checkMobile() { return; // disabled in favor of tailwind
     var btn = document.getElementById('mobile-menu-btn');
     if (!btn) return;
     var isMobile = window.innerWidth < 1024;
@@ -243,12 +243,12 @@
 <!-- Mobile Drawer -->
 <main>
 <!-- ===== HERO ===== -->
-<section class="relative h-screen w-full overflow-hidden flex flex-col justify-center items-center text-center">
+<section class="relative min-h-screen lg:h-screen w-full overflow-hidden flex flex-col justify-center lg:justify-between items-center text-center pt-24 lg:pt-32 pb-10 lg:pb-0">
   <video autoplay class="absolute top-0 left-0 w-full h-full object-cover z-0" id="hero-video" loop muted playsinline>
     <source src="assets/asset_1067658118.mp4" type="video/mp4">
   </video>
   <div class="absolute inset-0 bg-black/45 z-10"></div>
-  <div class="relative z-20 w-full px-5 mt-[-12vh]">
+  <div class="relative z-20 w-full px-5 mt-[-4vh] lg:mt-[-12vh]">
     <h1 class="text-[48px] md:text-[74px] font-light leading-[1.05] tracking-[-0.02em] text-white mb-6">
       Exploring the World<br class="hidden md:block"> With You
     </h1>
@@ -256,7 +256,7 @@
     <a class="inline-block border border-white/40 text-white/80 px-8 py-3 rounded-full text-[11px] font-semibold uppercase tracking-[0.1em] hover:bg-white hover:text-black transition-all" href="programs.html">Our Programs</a>
   </div>
   <!-- Booking Widget -->
-  <div class="absolute bottom-0 w-full max-w-[1280px] px-5 md:px-16 z-30 mb-10">
+  <div class="relative lg:absolute lg:bottom-0 w-full max-w-[1280px] px-5 lg:px-16 z-30 mt-10 lg:mt-0 lg:mb-10">
     <div class="rounded-xl overflow-hidden shadow-2xl">
       <div class="glass-effect flex flex-wrap items-center justify-between px-6 py-4 gap-4">
         <div class="flex bg-white/8 p-1 rounded-lg">
@@ -272,20 +272,20 @@
           </div>
         </div>
       </div>
-      <div class="bg-[#111] grid grid-cols-1 md:grid-cols-5 items-center">
-        <div class="p-5 border-b md:border-b-0 md:border-r border-white/8">
+      <div class="bg-[#111] grid grid-cols-1 lg:grid-cols-5 items-center">
+        <div class="p-5 border-b lg:border-b-0 lg:border-r border-white/8">
           <label class="block text-[10px] font-semibold uppercase tracking-[0.12em] text-white/35 mb-1.5">Origin</label>
           <input class="booking-input" placeholder="Departure City" type="text">
         </div>
-        <div class="p-5 border-b md:border-b-0 md:border-r border-white/8">
+        <div class="p-5 border-b lg:border-b-0 lg:border-r border-white/8">
           <label class="block text-[10px] font-semibold uppercase tracking-[0.12em] text-white/35 mb-1.5">Destination</label>
           <input class="booking-input" placeholder="Arrival City" type="text">
         </div>
-        <div class="p-5 border-b md:border-b-0 md:border-r border-white/8">
+        <div class="p-5 border-b lg:border-b-0 lg:border-r border-white/8">
           <label class="block text-[10px] font-semibold uppercase tracking-[0.12em] text-white/35 mb-1.5">Depart</label>
           <input class="booking-input" type="date">
         </div>
-        <div class="p-5 border-b md:border-b-0 md:border-r border-white/8" id="return-field">
+        <div class="p-5 border-b lg:border-b-0 lg:border-r border-white/8" id="return-field">
           <label class="block text-[10px] font-semibold uppercase tracking-[0.12em] text-white/35 mb-1.5">Return</label>
           <input class="booking-input" type="date">
         </div>
@@ -357,7 +357,7 @@
       <h2 class="text-[32px] md:text-[44px] font-light leading-[1.15] text-white">The Amalfi Jets App</h2>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-[#0e0e0e] h-[640px] p-8 flex flex-col justify-between rounded-xl border border-white/8 hover:border-white/20 transition-all group">
+      <div class="bg-[#0e0e0e] h-[520px] sm:h-[640px] p-8 flex flex-col justify-between rounded-xl border border-white/8 hover:border-white/20 transition-all group">
         <div>
           <h4 class="text-[22px] font-medium text-white mb-3 leading-snug">Simplifying your Journey</h4>
           <p class="text-[15px] text-white/55 leading-relaxed">Reserve your jet with a single tap. Complete booking integration in your pocket.</p>
@@ -366,7 +366,7 @@
           <img alt="Amalfi Jets app — simplify your journey" class="w-3/4 translate-y-8 rotate-2 group-hover:rotate-0 transition-transform duration-500" loading="lazy" src="assets/asset_1497387884.jpg">
         </div>
       </div>
-      <div class="bg-[#0e0e0e] h-[640px] p-8 flex flex-col justify-between rounded-xl border border-white/8 hover:border-white/20 transition-all group">
+      <div class="bg-[#0e0e0e] h-[520px] sm:h-[640px] p-8 flex flex-col justify-between rounded-xl border border-white/8 hover:border-white/20 transition-all group">
         <div>
           <h4 class="text-[22px] font-medium text-white mb-3 leading-snug">Fly Smarter</h4>
           <p class="text-[15px] text-white/55 leading-relaxed">Real-time telemetry and status updates for your aircraft throughout its journey.</p>
@@ -375,7 +375,7 @@
           <img alt="Amalfi Jets app — fly smarter with real-time tracking" class="w-3/4 translate-y-8 -rotate-2 group-hover:rotate-0 transition-transform duration-500" loading="lazy" src="assets/asset_629558153.jpg">
         </div>
       </div>
-      <div class="bg-[#0e0e0e] h-[640px] p-8 flex flex-col justify-between rounded-xl border border-white/8 hover:border-white/20 transition-all group">
+      <div class="bg-[#0e0e0e] h-[520px] sm:h-[640px] p-8 flex flex-col justify-between rounded-xl border border-white/8 hover:border-white/20 transition-all group">
         <div>
           <h4 class="text-[22px] font-medium text-white mb-3 leading-snug">Beyond the Flight</h4>
           <p class="text-[15px] text-white/55 leading-relaxed">Access your Jet Card balance and account benefits instantly from anywhere.</p>
@@ -455,13 +455,13 @@
 <!-- ===== SHARED FOOTER ===== -->
 <footer class="bg-black border-t border-[#1a1a1a]">
   <div class="max-w-[1280px] mx-auto px-5 md:px-16 pt-16 pb-8">
-    <div class="flex flex-col lg:flex-row justify-between gap-12 mb-14">
-      <div class="flex flex-col gap-6 max-w-[220px]">
+    <div class="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-12 mb-14 text-center lg:text-left">
+      <div class="flex flex-col items-center lg:items-start gap-6 max-w-[220px]">
         <a class="flex items-center gap-2" href="index.html">
           <span class="material-symbols-outlined text-white text-xl">change_history</span>
           <span class="text-[14px] font-black tracking-[0.2em] text-white uppercase">Amalfi Jets</span>
         </a>
-        <div class="flex items-center gap-2.5">
+        <div class="flex items-center justify-center lg:justify-start gap-2.5">
           <a href="#" aria-label="TikTok" class="w-8 h-8 rounded-full border border-white/15 flex items-center justify-center text-white/45 hover:text-white hover:border-white/40 transition-all">
             <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05A6.34 6.34 0 003.15 15.3a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.88a8.27 8.27 0 004.84 1.55V7a4.85 4.85 0 01-1.08-.31z"/></svg>
           </a>
@@ -478,7 +478,7 @@
             <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.736-8.856L1.669 2.25H8.42l4.265 5.637L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
           </a>
         </div>
-        <div class="flex gap-2 flex-wrap">
+        <div class="flex gap-2 flex-wrap justify-center lg:justify-start">
           <a href="#" class="bg-[#0e0e0e] border border-white/10 rounded-lg px-3 py-2 flex items-center gap-2 hover:border-white/25 transition-all">
             <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
             <div><p class="text-[8px] text-white/35 uppercase leading-none">Download on the</p><p class="text-[11px] text-white font-bold leading-none">App Store</p></div>
@@ -489,10 +489,10 @@
           </a>
         </div>
       </div>
-      <div class="flex items-center lg:justify-center">
+      <div class="flex items-center justify-center lg:justify-start">
         <a class="bg-white text-black px-8 h-[44px] flex items-center rounded-full text-[11px] font-semibold uppercase tracking-[0.1em] hover:opacity-90 transition-opacity whitespace-nowrap" href="request-a-quote.html">Request a Quote</a>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 w-full lg:w-auto">
         <div>
           <h5 class="text-white text-[11px] font-semibold uppercase tracking-[0.1em] mb-4">Our Programs</h5>
           <ul class="space-y-2.5">
