@@ -1,25 +1,25 @@
-# Amalfi Jets — Private Jet Charter & Management
+﻿# Amalfi Jets Website
 
-A premium private aviation homepage built with [Google Stitch](https://stitch.google.com), featuring the **Obsidian Horizon** design system.
+A luxury private jet charter website with 10 pages, cloned from Stitch and refined to match amalfijets.com.
 
-## Stack
-- Pure HTML + Tailwind CSS (CDN)
-- Inter Tight (Google Fonts)
-- Material Symbols (Google Icons)
-- Zero build step — fully static
+## Live Site
+**https://amalfi-jets.vercel.app**
 
-## Sections
-1. **Navigation** — Frosted glass nav with mobile drawer
-2. **Hero** — Full-screen cinematic background with booking widget
-3. **What Sets Amalfi Apart** — Carousel cards
-4. **The Amalfi Jets App** — Feature cards with phone mockups
-5. **High-Quality Aircraft, Anywhere** — Full-bleed image section
-6. **More Than Your Jet Provider** — Image card grid
-7. **Footer** — Links, legal, social, CTA
+## Pages
+- Home (index.html) — Video hero, booking widget
+- Programs (programs.html)
+- On-Demand Charter (on-demand-charter.html)
+- Aircraft Comparison (aircraft-comparison.html)
+- Why Amalfi (why-amalfi.html) — with trust badges
+- Amalfi One Jet Card (amalfi-one-jet-card.html)
+- Amalfi Reserve Membership (amalfi-reserve-membership.html)
+- Amalfi Technology (amalfi-technology.html)
+- Golf Experiences (amalfi-exclusive-golf-experiences.html)
+- Request a Quote (request-a-quote.html)
 
-## Deploy
+## Deployment
+**Auto-deploy via GitHub -> Vercel**
+Every push to main branch automatically deploys to production at https://amalfi-jets.vercel.app
 
-Live on Vercel: [amalfi-jets.vercel.app](https://amalfi-jets.vercel.app) *(after deployment)*
-
-## Local Preview
-Just open `index.html` in your browser — no build step needed.
+## Assets
+All 42 media assets (41 images + 1 video) are stored locally in /assets/ — no external CDN dependencies.
