@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Aircraft Types | Amalfi Jets</title>
+<!-- Preconnects -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        ::-webkit-scrollbar { width: 4px; }
+        ::-webkit-scrollbar-track { background: #000000; }
+        ::-webkit-scrollbar-thumb { background: #27272a; }
+        .glass-nav { backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* Smooth state transitions */
+        .category-tab { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#ffffff",
+                        "tertiary-container": "#e2e2e2",
+                        "outline-variant": "#444748",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "on-secondary-fixed-variant": "#474646",
+                        "gray-500": "#6b7280",
+                        "gray-400": "#8c8c8c",
+                        "secondary": "#c8c6c5",
+                        "on-secondary-container": "#bab8b7",
+                        "on-primary-fixed-variant": "#454747",
+                        "primary-container": "#e2e2e2",
+                        "gray-900": "#111111",
+                        "secondary-fixed": "#e5e2e1",
+                        "text-dim": "rgba(255, 255, 255, 0.6)",
+                        "surface-container": "#1f1f1f",
+                        "on-error": "#690005",
+                        "surface-variant": "#353535",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "background": "#131313",
+                        "gray-300": "#d1d5d9",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-tint": "#c6c6c7",
+                        "primary-fixed": "#e2e2e2",
+                        "inverse-primary": "#5d5f5f",
+                        "on-primary-container": "#636565",
+                        "tertiary-fixed": "#e2e2e2",
+                        "surface-dim": "#131313",
+                        "error": "#ffb4ab",
+                        "on-tertiary": "#2f3131",
+                        "on-primary": "#2f3131",
+                        "error-container": "#93000a",
+                        "secondary-container": "#4a4949",
+                        "tertiary": "#ffffff",
+                        "surface-container-high": "#2a2a2a",
+                        "gray-100": "#f5f5f7",
+                        "text-muted": "#5e5e5e",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "surface-container-highest": "#353535",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "gray-800": "#1a1a1a",
+                        "on-surface": "#e2e2e2",
+                        "on-error-container": "#ffdad6",
+                        "on-background": "#e2e2e2",
+                        "surface-container-low": "#1b1b1b",
+                        "outline": "#8e9192",
+                        "surface-bright": "#393939",
+                        "on-surface-variant": "#c4c7c8",
+                        "surface": "#131313",
+                        "gray-700": "#27272a",
+                        "inverse-surface": "#e2e2e2",
+                        "on-tertiary-container": "#636565",
+                        "inverse-on-surface": "#303030",
+                        "primary-fixed-dim": "#c6c6c7",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "on-secondary": "#313030",
+                        "on-primary-fixed": "#1a1c1c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit-xs": "4px",
+                        "gutter": "24px",
+                        "unit-xl": "64px",
+                        "unit-md": "16px",
+                        "margin-desktop": "64px",
+                        "unit-lg": "32px",
+                        "margin-mobile": "20px",
+                        "unit-sm": "8px",
+                        "max-width": "1280px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Inter Tight"],
+                        "body-base": ["Inter Tight"],
+                        "body-lg": ["Inter Tight"],
+                        "title-lg": ["Inter Tight"],
+                        "display-2xl": ["Inter Tight"],
+                        "label-sm": ["Inter Tight"],
+                        "headline-lg": ["Inter Tight"],
+                        "display-lg-mobile": ["Inter Tight"],
+                        "headline-xl": ["Inter Tight"],
+                        "label-xs": ["Inter Tight"],
+                        "display-xl": ["Inter Tight"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["44px", { "lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+                        "body-base": ["15px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "title-lg": ["22px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "display-2xl": ["74px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300" }],
+                        "label-sm": ["13px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg": ["28px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                        "display-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "400" }],
+                        "headline-xl": ["36px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "label-xs": ["11px", { "lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600" }],
+                        "display-xl": ["60px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-base overflow-x-hidden">
+<!-- Shared Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-white/10 transition-all duration-300"><div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop h-[72px] grid grid-cols-2 lg:grid-cols-3 items-center">
+    <!-- Left Zone: Navigation Links -->
+    <div class="hidden lg:flex items-center gap-unit-lg">
+        <div class="group relative">
+            <button class="flex items-center gap-1 font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-4">
+                Programs
+                <span class="material-symbols-outlined text-[18px]">expand_more</span>
+            </button>
+        </div>
+        <div class="group relative">
+            <button class="flex items-center gap-1 font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors py-4">
+                Services
+                <span class="material-symbols-outlined text-[18px]">expand_more</span>
+            </button>
+        </div>
+        <a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="fleet.html">Fleet</a>
+    </div>
+    <!-- Center Zone: Logo -->
+    <div class="flex justify-start lg:justify-center">
+        <a class="font-label-sm text-label-sm tracking-[0.3em] font-black text-primary uppercase" href="index.html">
+            AMALFI JETS
+        </a>
+    </div>
+    <!-- Right Zone: Actions -->
+    <div class="flex justify-end items-center gap-unit-md md:gap-unit-lg">
+        <a class="hidden xl:block font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="about.html">Why Amalfi</a>
+        <button class="bg-primary text-on-primary px-4 md:px-unit-md py-2 md:py-unit-sm rounded-full font-label-sm text-label-sm hover:opacity-80 transition-opacity active:scale-95 duration-200">
+            Request a Quote
+        </button>
+    </div>
+</div></nav>
+<!-- Hero Section -->
+<header class="pt-[72px] bg-black">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-unit-xl flex flex-col md:flex-row justify-between items-start md:items-end gap-unit-lg">
+<h1 class="font-display-2xl text-display-lg md:text-display-2xl tracking-tighter text-white">
+            Aircraft Types
+        </h1>
+<div class="hidden md:block">
+<button class="bg-white text-black px-unit-lg py-unit-md rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:bg-gray-200 transition-colors">
+                Book a Flight
+            </button>
+</div>
+</div>
+</header>
+<!-- Category Selector Sticky Nav -->
+<div class="sticky top-[72px] z-40 bg-gray-900 border-y border-gray-700">
+<div class="max-w-max-width mx-auto overflow-x-auto hide-scrollbar">
+<div class="flex flex-nowrap min-w-max px-margin-mobile md:px-margin-desktop">
+<button class="category-tab py-unit-lg px-unit-lg border-b-2 border-transparent text-gray-500 hover:text-white transition-all group" data-category="turboprops">
+<span class="block font-label-sm text-label-sm uppercase tracking-widest mb-2 group-[.active]:text-white">Turboprops</span>
+<span class="block text-[10px] text-gray-600 group-[.active]:text-gray-400">Short Range â€¢ Efficient</span>
+</button>
+<button class="category-tab py-unit-lg px-unit-lg border-b-2 border-primary text-white transition-all group active" data-category="light">
+<span class="block font-label-sm text-label-sm uppercase tracking-widest mb-2 group-[.active]:text-white">Light</span>
+<span class="block text-[10px] text-gray-600 group-[.active]:text-gray-400">Regional â€¢ Nimble</span>
+</button>
+<button class="category-tab py-unit-lg px-unit-lg border-b-2 border-transparent text-gray-500 hover:text-white transition-all group" data-category="midsize">
+<span class="block font-label-sm text-label-sm uppercase tracking-widest mb-2 group-[.active]:text-white">Midsize</span>
+<span class="block text-[10px] text-gray-600 group-[.active]:text-gray-400">Balanced â€¢ Comfort</span>
+</button>
+<button class="category-tab py-unit-lg px-unit-lg border-b-2 border-transparent text-gray-500 hover:text-white transition-all group" data-category="super-mid">
+<span class="block font-label-sm text-label-sm uppercase tracking-widest mb-2 group-[.active]:text-white">Super Midsize</span>
+<span class="block text-[10px] text-gray-600 group-[.active]:text-gray-400">Long Haul â€¢ Luxury</span>
+</button>
+<button class="category-tab py-unit-lg px-unit-lg border-b-2 border-transparent text-gray-500 hover:text-white transition-all group" data-category="heavy">
+<span class="block font-label-sm text-label-sm uppercase tracking-widest mb-2 group-[.active]:text-white">Heavy</span>
+<span class="block text-[10px] text-gray-600 group-[.active]:text-gray-400">Transcontinental</span>
+</button>
+<button class="category-tab py-unit-lg px-unit-lg border-b-2 border-transparent text-gray-500 hover:text-white transition-all group" data-category="ultra">
+<span class="block font-label-sm text-label-sm uppercase tracking-widest mb-2 group-[.active]:text-white">Ultra Long Haul</span>
+<span class="block text-[10px] text-gray-600 group-[.active]:text-gray-400">Global Reach</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Detail Panel -->
+<main class="py-unit-xl max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop transition-all duration-700 opacity-100 translate-y-0">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-unit-lg lg:gap-unit-xl items-start" id="aircraft-content">
+<!-- Visuals Column -->
+<div class="lg:col-span-7 space-y-unit-lg">
+<div class="relative overflow-hidden group bg-surface-container-low aspect-video md:aspect-auto">
+<img alt="A sleek, modern light jet aircraft positioned on a dark runway at dusk. The exterior is a polished metallic silver reflecting the cool blue moonlight." class="w-full h-full md:h-[500px] object-cover filter brightness-75 hover:brightness-100 transition-all duration-700" loading="lazy" onerror="this.src='https://placehold.co/800x600/131313/ffffff?text=Exterior+View'" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ4UDm66D6ma9LQiNqptJw9zYGt_5ablIXvSRuZIfsvT2_Viikv89K5OtCmc6m1yGvHFQrDCYp26X-tuWkb6wIJdXnxetayedj6KMZj6bX_jf4us2wPMHGEYCpNZwnWdkmndB3lhv9Htk-UIdNqG1wgr8ykHjmvC_I5Mz9rvZ2Ekul4_TUcDdp1Z2YehkUTz1k-U-fZWTQw4reUr4NjTEk5Z7dxA77Rg_4_jEB5aZ7hS1Xq6CCCmH5S2IlTOOzeifx6fASS4TL6XA">
+<div class="absolute bottom-4 left-4">
+<span class="bg-black/50 backdrop-blur-md px-4 py-2 text-[10px] uppercase tracking-widest border border-white/10">Exterior View</span>
+</div>
+</div>
+<div class="relative overflow-hidden group bg-surface-container-low aspect-video md:aspect-auto">
+<img alt="The luxurious interior cabin of a private light jet featuring premium cream-colored leather seats and dark wood accents." class="w-full h-full md:h-[400px] object-cover filter brightness-75 hover:brightness-100 transition-all duration-700" loading="lazy" onerror="this.src='https://placehold.co/800x600/131313/ffffff?text=Interior+View'" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRLHKmL2jECyf2RwFifYSacLDZVcGrctkZ0ijreGq55Ta9vW2vwalFIZhLllEadtPsz5CYJkvIiiUe2QoCyjlgc7Oj8lNc4t9KaNxOQI1P5fEdZW_rxg4DvudIzEHGiS-bJB9EaOLzPubHbB90AZ1gE7PT6P9mh5EFmRs0Y5akGWK02ij5ykTUtZSsxw0PssK3mfAxjNIBpT2Xu8rxxQmL2OnU-tRCEVKmjejKu0uO3iLaAMTf9kyjy_sFsyeWmzGCRfeQdYzrJHk">
+<div class="absolute bottom-4 left-4">
+<span class="bg-black/50 backdrop-blur-md px-4 py-2 text-[10px] uppercase tracking-widest border border-white/10">Interior Cabin</span>
+</div>
+</div>
+</div>
+<!-- Specs Column -->
+<div class="lg:col-span-5 lg:sticky lg:top-[220px]">
+<div class="bg-gray-800 border border-gray-700 p-unit-md md:p-unit-lg rounded-lg shadow-2xl">
+<div class="mb-unit-lg">
+<h2 class="font-headline-xl text-headline-lg md:text-headline-xl text-white mb-2">Light Jets</h2>
+<p class="text-on-surface-variant font-body-base">Ideal for short to mid-range regional trips, offering the perfect balance of efficiency and luxury for up to 7 passengers.</p>
+</div>
+<div class="space-y-2">
+<div class="flex items-center justify-between py-4 border-b border-gray-700/50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400">groups</span>
+<span class="text-gray-400 font-label-sm uppercase tracking-wider">Passenger Capacity</span>
+</div>
+<span class="text-white font-title-lg">6-8 Seats</span>
+</div>
+<div class="flex items-center justify-between py-4 border-b border-gray-700/50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400">timer</span>
+<span class="text-gray-400 font-label-sm uppercase tracking-wider">Max Endurance</span>
+</div>
+<span class="text-white font-title-lg">4h 00m</span>
+</div>
+<div class="flex items-center justify-between py-4 border-b border-gray-700/50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400">distance</span>
+<span class="text-gray-400 font-label-sm uppercase tracking-wider">Typical Range</span>
+</div>
+<span class="text-white font-title-lg">1,600 NM</span>
+</div>
+<div class="flex items-center justify-between py-4 border-b border-gray-700/50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400">luggage</span>
+<span class="text-gray-400 font-label-sm uppercase tracking-wider">Baggage Capacity</span>
+</div>
+<span class="text-white font-title-lg">65 ftÂ³</span>
+</div>
+<div class="flex items-center justify-between py-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-gray-400">speed</span>
+<span class="text-gray-400 font-label-sm uppercase tracking-wider">Cruise Speed</span>
+</div>
+<span class="text-white font-title-lg">450 kts</span>
+</div>
+</div>
+<div class="mt-unit-lg pt-unit-lg border-t border-gray-700">
+<button class="w-full bg-white text-black py-unit-md rounded-lg font-label-sm text-label-sm uppercase tracking-widest hover:bg-gray-200 transition-colors mb-4">
+                        View Available Aircraft
+                    </button>
+<p class="text-[10px] text-gray-500 text-center uppercase tracking-widest">Pricing starting at $4,500 / Hour</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Book CTA Row -->
+<section class="bg-gray-900 py-unit-xl border-y border-gray-800 transition-all duration-700 opacity-100 translate-y-0">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-unit-lg text-center md:text-left">
+<div class="max-w-xl">
+<h3 class="font-headline-xl text-headline-xl text-white mb-2">Ready to book your flight?</h3>
+<p class="text-on-surface-variant font-body-base">Our lifestyle concierge is available 24/7 to assist with your requirements.</p>
+</div>
+<button class="bg-white text-black px-unit-xl py-unit-md rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:scale-105 transition-transform whitespace-nowrap">
+            Request a Quote
+        </button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-black border-t border-gray-700/50"><div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop pt-unit-xl pb-unit-lg">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-unit-xl mb-unit-xl">
+      <!-- ZONE 1: Logo, Socials, Apps -->
+      <div class="lg:col-span-4 flex flex-col gap-8">
+        <a href="index.html" class="font-label-sm text-label-sm tracking-[0.3em] font-black text-primary uppercase">AMALFI JETS</a>
+        <div class="flex gap-4">
+          <a href="#" class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[18px]">public</span>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[18px]">facebook</span>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[18px]">share</span>
+          </a>
+          <a href="#" class="w-8 h-8 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white transition-colors">
+            <span class="material-symbols-outlined text-[18px]">close</span>
+          </a>
+        </div>
+        <div class="flex gap-3">
+          <div class="bg-gray-900 border border-gray-800 rounded-lg px-3 py-1.5 flex items-center gap-2 cursor-pointer hover:bg-gray-800 transition-colors">
+            <span class="material-symbols-outlined text-white text-[20px]">apple</span>
+            <div class="flex flex-col">
+              <span class="text-[8px] text-gray-500 uppercase leading-none">Download on the</span>
+              <span class="text-[12px] text-white font-semibold leading-none">App Store</span>
+            </div>
+          </div>
+          <div class="bg-gray-900 border border-gray-800 rounded-lg px-3 py-1.5 flex items-center gap-2 cursor-pointer hover:bg-gray-800 transition-colors">
+            <span class="material-symbols-outlined text-white text-[20px]">play_arrow</span>
+            <div class="flex flex-col">
+              <span class="text-[8px] text-gray-500 uppercase leading-none">Get it on</span>
+              <span class="text-[12px] text-white font-semibold leading-none">Google Play</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ZONE 2: CTA -->
+      <div class="lg:col-span-3 flex items-start lg:justify-center">
+        <a href="request-a-quote.html" class="bg-white text-black h-[44px] px-8 rounded-full font-label-sm text-label-sm uppercase tracking-widest flex items-center justify-center hover:bg-gray-200 transition-colors whitespace-nowrap">
+          Request a Quote
+        </a>
+      </div>
+
+      <!-- ZONE 3: Links Grid -->
+      <div class="lg:col-span-5 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <h4 class="text-white font-label-sm text-label-sm uppercase tracking-widest mb-4">Programs</h4>
+          <ul class="space-y-2">
+            <li class=""><a href="amalfi-one.html" class="text-gray-400 hover:text-white text-[13px] transition-colors">Amalfi One</a></li>
+            <li class=""><a href="corporate.html" class="text-gray-400 hover:text-white text-[13px] transition-colors">Corporate</a></li>
+            <li class=""><a href="empty-legs.html" class="text-gray-400 hover:text-white text-[13px] transition-colors">Empty Legs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-label-sm text-label-sm uppercase tracking-widest mb-4">Aircraft</h4>
+          <ul class="space-y-2">
+            <li class=""><a href="fleet.html" class="text-gray-400 hover:text-white text-[13px] transition-colors">Our Fleet</a></li>
+            <li class=""><a href="#" class="text-gray-400 hover:text-white text-[13px] transition-colors">Light Jets</a></li>
+            <li class=""><a href="#" class="text-gray-400 hover:text-white text-[13px] transition-colors">Heavy Jets</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-label-sm text-label-sm uppercase tracking-widest mb-4">Why Amalfi</h4>
+          <ul class="space-y-2">
+            <li class=""><a href="about.html" class="text-gray-400 hover:text-white text-[13px] transition-colors">The Amalfi Way</a></li>
+            <li class=""><a href="safety.html" class="text-gray-400 hover:text-white text-[13px] transition-colors">Safety</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-label-sm text-label-sm uppercase tracking-widest mb-4">Company</h4>
+          <ul class="space-y-2">
+            <li class=""><a href="press.html" class="text-gray-400 hover:text-white text-[13px] transition-colors">Press</a></li>
+            <li class=""><a href="contact.html" class="text-gray-400 hover:text-white text-[13px] transition-colors">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM: Disclaimer & Copyright -->
+    <div class="pt-unit-lg border-t border-gray-800/50">
+      <p class="text-[11px] text-gray-600 leading-relaxed mb-6 uppercase tracking-wider">
+        Amalfi Jets Inc. is an air charter broker and does not own or operate aircraft. All flights are operated by FAA-certified Part 135 air carriers or foreign equivalent. Amalfi Jets acts as an agent for the client in arranging air transportation.
+      </p>
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="flex flex-wrap justify-center gap-6">
+          <p class="text-gray-600 text-[12px] uppercase tracking-widest">Â© 2024 Amalfi Jets. All Rights Reserved.</p>
+          <a href="privacy.html" class="text-gray-600 hover:text-white text-[12px] uppercase tracking-widest transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="text-gray-600 hover:text-white text-[12px] uppercase tracking-widest transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </div></footer>
+<script>
+    // Tab Switching Logic
+    document.querySelectorAll('.category-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Remove active classes
+            document.querySelectorAll('.category-tab').forEach(t => {
+                t.classList.remove('border-primary', 'text-white', 'active');
+                t.classList.add('border-transparent', 'text-gray-500');
+            });
+            
+            // Add active classes
+            tab.classList.add('border-primary', 'text-white', 'active');
+            tab.classList.remove('border-transparent', 'text-gray-500');
+
+            // Smooth scroll to top of content
+            window.scrollTo({
+                top: document.getElementById('aircraft-content').offsetTop - 180,
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Simple Fade in Observer
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-4');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('main, section').forEach(el => {
+        el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+        observer.observe(el);
+    });
+
+    // Sticky Nav Scroll Effect
+    const nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 20) {
+            nav.classList.add('py-2');
+            nav.classList.remove('py-0');
+        } else {
+            nav.classList.remove('py-2');
+            nav.classList.add('py-0');
+        }
+    });
+</script>
+
+
+
+
+</body></html>

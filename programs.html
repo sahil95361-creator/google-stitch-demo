@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Programs Overview | Amalfi Jets</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;800;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#e2e2e2",
+                    "secondary-fixed": "#e5e2e1",
+                    "secondary": "#c8c6c5",
+                    "surface-container-high": "#2a2a2a",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "surface-dim": "#131313",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "on-primary-container": "#636565",
+                    "surface-container-highest": "#353535",
+                    "error": "#ffb4ab",
+                    "gray-900": "#111111",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "on-primary-fixed-variant": "#454747",
+                    "inverse-surface": "#e2e2e2",
+                    "surface": "#131313",
+                    "secondary-container": "#4a4949",
+                    "tertiary": "#ffffff",
+                    "on-surface": "#e2e2e2",
+                    "surface-variant": "#353535",
+                    "gray-400": "#8c8c8c",
+                    "primary-container": "#e2e2e2",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "primary-fixed-dim": "#c6c6c7",
+                    "background": "#131313",
+                    "outline": "#8e9192",
+                    "inverse-primary": "#5d5f5f",
+                    "gray-500": "#6b7280",
+                    "on-primary-fixed": "#1a1c1c",
+                    "tertiary-fixed-dim": "#c6c6c7",
+                    "on-surface-variant": "#c4c7c8",
+                    "text-muted": "#5e5e5e",
+                    "surface-bright": "#393939",
+                    "tertiary-fixed": "#e2e2e2",
+                    "surface-container-low": "#1b1b1b",
+                    "gray-100": "#f5f5f7",
+                    "gray-300": "#d1d5d9",
+                    "gray-800": "#1a1a1a",
+                    "on-tertiary-container": "#636565",
+                    "surface-tint": "#c6c6c7",
+                    "error-container": "#93000a",
+                    "on-secondary": "#313030",
+                    "on-primary": "#2f3131",
+                    "surface-container-lowest": "#0e0e0e",
+                    "on-secondary-container": "#bab8b7",
+                    "surface-container": "#1f1f1f",
+                    "on-error": "#690005",
+                    "outline-variant": "#444748",
+                    "tertiary-container": "#e2e2e2",
+                    "inverse-on-surface": "#303030",
+                    "on-secondary-fixed-variant": "#474646",
+                    "text-dim": "rgba(255, 255, 255, 0.6)",
+                    "primary-fixed": "#e2e2e2",
+                    "on-error-container": "#ffdad6",
+                    "primary": "#ffffff",
+                    "gray-700": "#27272a",
+                    "on-tertiary": "#2f3131"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit-xl": "64px",
+                    "unit-sm": "8px",
+                    "margin-mobile": "20px",
+                    "unit-xs": "4px",
+                    "unit-md": "16px",
+                    "max-width": "1280px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "unit-lg": "32px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Inter Tight"],
+                    "display-lg": ["Inter Tight"],
+                    "headline-xl": ["Inter Tight"],
+                    "display-lg-mobile": ["Inter Tight"],
+                    "body-base": ["Inter Tight"],
+                    "title-lg": ["Inter Tight"],
+                    "label-xs": ["Inter Tight"],
+                    "body-lg": ["Inter Tight"],
+                    "display-xl": ["Inter Tight"],
+                    "display-2xl": ["Inter Tight"],
+                    "label-sm": ["Inter Tight"]
+            },
+            "fontSize": {
+                    "headline-lg": ["28px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                    "display-lg": ["44px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                    "headline-xl": ["36px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                    "body-base": ["15px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "title-lg": ["22px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "label-xs": ["11px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-xl": ["60px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300"}],
+                    "display-2xl": ["74px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300"}],
+                    "label-sm": ["13px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter Tight', sans-serif; -webkit-font-smoothing: antialiased; }
+        .glass-card { backdrop-filter: blur(12px); background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .program-card:hover .learn-more-pill { background-color: #ffffff; color: #000000; }
+        .program-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .program-card:hover { transform: translateY(-8px); }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary selection:text-black">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 transition-all duration-300 px-margin-desktop py-6 bg-transparent" id="global-header">
+<div class="max-w-max-width mx-auto grid grid-cols-3 items-center">
+<!-- Left: Navigation Links -->
+<div class="flex items-center gap-8">
+<div class="relative group">
+<button class="flex items-center gap-1 font-label-sm text-label-sm uppercase tracking-widest text-white hover:opacity-70 transition-opacity">
+          Programs
+          <span class="material-symbols-outlined text-[18px]">expand_more</span>
+</button>
+<!-- Dropdown placeholder -->
+<div class="absolute top-full left-0 mt-4 w-48 bg-surface-container-high border border-outline-variant/20 rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 p-2">
+<a class="block px-4 py-2 text-label-sm hover:bg-white/10 rounded-md transition-colors" href="#">On-Demand</a>
+<a class="block px-4 py-2 text-label-sm hover:bg-white/10 rounded-md transition-colors" href="#">Jet Card</a>
+<a class="block px-4 py-2 text-label-sm hover:bg-white/10 rounded-md transition-colors" href="#">Reserve</a>
+</div>
+</div>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-white hover:opacity-70 transition-opacity" href="#">Fleet</a>
+<a class="font-label-sm text-label-sm uppercase tracking-widest text-white hover:opacity-70 transition-opacity" href="#">Why Amalfi</a>
+</div>
+<!-- Center: Logo -->
+<div class="flex justify-center">
+<a class="font-label-sm text-label-sm tracking-[0.3em] font-black text-white uppercase" href="/">
+        AMALFI JETS
+      </a>
+</div>
+<!-- Right: CTA -->
+<div class="flex justify-end">
+<button class="bg-white text-black font-label-sm text-label-sm px-6 py-2.5 rounded-full hover:bg-gray-100 transition-colors active:scale-95">
+        Request a Quote
+      </button>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main>
+<!-- Hero Header -->
+<section class="pt-unit-xl bg-black">
+<div class="h-[320px] flex flex-col justify-center items-center text-center max-w-max-width mx-auto px-margin-mobile">
+<h1 class="font-display-2xl text-display-2xl md:text-display-2xl text-white">Programs</h1>
+<p class="font-headline-lg text-headline-lg text-text-dim mt-unit-sm">Helping you unlock more of the world.</p>
+</div>
+<div class="w-full h-[600px] overflow-hidden relative">
+<img alt="Luxury private jet soaring above the clouds" class="w-full h-full object-cover" data-alt="A wide cinematic shot of a sleek, white Gulfstream private jet cruising gracefully above a sea of fluffy white clouds during the golden hour. The sunlight reflects off the polished fuselage, creating a brilliant highlight that emphasizes its aerodynamic curves. The sky is a gradient of deep orange and soft violet, evoking a feeling of absolute freedom and ultimate luxury. The perspective is from another aircraft, giving a sense of being high in the atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLbEClgdLepoAICB7lCsmt0GhLMSi1BD9CGifKtbMFx-td2L6pGNymZeZpYJk2k2jB5y5pfczkTKAJJsRNHu4S5C4Pirlukg4pLDJg_uTOUUh4w39s9-7GpMF9-4lj46nXgv-YZMn2kvR5IXQ9WlhBBAzP6ek0A_a8-iiLrQEXGXBYIcDUutciJ5Jov4brK5IQJfoeAj-cN5HJKN1j_iwIfLDpkNspEo4ZqMT1BbdNM4Xy2XsbehtZ4FJDX8_jKRy3zchlfRpa6ck">
+</div>
+</section>
+<!-- Programs Grid -->
+<section class="bg-gray-100 py-unit-xl">
+<div class="max-w-max-width mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Card 1: On-Demand Charter -->
+<div class="program-card group relative h-[480px] rounded-[24px] overflow-hidden bg-gray-900 transition-all duration-700 opacity-100 translate-y-0">
+<img alt="On-Demand Charter" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An interior view of a luxury private jet cabin with premium beige leather seats and dark wood finishes, illuminated by soft natural light from large oval windows. A crystal glass sits on a polished side table, reflecting the refined atmosphere of elite travel. The aesthetic is clean, sophisticated, and monochromatic, focusing on high-quality textures and quiet luxury. The mood is calm and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuABPycwy34vfoMRktR1ybgtnbUXO1h133zJA0B_lJB6dy122ZSm_P-llT3af_J-JLHL70yQKvGvmunQKyHLpGvpx4i1jRCKB0ZZ4Gv2PLn5-0TZ68KbatgMkxxBWY0gMvcYw5kk81r4ElaykKWmC4FKREr2n-pil1JthOGuqrehGSB9iEblOFWq5MhBClfvuehtbYh0QN6qMj9cRYxjQ0gU5vqL8alLPBBZ8s2g7VdcrAu4MbvO3T3POLZvC5Mg1WOgeH2w9G1r6Hc">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-unit-lg w-full">
+<span class="font-label-xs text-label-xs text-primary bg-black/40 backdrop-blur-md px-3 py-1 rounded-full uppercase mb-unit-md inline-block">Service</span>
+<h2 class="font-headline-xl text-headline-xl text-white mb-unit-xs">On-Demand Charter</h2>
+<p class="font-body-base text-body-base text-gray-300 mb-unit-lg max-w-md">The most flexible way to fly globally, with no long-term commitment required.</p>
+<a class="learn-more-pill inline-flex items-center gap-2 font-label-sm text-label-sm border border-white text-white px-8 py-3 rounded-full transition-all duration-300" href="#">
+                                Learn More
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2: Amalfi One Jet Card -->
+<div class="program-card group relative h-[480px] rounded-[24px] overflow-hidden bg-gray-900 transition-all duration-700 opacity-100 translate-y-0">
+<img alt="Amalfi One Jet Card" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A minimalist overhead view of a premium black membership card with subtle metallic accents resting on a textured dark granite surface. The lighting is dramatic and directional, creating sharp shadows that emphasize the card's clean edges and prestigious branding. The color palette is strictly monochromatic, using deep blacks and cool grays to communicate exclusivity and precision in private aviation memberships." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6SfUkf0_4UV242onNs3rqe4srusKOx0AxrtQ1_oCx7sdy-REV9XB6fAhzXBZ6-ITVNqr_C8bW0oE_4d-ZGjGjUJM-LTAjU7oGoIlLk-TaY4z6_pOFHPEmhUSBJBYrBpXeojDsm1DOnlpP0tJMs_bAfc2n0cPNnLJ4uT2tXZH3d-_8HbXZGV4ev8YSogckEYVkLHc-TpGmvP29R_ON0SSWw3NiCdnbrlOEkDEp_5uxcJCr9uImt2VHlU0XPI1mcSfnvETEZb2qazM">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-unit-lg w-full">
+<span class="font-label-xs text-label-xs text-primary bg-black/40 backdrop-blur-md px-3 py-1 rounded-full uppercase mb-unit-md inline-block">Membership</span>
+<h2 class="font-headline-xl text-headline-xl text-white mb-unit-xs">Amalfi One Jet Card</h2>
+<p class="font-body-base text-body-base text-gray-300 mb-unit-lg max-w-md">Prepaid flight hours at fixed hourly rates with guaranteed availability.</p>
+<a class="learn-more-pill inline-flex items-center gap-2 font-label-sm text-label-sm border border-white text-white px-8 py-3 rounded-full transition-all duration-300" href="#">
+                                Learn More
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 3: Golf Experiences -->
+<div class="program-card group relative h-[480px] rounded-[24px] overflow-hidden bg-gray-900 transition-all duration-700 opacity-100 translate-y-0">
+<img alt="Golf Experiences" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A breathtaking view of a lush green golf course fairway winding along a rugged coastal cliffside under a clear azure sky. The vibrant green grass contrasts sharply with the deep blue of the ocean and the white foam of crashing waves below. The scene is shot with a wide-angle lens, capturing the expansive beauty and serenity of a world-class luxury sporting destination. The lighting is bright and high-contrast, highlighting the textures of the landscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxURaMUWbDzAmUeTCRy_XIZq6YEhQ1LxUxREx_XRJUAw1g9MkS8B4i6mh0gmmGXUtAATzOUFs2KVPGY-FiBfhZXaPC2mP3uwN3mXsBH0adca5mx3tp3sBkDzlQAZj5r21Y1yqh-gM_r6XbCecHt-QCnm8gmCp3frlgBMd9rntJZNmAdv1LEoaygBXe7EGzwWXR5xy-Qf4ADicXxE2eHdef2BPmZFGVkcoJJelhpmaPEp0p_j1WpERFVIqwvZ3-3JXp-m5krN-zi6s">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-unit-lg w-full">
+<span class="font-label-xs text-label-xs text-primary bg-black/40 backdrop-blur-md px-3 py-1 rounded-full uppercase mb-unit-md inline-block">Lifestyle</span>
+<h2 class="font-headline-xl text-headline-xl text-white mb-unit-xs">Golf Experiences</h2>
+<p class="font-body-base text-body-base text-gray-300 mb-unit-lg max-w-md">Bespoke itineraries to the world's most prestigious courses via private jet.</p>
+<a class="learn-more-pill inline-flex items-center gap-2 font-label-sm text-label-sm border border-white text-white px-8 py-3 rounded-full transition-all duration-300" href="#">
+                                Learn More
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 4: Reserve Membership -->
+<div class="program-card group relative h-[480px] rounded-[24px] overflow-hidden bg-gray-900 transition-all duration-700 opacity-100 translate-y-0">
+<img alt="Reserve Membership" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A modern architectural interior of an airport lounge designed with minimalist aesthetics, featuring floor-to-ceiling windows looking out over a private jet terminal. The furniture is sleek and contemporary, made of brushed metal and fine leather. The lighting is soft and ambient, creating a sense of calm and exclusivity. Outside, a private jet is parked on the tarmac, ready for departure. The scene represents the pinnacle of travel convenience and luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrSTF0PqCQKfXPZqHNcj4ngb7qpCSwNGsWBq3lAIF7f-LYPVPb9md0ZeHuxf1Kwo2jdGqnqq36S6eGBpEvaLOePd77-pRHyMSY-6Or_nOAt6RWvpe_wL55MSJ1D0tHduZYV-4LF_GxQqzl4l33-n1vNRfhCdIYHYQRJMqdxs2Zr68B1PYk3bPJgdEcd9MpQnGL0Y0P9GpEjyR1YWGNEVaXXPcWCXrm-kigM-6PS78_v2rIB-8rZ0IgVSEpjQMWpO9a8uxdXa2jQY0">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-unit-lg w-full">
+<span class="font-label-xs text-label-xs text-primary bg-black/40 backdrop-blur-md px-3 py-1 rounded-full uppercase mb-unit-md inline-block">Tiered Access</span>
+<h2 class="font-headline-xl text-headline-xl text-white mb-unit-xs">Reserve Membership</h2>
+<p class="font-body-base text-body-base text-gray-300 mb-unit-lg max-w-md">Our most exclusive tier offering priority scheduling and bespoke concierge services.</p>
+<a class="learn-more-pill inline-flex items-center gap-2 font-label-sm text-label-sm border border-white text-white px-8 py-3 rounded-full transition-all duration-300" href="#">
+                                Learn More
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-black py-unit-xl text-center">
+<div class="max-w-3xl mx-auto px-margin-mobile">
+<h3 class="font-headline-xl text-headline-xl text-white mb-unit-md">Ready to elevate your travel?</h3>
+<p class="font-body-lg text-body-lg text-text-dim mb-unit-lg">Our specialists are available 24/7 to help you choose the program that fits your lifestyle perfectly.</p>
+<div class="flex flex-col md:flex-row gap-gutter justify-center items-center">
+<button class="bg-primary text-black font-label-sm text-label-sm px-10 py-4 rounded-lg hover:opacity-90 transition-opacity w-full md:w-auto">Request a Quote</button>
+<button class="border border-white text-white font-label-sm text-label-sm px-10 py-4 rounded-lg hover:bg-white/10 transition-colors w-full md:w-auto">Speak to an Advisor</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-black border-t border-gray-800">
+  <div class="max-w-max-width mx-auto px-margin-desktop py-unit-xl">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-unit-xl">
+      <!-- Zone 1: Brand -->
+      <div class="md:col-span-3">
+        <a href="/" class="font-label-sm text-label-sm tracking-[0.3em] font-black text-white uppercase mb-unit-md block">AMALFI JETS</a>
+        <p class="text-gray-400 text-label-xs leading-relaxed max-w-xs">Redefining the standards of private aviation through precision, safety, and exclusivity.</p>
+      </div>
+      <!-- Zone 2: CTA -->
+      <div class="md:col-span-5 flex flex-col justify-center">
+        <h4 class="text-white font-headline-lg mb-4">Ready to fly?</h4>
+        <div class="flex flex-wrap gap-4">
+          <button class="bg-white text-black font-label-sm px-6 py-2.5 rounded-full hover:bg-gray-100 transition-colors">Request a Quote</button>
+          <button class="border border-white text-white font-label-sm px-6 py-2.5 rounded-full hover:bg-white/10 transition-colors">Contact Us</button>
+        </div>
+      </div>
+      <!-- Zone 3: Links Grid -->
+      <div class="md:col-span-4 grid grid-cols-2 gap-8">
+        <div>
+          <p class="font-label-sm uppercase tracking-widest text-white mb-4">Explore</p>
+          <ul class="space-y-2">
+            <li class=""><a href="#" class="text-gray-400 hover:text-white transition-colors text-body-base">Programs</a></li>
+            <li class=""><a href="#" class="text-gray-400 hover:text-white transition-colors text-body-base">Fleet</a></li>
+            <li class=""><a href="#" class="text-gray-400 hover:text-white transition-colors text-body-base">Why Amalfi</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-label-sm uppercase tracking-widest text-white mb-4">Company</p>
+          <ul class="space-y-2">
+            <li class=""><a href="#" class="text-gray-400 hover:text-white transition-colors text-body-base">Safety</a></li>
+            <li class=""><a href="#" class="text-gray-400 hover:text-white transition-colors text-body-base">News</a></li>
+            <li class=""><a href="#" class="text-gray-400 hover:text-white transition-colors text-body-base">Legal</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- DOT Disclaimer -->
+    <div class="pt-unit-md border-t border-gray-800 mb-unit-md">
+      <p class="text-[11px] leading-relaxed text-[#3a3a3a] uppercase tracking-wider">
+        Amalfi Jets is an air charter broker. Amalfi Jets is not a direct air carrier and does not own or operate any aircraft. All flights are operated by FAA-certified Part 135 or Part 121 air carriers or foreign equivalent.
+      </p>
+    </div>
+    <!-- Copyright Bar -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-4">
+      <p class="text-label-xs text-gray-500">Â© 2024 Amalfi Jets. All Rights Reserved.</p>
+      <div class="flex gap-gutter">
+        <a href="#" class="text-label-xs text-gray-500 hover:text-white transition-colors">Privacy Policy</a>
+        <a href="#" class="text-label-xs text-gray-500 hover:text-white transition-colors">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+        // Interactive Header scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-black/90', 'py-unit-sm');
+                nav.classList.remove('py-unit-md');
+            } else {
+                nav.classList.remove('bg-black/90', 'py-unit-sm');
+                nav.classList.add('py-unit-md');
+            }
+        });
+
+        // Simple Intersection Observer for scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.program-card').forEach(card => {
+            card.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+            observer.observe(card);
+        });
+    </script>
+
+
+</body></html>

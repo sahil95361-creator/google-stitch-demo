@@ -1,740 +1,530 @@
-<!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
-<title>Amalfi Jets | Private Jet Charter &amp; Management</title>
-<meta name="description" content="Amalfi Jets — Premium private jet charter and management. Access 3,500+ aircraft across 170+ countries with a 24/7 concierge team."/>
-<!-- Critical CSS to prevent layout flash -->
-<style>
-    *, ::after, ::before { box-sizing: border-box; }
-    html { line-height: 1.5; -webkit-text-size-adjust: 100%; -moz-tab-size: 4; tab-size: 4; font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
-    body { margin: 0; background-color: #131313; color: #e2e2e2; }
-    header { min-height: 100vh; }
-</style>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+﻿<!DOCTYPE html><html class="dark" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Amalfi Jets | Luxury Private Jet Charter &amp; Jet Card Programs</title>
+<!-- Preconnects -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<!-- Scripts & Fonts -->
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
                 extend: {
                     "colors": {
-                        "surface": "#131313",
-                        "outline": "#8e9192",
-                        "secondary-fixed-dim": "#c6c7bf",
-                        "tertiary-fixed": "#e4e2e1",
-                        "background": "#131313",
-                        "surface-container-low": "#1b1b1b",
                         "on-background": "#e2e2e2",
-                        "surface-container-lowest": "#0e0e0e",
-                        "tertiary": "#ffffff",
-                        "error-container": "#93000a",
-                        "secondary-fixed": "#e2e3da",
-                        "primary-fixed": "#e2e2e2",
-                        "on-secondary-fixed": "#1a1c17",
-                        "surface-container-highest": "#353535",
-                        "smoke": "#F5F5F7",
-                        "surface-variant": "#353535",
-                        "error": "#ffb4ab",
+                        "secondary-fixed": "#e5e2e1",
+                        "secondary": "#c8c6c5",
                         "surface-container-high": "#2a2a2a",
-                        "inverse-primary": "#5d5f5f",
-                        "on-primary-fixed": "#1a1c1c",
-                        "on-surface-variant": "#c4c7c8",
-                        "onyx-grey": "#222222",
-                        "inverse-on-surface": "#303030",
-                        "on-secondary-container": "#b4b6ae",
-                        "surface-container": "#1f1f1f",
-                        "primary-container": "#e2e2e2",
-                        "secondary-container": "#454841",
-                        "on-secondary-fixed-variant": "#454841",
-                        "on-error": "#690005",
-                        "primary": "#ffffff",
-                        "on-tertiary-fixed-variant": "#474746",
-                        "on-primary-container": "#636565",
-                        "on-tertiary-container": "#656464",
-                        "primary-fixed-dim": "#c6c6c7",
-                        "inverse-surface": "#e2e2e2",
-                        "on-secondary": "#2f312b",
-                        "muted-silver": "#8C8C8C",
-                        "tertiary-container": "#e4e2e1",
-                        "surface-tint": "#c6c6c7",
-                        "on-primary": "#2f3131",
-                        "on-primary-fixed-variant": "#454747",
-                        "on-tertiary-fixed": "#1b1c1c",
-                        "on-error-container": "#ffdad6",
-                        "on-surface": "#e2e2e2",
+                        "on-tertiary-fixed": "#1a1c1c",
                         "surface-dim": "#131313",
-                        "on-tertiary": "#303030",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "on-primary-container": "#636565",
+                        "surface-container-highest": "#353535",
+                        "error": "#ffb4ab",
+                        "gray-900": "#111111",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "on-primary-fixed-variant": "#454747",
+                        "inverse-surface": "#e2e2e2",
+                        "surface": "#131313",
+                        "secondary-container": "#4a4949",
+                        "tertiary": "#ffffff",
+                        "on-surface": "#e2e2e2",
+                        "surface-variant": "#353535",
+                        "gray-400": "#8c8c8c",
+                        "primary-container": "#e2e2e2",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "primary-fixed-dim": "#c6c6c7",
+                        "background": "#131313",
+                        "outline": "#8e9192",
+                        "inverse-primary": "#5d5f5f",
+                        "gray-500": "#6b7280",
+                        "on-primary-fixed": "#1a1c1c",
+                        "tertiary-fixed-dim": "#c6c6c7",
+                        "on-surface-variant": "#c4c7c8",
+                        "text-muted": "#5e5e5e",
                         "surface-bright": "#393939",
-                        "secondary": "#c6c7bf",
+                        "tertiary-fixed": "#e2e2e2",
+                        "surface-container-low": "#1b1b1b",
+                        "gray-100": "#f5f5f7",
+                        "gray-300": "#d1d5d9",
+                        "gray-800": "#1a1a1a",
+                        "on-tertiary-container": "#636565",
+                        "surface-tint": "#c6c6c7",
+                        "error-container": "#93000a",
+                        "on-secondary": "#313030",
+                        "on-primary": "#2f3131",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-secondary-container": "#bab8b7",
+                        "surface-container": "#1f1f1f",
+                        "on-error": "#690005",
                         "outline-variant": "#444748",
-                        "tertiary-fixed-dim": "#c8c6c5"
+                        "tertiary-container": "#e2e2e2",
+                        "inverse-on-surface": "#303030",
+                        "on-secondary-fixed-variant": "#474646",
+                        "text-dim": "rgba(255, 255, 255, 0.6)",
+                        "primary-fixed": "#e2e2e2",
+                        "on-error-container": "#ffdad6",
+                        "primary": "#ffffff",
+                        "gray-700": "#27272a",
+                        "on-tertiary": "#2f3131"
                     },
                     "borderRadius": {
-                        "DEFAULT": "1rem",
-                        "lg": "2rem",
-                        "xl": "3rem",
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
                         "full": "9999px"
                     },
                     "spacing": {
-                        "section-gap": "160px",
-                        "unit": "8px",
-                        "margin-desktop": "80px",
-                        "gutter": "24px",
+                        "unit-xl": "64px",
+                        "unit-sm": "8px",
                         "margin-mobile": "20px",
-                        "container-max": "1440px"
+                        "unit-xs": "4px",
+                        "unit-md": "16px",
+                        "max-width": "1280px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px",
+                        "unit-lg": "32px"
                     },
                     "fontFamily": {
-                        "display-hero-mobile": ["'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"],
-                        "body-md": ["'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"],
-                        "headline-lg": ["'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"],
-                        "headline-md": ["'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"],
-                        "button": ["'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"],
-                        "label-caps": ["'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"],
-                        "display-hero": ["'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"],
-                        "body-lg": ["'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"]
+                        "headline-lg": ["Inter Tight"],
+                        "display-lg": ["Inter Tight"],
+                        "headline-xl": ["Inter Tight"],
+                        "display-lg-mobile": ["Inter Tight"],
+                        "body-base": ["Inter Tight"],
+                        "title-lg": ["Inter Tight"],
+                        "label-xs": ["Inter Tight"],
+                        "body-lg": ["Inter Tight"],
+                        "display-xl": ["Inter Tight"],
+                        "display-2xl": ["Inter Tight"],
+                        "label-sm": ["Inter Tight"]
                     },
                     "fontSize": {
-                        "display-hero-mobile": ["32px", {"lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "500"}],
-                        "body-md": ["16px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
-                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "500"}],
-                        "headline-md": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "500"}],
-                        "button": ["15px", {"lineHeight": "1", "letterSpacing": "0.01em", "fontWeight": "500"}],
-                        "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
-                        "display-hero": ["74px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "500"}],
-                        "body-lg": ["20px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}]
+                        "headline-lg": ["28px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "display-lg": ["44px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+                        "headline-xl": ["36px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "400"}],
+                        "body-base": ["15px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "title-lg": ["22px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "label-xs": ["11px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-xl": ["60px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300"}],
+                        "display-2xl": ["74px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "300"}],
+                        "label-sm": ["13px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}]
                     }
                 },
             },
         }
     </script>
 <style>
-        :root {
-            --section-gap: 160px;
-            --margin-desktop: 80px;
-            --margin-mobile: 20px;
-            --touch-target: 44px;
-        }
-        @media (max-width: 768px) {
-            :root { --section-gap: 80px; }
-        }
-
-        body { 
-            font-family: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; 
-            -webkit-font-smoothing: antialiased; 
-            -moz-osx-font-smoothing: grayscale;
-            text-rendering: optimizeLegibility;
+        body { font-family: 'Inter Tight', sans-serif; -webkit-font-smoothing: antialiased; }
+        .glass-effect { background: rgba(26, 26, 26, 0.88); backdrop-filter: blur(16px); }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .booking-input { background: transparent; border: none; color: white; width: 100%; outline: none; }
+        .booking-input::placeholder { color: rgba(255,255,255,0.4); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        
+        #site-header.scrolled {
+            background: rgba(0,0,0,0.92);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255,255,255,0.06);
         }
 
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-        
-        .glass-panel { background: rgba(30, 30, 30, 0.85); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
-        .frosted-quote-btn { 
-            background: rgba(255, 255, 255, 0.08); 
-            border: 1px solid rgba(200, 200, 200, 0.35); 
-            backdrop-filter: blur(8px); 
-            -webkit-backdrop-filter: blur(8px);
-            min-height: var(--touch-target);
+        .active-link {
+            color: #ffffff !important;
+            font-weight: 600;
         }
         
-        .scrolled-nav { background: rgba(0, 0, 0, 0.9) !important; backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-        
-        .logo-wordmark { font-size: 15px; font-weight: 700; letter-spacing: 0.18em; color: #dedede; }
-        
-        #mobile-drawer { 
-            transform: translateX(100%); 
-            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
-            will-change: transform;
-        }
-        #mobile-drawer.active { transform: translateX(0); }
-        
-        .carousel-track { 
-            transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1); 
-            will-change: transform;
-            touch-action: pan-y pinch-zoom;
-        }
-        
-        .phone-frame {
-            background: #1c1c1e;
-            border: 8px solid #333;
-            border-bottom: 0;
-            border-top-left-radius: 32px;
-            border-top-right-radius: 32px;
-            width: 260px;
-            height: 400px;
-            position: relative;
-            overflow: hidden;
-            flex-shrink: 0;
-        }
-        
-        .touch-target { min-height: var(--touch-target); min-width: var(--touch-target); }
-        
-        .hide-scrollbar::-webkit-scrollbar { display: none; }
-        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-
-        @media (min-width: 768px) {
-            .section-5-custom .grid {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .card-3-special {
-                grid-column: 1 / span 1;
-                width: 100%;
-            }
-        }
-        @media (min-width: 1024px) {
-            .section-5-custom .grid {
-                grid-template-columns: repeat(4, 1fr);
-            }
-            .section-5-custom .grid > div:nth-child(1) {
-                grid-column: 1 / span 2;
-            }
-            .section-5-custom .grid > div:nth-child(2) {
-                grid-column: 3 / span 2;
-            }
-            .card-3-special {
-                grid-column: 2 / span 2 !important;
-                width: 100%;
-            }
+        .active-link::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #ffffff;
+            margin-top: 2px;
         }
     </style>
 </head>
-<body class="bg-surface text-on-surface">
-<!-- Navigation -->
-<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-6 transition-all duration-300" id="top-nav">
-<!-- Left Nav (Desktop Only) -->
-<div class="hidden md:flex items-center gap-8 flex-1">
-<div class="relative group">
-<button class="flex items-center gap-1 font-label-caps text-label-caps uppercase tracking-widest text-primary/80 hover:text-primary transition-colors touch-target">
-                    Programs 
-                    <svg fill="none" height="6" viewBox="0 0 10 6" width="10" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
-</button>
-</div>
-<a class="font-label-caps text-label-caps uppercase tracking-widest text-primary/80 hover:text-primary transition-colors touch-target flex items-center" href="#">Aircraft</a>
-<div class="relative group">
-<button class="flex items-center gap-1 font-label-caps text-label-caps uppercase tracking-widest text-primary/80 hover:text-primary transition-colors touch-target">
-                    Why Amalfi
-                    <svg fill="none" height="6" viewBox="0 0 10 6" width="10" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
-</button>
-</div>
-</div>
-<!-- Logo (Centered on all viewports) -->
-<div class="absolute left-1/2 -translate-x-1/2 flex items-center gap-2 z-10">
-<span class="logo-wordmark uppercase">Amalfi Jets</span>
-<svg class="text-[#dedede]" fill="none" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
-<path d="M22 2L2 10L11 13L14 22L22 2Z" fill="currentColor"></path>
-</svg>
-</div>
-<!-- Right Nav -->
-<div class="flex items-center justify-end gap-6 flex-1">
-<div class="hidden lg:flex items-center gap-2 text-[#dedede] font-label-caps text-[13px] tracking-wide">
-<span class="material-symbols-outlined text-[18px]">call</span>
-<span class="">+1(877) 626-2534</span>
-</div>
-<button class="hidden sm:block frosted-quote-btn px-6 py-2.5 rounded-full font-button text-[13px] uppercase tracking-widest text-white transition-all hover:bg-white/10 active:scale-95">
-                Request a Quote
-            </button>
-<!-- Mobile Menu Trigger -->
-<button aria-label="Open Menu" class="md:hidden flex flex-col gap-1.5 p-2 touch-target justify-center" id="mobile-menu-open">
-<div class="w-6 h-px bg-white"></div>
-<div class="w-6 h-px bg-white"></div>
-<div class="w-6 h-px bg-white"></div>
-</button>
-</div>
-</nav>
-<!-- Mobile Drawer -->
-<div class="fixed inset-0 bg-black z-[60] flex flex-col p-10 md:hidden overflow-y-auto" id="mobile-drawer">
-<div class="flex justify-between items-center mb-12">
-<div class="flex items-center gap-2">
-<span class="logo-wordmark uppercase">Amalfi Jets</span>
-</div>
-<button aria-label="Close Menu" class="p-2 touch-target" id="mobile-menu-close">
-<span class="material-symbols-outlined text-white text-3xl">close</span>
-</button>
-</div>
-<div class="flex flex-col gap-10">
-<div>
-<div class="text-muted-silver font-label-caps tracking-widest mb-4">PROGRAMS</div>
-<div class="flex flex-col gap-5 pl-4 border-l border-white/10">
-<a class="text-white text-xl font-medium touch-target flex items-center" href="#">Jet Cards</a>
-<a class="text-white text-xl font-medium touch-target flex items-center" href="#">Memberships</a>
-</div>
-</div>
-<a class="text-white text-2xl font-medium touch-target flex items-center" href="#">Aircraft</a>
-<div>
-<div class="text-muted-silver font-label-caps tracking-widest mb-4">WHY AMALFI</div>
-<div class="flex flex-col gap-5 pl-4 border-l border-white/10">
-<a class="text-white text-xl font-medium touch-target flex items-center" href="#">Safety</a>
-<a class="text-white text-xl font-medium touch-target flex items-center" href="#">The App</a>
-<a class="text-white text-xl font-medium touch-target flex items-center" href="#">Company</a>
-</div>
-</div>
-<a class="text-white text-2xl font-medium touch-target flex items-center" href="#">Contact</a>
-</div>
-<div class="mt-auto pt-10 border-t border-white/10">
-<div class="flex items-center gap-3 text-white mb-6">
-<span class="material-symbols-outlined">call</span>
-<span class="font-medium">+1(877) 626-2534</span>
-</div>
-<button class="w-full bg-white text-black py-4 rounded-full font-button uppercase tracking-widest touch-target active:scale-95 transition-transform">
-                Request a Quote
-            </button>
-</div>
-</div>
-<!-- HERO SECTION -->
-<header class="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden">
-<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWf4rWJRw8q4ygyJlJe1aGjpWHb6eD_DSu2uWdD6ZN7Z2qcKGCRx9s_yU_hffyV1VH8pkeC-ChE06Q183PQyVLxiieQqn0M6NvATjfPm80NkEdzjchEs-tsormoSBy3FRHuRcrdJbm4JT1w1_9ZjDQ_yC_qtJqjAFEtDD-v1IOfuHZiHkp-lYsK2zcwsjny4rxNLA1YpPGPMTVn1_6Ug6tgVecyZR_r-8K6rDEYxMTabUp-PSuHIqG6-rZqc7vaJXZQvttYzGi1XQ');">
-<div class="absolute inset-0 bg-black/40"></div>
-</div>
-<div class="relative z-10 px-6 max-w-5xl mb-24 md:mb-48 mt-[-10vh]">
-<h1 class="font-display-hero text-display-hero-mobile md:text-display-hero text-[#dedede] leading-[1.1] tracking-[-0.5px]">
-                Exploring the World With You
+<body class="bg-background text-on-surface">
+<header class="fixed top-0 left-0 w-full h-[60px] z-[1000] transition-all duration-300 bg-transparent border-b border-transparent" id="site-header"><div class="max-w-max-width mx-auto h-full px-margin-mobile md:px-margin-desktop flex items-center justify-between">
+  <div class="hidden lg:flex items-center gap-unit-lg flex-1">
+    <div class="relative group">
+      <button class="flex items-center gap-1 text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">
+        Programs <span class="material-symbols-outlined text-sm">expand_more</span>
+      </button>
+      <div class="absolute top-full left-0 mt-2 w-64 bg-gray-900 border border-gray-800 rounded-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[1001]">
+        <div class="p-2 flex flex-col">
+          <a class="px-4 py-3 text-[14px] text-gray-300 hover:bg-white/5 rounded-lg transition-colors" href="on-demand-charter.html">On-Demand Charter</a>
+          <a class="px-4 py-3 text-[14px] text-gray-300 hover:bg-white/5 rounded-lg transition-colors" href="amalfi-one-jet-card.html">Amalfi One Jet Card</a>
+          <a class="px-4 py-3 text-[14px] text-gray-300 hover:bg-white/5 rounded-lg transition-colors" href="amalfi-exclusive-golf-experiences.html">Golf Experiences</a>
+          <a class="px-4 py-3 text-[14px] text-gray-300 hover:bg-white/5 rounded-lg transition-colors" href="amalfi-reserve-membership.html">Reserve Membership</a>
+        </div>
+      </div>
+    </div>
+    <a class="text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="aircraft-comparison.html">Aircraft</a>
+    <div class="relative group">
+      <button class="flex items-center gap-1 text-label-sm font-label-sm uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors">
+        Why Amalfi <span class="material-symbols-outlined text-sm">expand_more</span>
+      </button>
+      <div class="absolute top-full left-0 mt-2 w-64 bg-gray-900 border border-gray-800 rounded-xl overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-[1001]">
+        <div class="p-2 flex flex-col">
+          <a class="px-4 py-3 text-[14px] text-gray-300 hover:bg-white/5 rounded-lg transition-colors" href="leadership-team.html">Leadership Team</a>
+          <a class="px-4 py-3 text-[14px] text-gray-300 hover:bg-white/5 rounded-lg transition-colors" href="amalfi-technology.html">Amalfi Technology</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-1 flex justify-start md:justify-center">
+    <a class="flex items-center gap-2" href="index.html">
+      <span class="material-symbols-outlined text-primary text-xl">change_history</span>
+      <span class="text-[15px] font-bold tracking-[0.18em] text-[#dedede] uppercase">Amalfi Jets</span>
+    </a>
+  </div>
+  <div class="flex-1 flex justify-end items-center gap-unit-lg">
+    <a class="hidden lg:block text-label-sm font-label-sm text-on-surface-variant hover:text-primary transition-colors" href="tel:+18776262534">+1 (877) 626-2534</a>
+    <a class="hidden md:block bg-white text-black px-unit-md py-2 rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:opacity-90 transition-opacity" href="request-a-quote.html">Request a Quote</a>
+    <button class="lg:hidden text-primary" onclick="document.getElementById('mobile-drawer').classList.remove('translate-x-full')">
+      <span class="material-symbols-outlined text-3xl">menu</span>
+    </button>
+  </div>
+</div></header>
+<main>
+<!-- Hero Section -->
+<section class="relative h-screen w-full overflow-hidden flex flex-col justify-center items-center text-center">
+<video autoplay="" class="absolute top-0 left-0 w-full h-full object-cover z-0" loop="" muted="" playsinline="">
+<source src="https://amalfijets.com/build/assets/home-video-2026-DcPGeeEq.mp4" type="video/mp4">
+</video>
+<div class="absolute inset-0 bg-black/40 z-10"></div>
+<div class="relative z-20 w-full px-margin-mobile mt-[-15vh]">
+<h1 class="font-display-2xl text-[48px] md:text-display-2xl text-white mb-unit-lg leading-tight">
+                Exploring the World <br class="hidden md:block"> With You
             </h1>
+<a class="inline-block border border-white text-white px-unit-lg py-unit-sm rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:bg-white hover:text-black transition-all" href="programs.html">
+                Our Programs
+            </a>
 </div>
-<!-- Booking Widget -->
-<div class="absolute bottom-0 left-0 w-full z-20">
-<div class="max-w-[1100px] mx-auto md:mb-12">
-<div class="overflow-hidden md:rounded-lg">
+<!-- Booking Widget Pinned at Bottom -->
+<div class="absolute bottom-0 w-full max-w-max-width px-margin-mobile md:px-margin-desktop z-30 mb-unit-xl">
+<div class="rounded-xl overflow-hidden shadow-2xl">
 <!-- Top Bar (Glass) -->
-<div class="glass-panel flex items-center justify-between px-6 py-4 border-b border-white/10">
-<div class="flex gap-6">
-<button class="text-white font-label-caps tracking-widest text-[11px] border-b-2 border-white pb-1 transition-all touch-target" id="btn-roundtrip">ROUND TRIP</button>
-<button class="text-muted-silver font-label-caps tracking-widest text-[11px] hover:text-white transition-all touch-target" id="btn-oneway">ONE WAY</button>
+<div class="glass-effect flex flex-wrap items-center justify-between px-unit-lg py-unit-md gap-unit-md">
+<div class="flex bg-white/5 p-1 rounded-lg">
+<button class="px-unit-md py-1.5 text-label-sm font-label-sm uppercase bg-white text-black rounded-md">Round Trip</button>
+<button class="px-unit-md py-1.5 text-label-sm font-label-sm uppercase text-white/60 hover:text-white transition-colors">One Way</button>
 </div>
-<div class="flex items-center gap-2 text-white font-body-md text-sm cursor-pointer select-none touch-target" id="passenger-toggle">
-<span class="material-symbols-outlined text-[18px]">person</span>
-<span class="" id="passenger-count">1 Passenger</span>
-<span class="material-symbols-outlined text-[18px]">expand_more</span>
+<div class="flex items-center gap-unit-md text-white/80">
+<span class="text-label-sm font-label-sm uppercase tracking-wider">Passengers</span>
+<div class="flex items-center gap-unit-sm border border-white/20 rounded-lg px-unit-sm py-1">
+<button class="material-symbols-outlined text-sm hover:text-white" onclick="updateCount(-1)">remove</button>
+<span class="font-label-sm min-w-[20px]" id="pax-count">1</span>
+<button class="material-symbols-outlined text-sm hover:text-white" onclick="updateCount(1)">add</button>
+</div>
 </div>
 </div>
 <!-- Bottom Bar (Solid) -->
-<div class="bg-[#1a1a1a] flex flex-col md:grid md:grid-cols-12 gap-px">
-<div class="md:col-span-3 p-6 text-left border-b md:border-b-0 md:border-r border-white/5 hover:bg-[#222] transition-colors">
-<label class="block font-label-caps text-muted-silver text-[10px] tracking-widest mb-1 uppercase">From</label>
-<input class="bg-transparent border-none p-0 text-white font-headline-md text-xl focus:ring-0 placeholder:text-muted-silver/30 w-full" placeholder="Origin" type="text"/>
+<div class="bg-gray-800 grid grid-cols-1 md:grid-cols-5 items-center">
+<div class="p-unit-lg border-b md:border-b-0 md:border-r border-white/10">
+<label class="block text-label-xs uppercase text-white/40 mb-1">Origin</label>
+<input class="booking-input font-body-base" placeholder="Departure City" type="text">
 </div>
-<!-- Swap Col -->
-<div class="relative flex items-center justify-center h-4 md:h-auto md:col-span-1 border-b md:border-b-0 md:border-r border-white/5">
-<button aria-label="Swap Locations" class="bg-white text-black rounded-full w-10 h-10 flex items-center justify-center hover:scale-110 active:scale-95 transition-transform shadow-lg z-10 absolute md:static -translate-y-1/2 md:translate-y-0" id="location-swap">
-<span class="material-symbols-outlined text-[20px]">swap_horiz</span>
-</button>
+<div class="p-unit-lg border-b md:border-b-0 md:border-r border-white/10">
+<label class="block text-label-xs uppercase text-white/40 mb-1">Destination</label>
+<input class="booking-input font-body-base" placeholder="Arrival City" type="text">
 </div>
-<div class="md:col-span-3 p-6 text-left border-b md:border-b-0 md:border-r border-white/5 hover:bg-[#222] transition-colors">
-<label class="block font-label-caps text-muted-silver text-[10px] tracking-widest mb-1 uppercase">To</label>
-<input class="bg-transparent border-none p-0 text-white font-headline-md text-xl focus:ring-0 placeholder:text-muted-silver/30 w-full" placeholder="Destination" type="text"/>
+<div class="p-unit-lg border-b md:border-b-0 md:border-r border-white/10">
+<label class="block text-label-xs uppercase text-white/40 mb-1">Depart</label>
+<input class="booking-input font-body-base" type="date">
 </div>
-<!-- Dates Row -->
-<div class="md:col-span-4 grid grid-cols-2">
-<div class="p-6 text-left border-r border-white/5 hover:bg-[#222] transition-colors cursor-pointer">
-<label class="block font-label-caps text-muted-silver text-[10px] tracking-widest mb-1 uppercase">Depart</label>
-<div class="text-white font-headline-md text-xl truncate">Add Date</div>
+<div class="p-unit-lg border-b md:border-b-0 md:border-r border-white/10">
+<label class="block text-label-xs uppercase text-white/40 mb-1">Return</label>
+<input class="booking-input font-body-base" type="date">
 </div>
-<div class="p-6 text-left hover:bg-[#222] transition-colors cursor-pointer" id="return-col">
-<label class="block font-label-caps text-muted-silver text-[10px] tracking-widest mb-1 uppercase">Return</label>
-<div class="text-white font-headline-md text-xl truncate">Add Date</div>
-</div>
-</div>
-<!-- Search -->
-<div class="md:col-span-1 flex items-center justify-center p-6 bg-white md:bg-transparent">
-<button class="bg-white md:bg-white text-black rounded-full w-full md:w-12 h-12 flex items-center justify-center hover:opacity-90 active:scale-95 transition-all">
-<span class="hidden md:block material-symbols-outlined text-[24px]">arrow_forward</span>
-<span class="md:hidden font-button uppercase tracking-widest text-[13px] font-bold">Search Flights</span>
+<div class="flex justify-center p-unit-md">
+<button class="bg-white text-black w-16 h-16 rounded-full flex items-center justify-center hover:scale-105 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'wght' 500;">search</span>
 </button>
 </div>
 </div>
 </div>
 </div>
-</div>
-</header>
-<!-- SECTION 2: What Sets Amalfi Apart -->
-<section class="bg-[#f5f5f7] py-20 md:py-[100px] overflow-hidden">
-<div class="max-w-[1280px] mx-auto px-6">
-<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-16">
-<h2 class="font-headline-lg text-black">What Sets Amalfi Apart</h2>
-<div class="flex flex-wrap gap-4 w-full md:w-auto">
-<button class="flex-1 md:flex-none bg-black text-white px-8 py-4 rounded-full font-button uppercase tracking-widest text-[13px] hover:bg-zinc-800 transition-colors touch-target">
-                        Amalfi Experience
-                    </button>
-<button class="flex-1 md:flex-none border border-black text-black px-8 py-4 rounded-full font-button uppercase tracking-widest text-[13px] flex items-center justify-center gap-2 hover:bg-black hover:text-white transition-all touch-target">
-<span class="material-symbols-outlined text-[20px]">play_circle</span>
-                        Watch Video
-                    </button>
+</section>
+<!-- Section 2: What Sets Amalfi Apart -->
+<section class="bg-gray-100 py-unit-xl">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex justify-between items-end mb-unit-lg">
+<h2 class="font-headline-xl text-headline-xl text-black">What Sets Amalfi Apart</h2>
+<div class="flex gap-unit-sm">
+<button class="w-12 h-12 border border-black/10 rounded-full flex items-center justify-center hover:bg-black hover:text-white transition-colors" onclick="scrollCarousel(-1)">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 border border-black/10 rounded-full flex items-center justify-center hover:bg-black hover:text-white transition-colors" onclick="scrollCarousel(1)">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
 </div>
 </div>
-<div class="relative overflow-hidden" id="carousel-viewport">
-<div class="carousel-track flex" id="carousel-track">
+<div class="flex gap-gutter overflow-x-auto no-scrollbar snap-x snap-mandatory" id="carousel">
+<!-- Slide 1 -->
+<div class="min-w-[85vw] md:min-w-[680px] h-[680px] rounded-[24px] overflow-hidden relative snap-start group">
+<img alt="Luxury private jet cabin interior" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" onerror="this.src='https://placehold.co/1200x800?text=Private+Jet+Interior'" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDieJHH3e_yTfhUeEQcpHpbiyTdZ8Jt-Rf-uxh3eXNk9MzFJurmkVsm14BU0gp_LTNX3DHIYsCO1jfS-Nd9-cowQY02wLySfjyZhNjd63rB_ZeUNNsr6d3JGvEpjfMQ2_7UUNZKMBwNLA_f9VG3SlRcK_C_YSxGm8uBqR2eNcxnBdTfQz_D3ZBs438s_PbkGM3NhZER7nsfxv-Dr3qZYrCnqPqFlx9mLxp_cGuyyZzgLhDCuPLgRWLcn3YQT0BxyBN-iWerxynoRSs">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-unit-lg left-unit-lg right-unit-lg">
+<span class="font-label-xs text-label-xs uppercase text-white/60 tracking-widest block mb-2">Excellence</span>
+<h3 class="font-headline-xl text-white mb-4">Transparent Pricing</h3>
+<p class="font-body-base text-white/80 max-w-md">No hidden fees or unexpected charges. We believe in complete financial clarity for every journey.</p>
+</div>
+</div>
+<!-- Slide 2 -->
+<div class="min-w-[85vw] md:min-w-[680px] h-[680px] rounded-[24px] overflow-hidden relative snap-start group">
+<img alt="High-end concierge desk" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" onerror="this.src='https://placehold.co/1200x800?text=Concierge+Service'" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ59VO9d3CpGx_fEmY16SeLqGqREJL-SvwF5o6S1JuvR0R3QKRo8StxsmTGy4aIiUSfSrQTQrOhYiYcBZtNlFSuUPwqszanyJWfrXDWwOU1a8NbJlVqp-HRwoplNzuGkgAQhv7wSWeWo4GtCRoKYZ1IsUEdAO20H9-zUa48jjpgWpQmZfSgq14lWkqNSIdfRT_CNUzIeUCZNQsm-OqrqrwYkuDYOkD-SACdIB87Gz5EMEgu-Bf5990TfSioF1ET9qSATX835niCmc">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-unit-lg left-unit-lg right-unit-lg">
+<span class="font-label-xs text-label-xs uppercase text-white/60 tracking-widest block mb-2">Service</span>
+<h3 class="font-headline-xl text-white mb-4">24/7 Concierge</h3>
+<p class="font-body-base text-white/80 max-w-md">Your dedicated lifestyle manager is available around the clock to ensure every detail of your trip is perfect.</p>
+</div>
+</div>
+<!-- Slide 3 -->
+<div class="min-w-[85vw] md:min-w-[680px] h-[680px] rounded-[24px] overflow-hidden relative snap-start group">
+<img alt="Jet engine and wing against sky" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" onerror="this.src='https://placehold.co/1200x800?text=Aircraft+Engine'" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz5GhnBA_SaAFXxqrpIP8q_hEYFA5BnupMEhrTRiCkc75g07o1eA7dq7txqtf2DJzUi-5DVPpzmr0gniZtWSUQhpwa3IJBN-rBN8pQOBxuDctl0eshqENZMg4vT0zmqdD71x0wnEQ57r6NSSvKAEQdBZJv-tNbDX65El3wfCbxoxnEl2dux2yx9NL5T5HhgPTc1WXvPKUu1EZf_89m-9u0MqjBXobb0uepkuY6bq1kSi5w2iqeqHPkRIXpXwXHToSMmwOudSCHtZE">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-unit-lg left-unit-lg right-unit-lg">
+<span class="font-label-xs text-label-xs uppercase text-white/60 tracking-widest block mb-2">Assurance</span>
+<h3 class="font-headline-xl text-white mb-4">Safety First</h3>
+<p class="font-body-base text-white/80 max-w-md">Rigorous third-party audits and uncompromising standards ensure your safety is our ultimate priority.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Amalfi Jets App -->
+<section class="bg-black py-unit-xl">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="mb-unit-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-white/40 mb-unit-sm block">Digital Experience</span>
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white">The Amalfi Jets App</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
 <!-- Card 1 -->
-<div class="w-full flex-shrink-0 px-2">
-<div class="bg-white rounded-2xl overflow-hidden flex flex-col md:flex-row min-h-[600px] md:h-[680px]">
-<div class="md:w-[55.8%] h-[300px] md:h-full">
-<img alt="Benchmark" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPxb7sAZU3-oTwm5H6K4jvF24Ogxr-gNunfIqiTbN5DL7f3MAnodwHOhurKRdUWfj7Z8UVgBIEdCX5Qv_8h-xBxbfeb__AsP3G6NaxxlNH0-jsCJH_4RsH8GRjv7j5jddPm9KNLZiPL835qk8CNeYNKqYFQERqkg_nWS3xsGuxurkf3W8uNQf9rCGjB_c3SwBcSuUqlMouMgTgZW69DVYtWAic8IB07BWuknjza1VdImHN0faC2hDnfgVK-uUe8c28IJ-Qzg9AY2o"/>
+<div class="bg-[#161617] h-[660px] p-unit-lg flex flex-col justify-between rounded-xl border border-gray-700 hover:border-white/20 transition-all">
+<div>
+<h4 class="font-title-lg text-white mb-unit-sm">Book in Seconds</h4>
+<p class="font-body-base text-white/60">Reserve your jet with a single tap. Complete booking integration in your pocket.</p>
 </div>
-<div class="md:w-[44.2%] p-8 md:p-[60px] flex flex-col justify-center items-start bg-white">
-<h3 class="font-headline-md text-black mb-6 leading-tight">A New Benchmark in Private Aviation</h3>
-<p class="text-body-md text-[#5d5d5d] mb-10 max-w-sm">
-                                    We redefine the skies through personalized service that anticipates your every need before you even think of it.
-                                </p>
-<button class="w-full md:w-auto border border-black text-black px-10 py-4 rounded-full font-button uppercase tracking-widest text-[13px] hover:bg-black hover:text-white transition-all touch-target">
-                                    Book a flight
-                                </button>
-</div>
+<div class="flex justify-center pt-unit-xl overflow-hidden">
+<img alt="Smartphone mockup booking app" class="w-3/4 translate-y-unit-lg rotate-2" loading="lazy" onerror="this.src='https://placehold.co/400x600?text=App+Mockup'" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmn__hTdo6hdJHICgKhWm7qSLySbLtjhFQzlDaIDlEhcCVA0cHMYScXpFFW6bw6tGgIFEhexc4l_Rb0j5E1HuwTUPe-GtxUoaMpqDK4z_3rbxZ7miG-_bcaXwP9ezicVF5fXuthQlTZj0o6TSo_O1S4Xf0p3Gp_KUz6HHlUhnYNS_eskBV_sLLOUllwWUgjMhWEIHImPEYzAmZoNoqTCp3TfJjZICAT47yLwo9-4R88wNFppFeHPwHASNMOlKq7Cnjg2uvuBZzvx4">
 </div>
 </div>
 <!-- Card 2 -->
-<div class="w-full flex-shrink-0 px-2">
-<div class="bg-white rounded-2xl overflow-hidden flex flex-col md:flex-row min-h-[600px] md:h-[680px]">
-<div class="md:w-[55.8%] h-[300px] md:h-full">
-<img alt="Global Charters" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf_nhpS80pCKNLY322_4zgDKrexRPGXVsWeddNx3J5CHYZtIuXc7qFCzUkIUYeS8tUNYCx9tsnS-d5xg0BC9CSzAuyNOJYP0HaNVDIKBhoOHAQph4wpaYSbX4kQYiO9xjbuPQ5HAQXf0Fw5O6AS8kdzPYTPqgApJX6-q-OvhHx7CoGlqyl3n7pwP1RMd4IR9ttH2iSA9Zy20cUD0_unrooVQXhyPmbKlCdKwQdBrN6Auv474uVkyOXLC-M-vYoBEw5T93Im5eEN7A"/>
+<div class="bg-[#161617] h-[660px] p-unit-lg flex flex-col justify-between rounded-xl border border-gray-700 hover:border-white/20 transition-all">
+<div>
+<h4 class="font-title-lg text-white mb-unit-sm">Track Your Flight Live</h4>
+<p class="font-body-base text-white/60">Real-time telemetry and status updates for your aircraft throughout its journey.</p>
 </div>
-<div class="md:w-[44.2%] p-8 md:p-[60px] flex flex-col justify-center items-start bg-white">
-<h3 class="font-headline-md text-black mb-6 leading-tight">Global Network of Private Jet Charters</h3>
-<p class="text-body-md text-[#5d5d5d] mb-10 max-w-sm">
-                                    Access to over 5,000 aircraft worldwide, curated to provide you with the perfect vessel for any mission.
-                                </p>
-<button class="w-full md:w-auto border border-black text-black px-10 py-4 rounded-full font-button uppercase tracking-widest text-[13px] hover:bg-black hover:text-white transition-all touch-target">
-                                    Book a flight
-                                </button>
-</div>
+<div class="flex justify-center pt-unit-xl overflow-hidden">
+<img alt="Flight tracking app interface" class="w-3/4 translate-y-unit-lg -rotate-2" loading="lazy" onerror="this.src='https://placehold.co/400x600?text=Tracking+App'" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7lNGdBHPwkFsyEyZTYkRJr8s81v-hx2FqqauCy2QN4Xi-yDolABzqVZ4R4nxg4Mg8A_r7NTow2RrQ27_5MNQurJiOf533FFGSuHdIZ5RLG-snDPEGWpo5ea6os_veV38PeKXPEEm0HXwPWjWa5gn3sIRf5NGP4nPWwzOZEMkHIDCnI3BJMzgXp-bMQXp6aYl3MPJp7HQv1Ll-6ZDkZ5-vpjo-RaJvyXFxQWDv4_8XcUudeT9d3eY2s7NdA5n_ITBwWvSXlAvZiR4">
 </div>
 </div>
 <!-- Card 3 -->
-<div class="w-full flex-shrink-0 px-2">
-<div class="bg-white rounded-2xl overflow-hidden flex flex-col md:flex-row min-h-[600px] md:h-[680px]">
-<div class="md:w-[55.8%] h-[300px] md:h-full">
-<img alt="Industry Leading" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU6L6nCuQHTc6t87oM0pNbuG8-sg9B5eyfeQy823kry0ma_8gSiSlQPIzZaxvbqBE_JF71fHhou8e7-kBavABQYH6-oU9RnmdIFGxukTtEeEGd1ZlLcaGdblnR9gZ9iAVgVnt8R8n9cEMiiUyWz-lGEHmPbFhvj1X8dSnNo95eZh8DFJidqzQv-gf_LjNbzNd54ufd1aJpkA7BMD45EfF-Sr9LuVvw6-xEh7V2l3eYdJIyNMziJHhIJQqdsnYR4Gsecl0arCaJMaU"/>
+<div class="bg-[#161617] h-[660px] p-unit-lg flex flex-col justify-between rounded-xl border border-gray-700 hover:border-white/20 transition-all">
+<div>
+<h4 class="font-title-lg text-white mb-unit-sm">Manage Your Membership</h4>
+<p class="font-body-base text-white/60">Access your Jet Card balance and account benefits instantly from anywhere.</p>
 </div>
-<div class="md:w-[44.2%] p-8 md:p-[60px] flex flex-col justify-center items-start bg-white">
-<h3 class="font-headline-md text-black mb-6 leading-tight">Industry-Leading Safety Standards</h3>
-<p class="text-body-md text-[#5d5d5d] mb-10 max-w-sm">
-                                    Our safety-first approach exceeds standard regulations, ensuring peace of mind on every departure.
-                                </p>
-<button class="w-full md:w-auto border border-black text-black px-10 py-4 rounded-full font-button uppercase tracking-widest text-[13px] hover:bg-black hover:text-white transition-all touch-target">
-                                    Book a flight
-                                </button>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Dots -->
-<div class="flex justify-center gap-3 mt-12">
-<button aria-label="Slide 1" class="dot w-2 h-2 rounded-full bg-[#5d5d5d] touch-target" id="dot-0" onclick="goToSlide(0)"></button>
-<button aria-label="Slide 2" class="dot w-2 h-2 rounded-full bg-[#d1d5d9] touch-target" id="dot-1" onclick="goToSlide(1)"></button>
-<button aria-label="Slide 3" class="dot w-2 h-2 rounded-full bg-[#d1d5d9] touch-target" id="dot-2" onclick="goToSlide(2)"></button>
-</div>
-</div>
-</section>
-<!-- SECTION 3: The Amalfi Jets App -->
-<section class="bg-black py-20 md:py-[120px] pb-0">
-<div class="max-w-[1280px] mx-auto px-6">
-<div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-20">
-<h2 class="font-headline-lg text-white">The Amalfi Jets App</h2>
-<div class="flex flex-wrap gap-4 w-full md:w-auto">
-<button class="flex-1 md:flex-none bg-white text-black px-8 py-4 rounded-full font-button uppercase tracking-widest text-[13px] flex items-center justify-center gap-2 hover:bg-zinc-200 transition-colors touch-target">
-<svg class="w-4 h-4" fill="currentColor" viewBox="0 0 170 170"><path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69.03-8.14-1.05-13.36-3.21-5.22-2.16-9.84-3.27-13.84-3.32-4.13 0-8.91 1.12-14.36 3.35-5.45 2.23-9.44 3.38-11.96 3.44-5.19.15-9.86-1.87-14.03-6.06-3.01-3.01-7.14-8.12-12.39-15.34-5.58-7.77-9.86-16.14-12.82-25.13-3.07-9.27-4.62-18.42-4.62-27.46 0-11.45 2.18-21.2 6.55-29.25 4.31-7.9 10.23-14.15 17.75-18.78 7.52-4.63 15.65-6.95 24.41-6.95 4.18 0 8.78.89 13.81 2.65 5.03 1.76 8.35 2.64 9.94 2.64 1.25 0 5.17-.98 11.75-2.95 6.58-1.97 12.1-2.95 16.57-2.95 8.1 0 15.37 1.94 21.83 5.82 5.05 3.03 9.4 7.22 13.06 12.57-10.45 6.32-15.68 15.06-15.68 26.21 0 8.5 2.5 15.6 7.51 21.3 5.01 5.7 11.25 9.17 18.72 10.42-.4 1.45-1.12 3.1-2.14 4.97zM119.11 7.24c0 8.17-2.96 15.59-8.87 22.25-6.14 6.89-13.53 11.1-21.17 10.73-.12-1.21-.18-2.34-.18-3.41 0-7.85 3.31-16.03 9.93-22.37C105.7 8.08 113.72 3.65 118.8 3.5c.2.14.3.17.31.24v3.5z"></path></svg>
-                        Download App
-                    </button>
-<button class="flex-1 md:flex-none border border-white text-white px-8 py-4 rounded-full font-button uppercase tracking-widest text-[13px] hover:bg-white hover:text-black transition-all touch-target">
-                        Learn more
-                    </button>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- App Card 1 -->
-<div class="bg-[#161617] rounded-[24px] h-[600px] flex flex-col justify-between overflow-hidden">
-<div class="p-8 md:p-10 pb-0">
-<h3 class="font-headline-md text-white mb-4">Simplifying your Journey</h3>
-<p class="text-body-md text-[#8c8c8c]">
-                            Book, manage, and track your flights in real-time through our bespoke mobile interface.
-                        </p>
-</div>
-<div class="flex justify-center items-end px-6">
-<div class="phone-frame">
-<div class="p-6 pt-12 space-y-4">
-<div class="h-40 w-full bg-zinc-800/50 rounded-xl flex items-center justify-center">
-<div class="space-y-3 w-4/5">
-<div class="h-3 w-full bg-zinc-700 rounded-full"></div>
-<div class="h-3 w-2/3 bg-zinc-700 rounded-full"></div>
-<div class="h-10 w-full bg-white rounded-lg mt-4"></div>
-</div>
-</div>
-<div class="space-y-3">
-<div class="h-2 w-full bg-zinc-800 rounded-full"></div>
-<div class="h-2 w-full bg-zinc-800 rounded-full"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- App Card 2 -->
-<div class="bg-[#161617] rounded-[24px] h-[600px] flex flex-col justify-between overflow-hidden">
-<div class="p-8 md:p-10 pb-0">
-<h3 class="font-headline-md text-white mb-4">Fly Smarter</h3>
-<p class="text-body-md text-[#8c8c8c]">
-                            Instant notifications for empty-leg opportunities and weather-optimized flight paths.
-                        </p>
-</div>
-<div class="flex justify-center items-end px-6">
-<div class="phone-frame">
-<div class="p-6 pt-12">
-<div class="grid grid-cols-2 gap-4 mb-6">
-<div class="h-24 bg-zinc-800 rounded-xl"></div>
-<div class="h-24 bg-zinc-800 rounded-xl"></div>
-<div class="h-24 bg-zinc-800 rounded-xl"></div>
-<div class="h-24 bg-zinc-800 rounded-xl"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- App Card 3 -->
-<div class="bg-[#161617] rounded-[24px] h-[600px] flex flex-col justify-between overflow-hidden sm:col-span-2 lg:col-span-1">
-<div class="p-8 md:p-10 pb-0">
-<h3 class="font-headline-md text-white mb-4">Beyond the Flight</h3>
-<p class="text-body-md text-[#8c8c8c]">
-                            Connect directly with our 24/7 Lifestyle Concierge for ground transport and dining.
-                        </p>
-</div>
-<div class="flex justify-center items-end px-6">
-<div class="phone-frame">
-<div class="p-6 pt-12 space-y-4">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-full bg-zinc-800"></div>
-<div class="h-3 w-24 bg-zinc-800 rounded-full"></div>
-</div>
-<div class="h-32 w-full bg-white/5 rounded-xl border border-white/10 p-4">
-<div class="flex gap-2">
-<div class="w-1/2 h-20 bg-zinc-800 rounded-lg"></div>
-<div class="w-1/2 h-20 bg-zinc-800 rounded-lg"></div>
-</div>
-</div>
-</div>
-</div>
+<div class="flex justify-center pt-unit-xl overflow-hidden">
+<img alt="Membership management app" class="w-3/4 translate-y-unit-lg" loading="lazy" onerror="this.src='https://placehold.co/400x600?text=Membership+App'" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaXrbt7uaRNFVzt3YdmMw6B68EQI1_yqJNlqeYKY2oKvQkpnX8FXFL1v9GoQsrsUXrQx8UCnHjVf_wQBLIrkS7NDcs91g9Q-KR3caC_QfOu81gyBHkqv-8CqXmeaHLfywRh7rSptZoyxgtSJZM0E845JiJInVI00t6ryWw5q9viJK6YPoXi2Jg4A7hJGLxytwSl0fOUaiLgDdN0RzL2X-HqGx9F7xnbdQfdFXTLOFVIryxdojcdAHe03tn0IICNG3NaPFZqBCJM60">
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- SECTION 4: High-Quality Aircraft, Anywhere -->
-<section class="relative h-[420px] md:h-[900px] flex items-center justify-center overflow-hidden">
-<div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBHp9xZ8ldGkKWc1MmcGSDu-53tSE3feqfyblFYPlO_S5NUyvUUHBykogPVs0JauwoGBlCrggrn4qg79eh5bv7MBDMS7PmgnaxHxns8UtAEhfiGnCh_KaXmyXLOuEtmJ9APnAtASrFpR-UtLsYEDVCm39XfkECG1dMlSBr8GswG-1hsKMAhlTcjXzPJ_YKuE1Sf1Xh2tMhwPooWA57bfntcec0jkBPVSWrgD81xJJyB4rZ7BDE6h12dUPBdZmCN9Zge1gjLN9kSrRI');">
-<div class="absolute inset-0" style="background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 40%, rgba(255, 255, 255, 0) 100%);"></div>
-</div>
-<div class="relative z-10 text-center px-6 max-w-4xl mt-[-40px] md:mt-[-80px]">
-<p class="text-[14px] md:text-[24px] text-[#5e5e5e] font-medium mb-4 md:mb-6 uppercase tracking-widest">3,500 aircraft across 170+ countries</p>
-<h2 class="text-[36px] md:text-[74px] font-medium text-black leading-[1.05] mb-8 md:mb-12 tracking-tight">High-Quality Aircraft, Anywhere</h2>
-<div class="flex flex-col sm:flex-row gap-4 justify-center">
-<button class="px-10 py-4 bg-black text-white rounded-full font-button text-[13px] uppercase tracking-widest hover:bg-zinc-800 transition-colors touch-target">Book a flight</button>
-<button class="px-10 py-4 border border-black text-black rounded-full font-button text-[13px] uppercase tracking-widest hover:bg-black hover:text-white transition-all touch-target">Explore aircraft</button>
+<!-- Section 4: High-Quality Aircraft, Anywhere -->
+<section class="relative h-[600px] md:h-[900px] flex items-center">
+<img alt="White heavy jet on runway" class="absolute inset-0 w-full h-full object-cover" loading="lazy" onerror="this.src='https://placehold.co/1920x1080?text=Global+Fleet'" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk72S3b_LkA_SIAT0UMiyEGr13O9a0WGNLPUo-aANCwUqnuQDR9rehifaWF98yjrDwfIl4jBeeK5lZp05yM5Rqi3fVHpp6brelYZ8FcCF_V22g9HmuUQ3vt79NvA1zXXJytQieQADU10Fbs-6g2h8lz2o8rKArk4xiDPz-EBL0Lmvx5UZWIeK3CGr7chToklowB52Bdr0CgT-JvnZQYpIdZSB4CTlzIf9g1Og6AvU7wdUuhQXnY0N49iOBjdT_BX7yTxt8DmL0qeY">
+<div class="absolute inset-0 bg-gradient-to-b from-white via-white/10 to-transparent"></div>
+<div class="relative z-10 max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop text-center md:text-left">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-black/60 mb-unit-sm">Global Fleet Access</p>
+<h2 class="font-display-2xl text-[44px] md:text-display-2xl text-black leading-tight mb-unit-lg">
+                High-Quality Aircraft, <br class="hidden md:block"> Anywhere
+            </h2>
+<p class="font-body-lg text-black/80 mb-unit-xl max-w-xl mx-auto md:mx-0">
+                Access over 3,500 aircraft across 170+ countries with the highest standards of safety and service.
+            </p>
+<div class="flex flex-col md:flex-row gap-unit-md justify-center md:justify-start">
+<a class="bg-black text-white px-unit-xl py-unit-md font-label-sm text-label-sm uppercase tracking-widest text-center hover:opacity-90" href="request-a-quote.html">Book a flight</a>
+<a class="border border-black text-black px-unit-xl py-unit-md font-label-sm text-label-sm uppercase tracking-widest text-center hover:bg-black hover:text-white transition-all" href="aircraft-comparison.html">Explore aircraft</a>
 </div>
 </div>
 </section>
-<!-- SECTION 5: More Than Your Jet Provider -->
-<section class="bg-[#f5f5f7] py-20 md:py-[180px] section-5-custom">
-<div class="max-w-[1280px] mx-auto px-6">
-<h2 class="text-[32px] md:text-[44px] font-medium text-black mb-12 md:mb-16">More Than Your Jet Provider</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Section 5: More Than Your Jet Provider -->
+<section class="bg-gray-100 py-unit-xl">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="mb-unit-xl">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-black">More Than Your Jet Provider</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
 <!-- Card 1 -->
-<div class="relative h-[400px] md:h-[600px] rounded-2xl overflow-hidden group transition-transform duration-500 hover:scale-[1.02]">
-<img alt="Led by Excellence" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCC9fshFJRdmCwZ3YenLl_-cNPE031_fMCt4bziCqDZzxtO76TcE2wWoKFDOh1hH-E-f5d5w-1Daq9BPKYDuu39fdV0ktBPpPC5GYlM0GvYIQSrxIFBAtyLoKBk_jGrES0QYtGUtyZ0ncFZqXwIFUAKsAfE-_bQvJNe8hsAj9nrQcGof-_3aQztDwM0xg6lGOU3_3_uES0zdbcIdRPinJo9fSckQthyn2jVxdz4awn_1Vl5ipPM8c5mc2wBEOBCYCuTLbik95YKopc"/>
-<div class="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-500"></div>
-<div class="absolute bottom-8 md:bottom-12 left-8 md:left-12 right-8 md:right-12">
-<span class="text-[12px] text-white/70 uppercase tracking-widest mb-3 block">Led by Excellence</span>
-<p class="text-[20px] md:text-[24px] text-white font-medium leading-tight">A team redefining how you fly private. Blending transparency, trust, and a human touch.</p>
+<div class="relative h-[500px] overflow-hidden group rounded-xl">
+<img alt="Flight crew professionals" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" onerror="this.src='https://placehold.co/800x600?text=Leadership'" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTmUp3atkMSv3X0JtnjE6wwIhWW5j14a8B-Q1tXlxfmmoZ8yWtpBPfMpIWsR2AvWlM_-1FKArtRwGJBeX3k59excdZet2Z8i4oOm2TLYOw-YgGPpTowDbW8gHMmaGSDHnq8IlG-24fG0x3SW1pUA9inRARzXqb93pBOg7RHQQiku7lkTMVgR52iYJqpXXJDjIWhzLMDbCD38qQBd_SVBcHGExgyf7ZGaL1PSSgG3MrkOKdsAviv1a4XwVS9GLcZXI5-V7q6MbE_bU">
+<div class="absolute inset-0 bg-black/30"></div>
+<div class="absolute bottom-unit-lg left-unit-lg">
+<h4 class="font-headline-lg text-white">Led by Excellence</h4>
 </div>
 </div>
 <!-- Card 2 -->
-<div class="relative h-[400px] md:h-[600px] rounded-2xl overflow-hidden group transition-transform duration-500 hover:scale-[1.02]">
-<img alt="Our Programs" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0oOmNSY8TTni0Q_28XDf6TnBx8Lc_yVUtIndYFOAAEmtkdhYUBrZpGSonjaAU7WGBlbdBw58GDZsv8-KPlp326WBhySv8Ec_LF92pBqC1aj-MUhLomBpSpDQ3NraIKHuhkNkKGwi5_9uEVF4DnSIdCXnl-K4U4RmikZjWDDEUvqkszfp7hQU5YoSkCs1yQZQrSsqw_iJWSGW8xcYv_RH5vH0pDVStlkmHhI_0awU_e_m1t5fqNX3_L0wh2sco2KnCY2ZBvwN4pPA"/>
-<div class="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-500"></div>
-<div class="absolute bottom-8 md:bottom-12 left-8 md:left-12 right-8 md:right-12 flex flex-col items-start">
-<span class="text-[12px] text-white/70 uppercase tracking-widest mb-3 block">Our Programs</span>
-<p class="text-[20px] md:text-[24px] text-white font-medium leading-tight mb-8">Flexible membership and charter programs designed around your world... anywhere, anytime.</p>
-<button class="px-8 py-3 bg-white text-black rounded-full font-button text-[13px] uppercase tracking-widest hover:bg-black hover:text-white transition-all touch-target">Programs</button>
+<div class="relative h-[500px] overflow-hidden group rounded-xl">
+<img alt="Amalfi Jet Card" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" onerror="this.src='https://placehold.co/800x600?text=Jet+Card'" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDg4ZMF1qo2GBIo0tOvZyqk0_fbEb4Cu7pkKgvaTKMeB6ZcsoLPO-aD2D2se0hVTodrD5s35UHRHJF5hDPyIh2xU9vLfrg9EHGQOqwF1xDCH1kHo6OIXq2OrtmTssPfqtIIRlyL_qx-dDVBMfufDwGWm9BhNBY52qojKOP52zLPETl8XzOHEn6LQt8H4TsheXfw3k9M3AEcUj0ykHn7_qInLCAj9myMm9gWX0EW0sdd-wsCuGQ7Wkc9juOR3icBu_cGOzicbH3BkgU">
+<div class="absolute inset-0 bg-black/30"></div>
+<div class="absolute bottom-unit-lg left-unit-lg">
+<h4 class="font-headline-lg text-white">Our Programs</h4>
 </div>
 </div>
-<!-- Card 3 -->
-<div class="card-3-special relative h-[400px] md:h-[600px] rounded-2xl overflow-hidden group bg-[#111] transition-transform duration-500 hover:scale-[1.02] flex flex-col justify-end p-8 md:p-12">
-<div class="flex flex-col items-start relative z-10">
-<span class="text-[12px] text-white/70 uppercase tracking-widest mb-3 block">Safety Above All</span>
-<p class="text-[28px] md:text-[36px] text-white font-medium leading-tight mb-8 max-w-2xl">Every aircraft, pilot, and process exceeds the highest global standards to ensure complete peace of mind.</p>
-<button class="px-8 py-3 bg-white text-black rounded-full font-button text-[13px] uppercase tracking-widest hover:bg-black hover:text-white transition-all touch-target">Why Amalfi</button>
+<!-- Card 3: Full Width Span -->
+<div class="md:col-span-2 bg-gray-900 h-[300px] p-unit-xl flex items-center justify-between group hover:bg-black transition-colors rounded-xl">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-white/40 mb-2 block">Our Promise</span>
+<h2 class="font-headline-xl text-white">Safety Above All</h2>
 </div>
-</div>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer class="bg-black border-t border-[#292929]">
-<div class="max-w-[1280px] mx-auto px-6 md:px-12 py-16 md:py-20">
-<div class="flex flex-col lg:flex-row justify-between gap-16 mb-20">
-<!-- Footer Branding & CTA -->
-<div class="flex flex-col md:flex-row lg:flex-col justify-between lg:justify-start gap-12 lg:max-w-[320px]">
-<div class="space-y-8">
-<div class="flex items-center gap-2">
-<span class="text-[15px] font-bold tracking-[0.18em] text-[#dedede] uppercase">Amalfi Jets</span>
-<svg class="text-[#dedede]" fill="none" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg">
-<path d="M22 2L2 10L11 13L14 22L22 2Z" fill="currentColor"></path>
-</svg>
-</div>
-<div class="flex gap-5">
-<a aria-label="LinkedIn" class="text-[#8c8c8c] hover:text-white transition-colors touch-target" href="#"><span class="material-symbols-outlined !text-[20px]">brand_awareness</span></a>
-<a aria-label="Facebook" class="text-[#8c8c8c] hover:text-white transition-colors touch-target" href="#"><span class="material-symbols-outlined !text-[20px]">facebook</span></a>
-<a aria-label="Instagram" class="text-[#8c8c8c] hover:text-white transition-colors touch-target" href="#"><span class="material-symbols-outlined !text-[20px]">camera_enhance</span></a>
-</div>
-</div>
-<div class="space-y-6">
-<button class="w-full md:w-auto h-[48px] px-10 bg-white text-black font-button uppercase tracking-widest rounded-full hover:bg-black hover:text-white border border-white transition-all duration-300 touch-target">
-                            Request a Quote
-                        </button>
-<a class="inline-flex items-center gap-3 bg-[#1a1a1a] border border-[#292929] px-5 py-3 rounded-lg text-white hover:bg-[#222] transition-colors w-full md:w-fit" href="#">
-<span class="material-symbols-outlined">app_promo</span>
-<div class="text-left">
-<div class="text-[10px] opacity-60 uppercase font-bold tracking-wider">Download on the</div>
-<div class="text-[15px] font-semibold leading-none">App Store</div>
-</div>
+<a class="w-20 h-20 border border-white/20 rounded-full flex items-center justify-center hover:bg-white hover:text-black transition-all" href="safety.html">
+<span class="material-symbols-outlined text-3xl">arrow_outward</span>
 </a>
 </div>
 </div>
-<!-- Footer Links Grid -->
-<div class="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-x-12">
-<div class="space-y-6">
-<h4 class="text-white font-label-caps text-[12px] uppercase tracking-widest">Our Programs</h4>
-<ul class="flex flex-col gap-4">
-<li class=""><a class="text-[#8c8c8c] hover:text-white transition-colors text-sm" href="#">Programs Overview</a></li>
-<li class=""><a class="text-[#8c8c8c] hover:text-white transition-colors text-sm" href="#">On-Demand Charter</a></li>
-<li class=""><a class="text-[#8c8c8c] hover:text-white transition-colors text-sm" href="#">Amalfi One Jet Card</a></li>
-</ul>
 </div>
-<div class="space-y-6">
-<h4 class="text-white font-label-caps text-[12px] uppercase tracking-widest">Aircraft</h4>
-<ul class="flex flex-col gap-4">
-<li class=""><a class="text-[#8c8c8c] hover:text-white transition-colors text-sm" href="#">Light Jets</a></li>
-<li class=""><a class="text-[#8c8c8c] hover:text-white transition-colors text-sm" href="#">Midsize Jets</a></li>
-<li class=""><a class="text-[#8c8c8c] hover:text-white transition-colors text-sm" href="#">Heavy Jets</a></li>
-</ul>
-</div>
-<div class="space-y-6">
-<h4 class="text-white font-label-caps text-[12px] uppercase tracking-widest">Why Amalfi</h4>
-<ul class="flex flex-col gap-4">
-<li class=""><a class="text-[#8c8c8c] hover:text-white transition-colors text-sm" href="#">Safety Team</a></li>
-<li class=""><a class="text-[#8c8c8c] hover:text-white transition-colors text-sm" href="#">Technology</a></li>
-</ul>
-</div>
-<div class="space-y-6">
-<h4 class="text-white font-label-caps text-[12px] uppercase tracking-widest">Contact</h4>
-<div class="space-y-4">
-<a class="flex items-center gap-2 text-[#8c8c8c] hover:text-white text-sm" href="tel:+18776262534">
-<span class="material-symbols-outlined text-[18px]">call</span>
-                                +1 (877) 626-2534
-                            </a>
-<a class="text-[#8c8c8c] hover:text-white text-sm block" href="mailto:info@amalfijets.com">info@amalfijets.com</a>
-</div>
-</div>
-</div>
-</div>
-<div class="border-t border-[#292929] pt-8 mb-12">
-<p class="text-[11px] leading-[1.8] text-[#444444] uppercase tracking-widest text-justify opacity-80">
-                    Amalfi Jets Inc. is an Air Charter Broker. Amalfi Jets Inc. is not a direct air carrier and does not own or operate any aircraft. All flights are operated by air carriers that are certified by the FAA or foreign equivalent and meet all DOT and FAA safety standards. Amalfi Jets Inc. offers its brokerage services as an indirect air carrier in accordance with DOT air charter broker regulations 14 CFR Part 295.
-                </p>
-</div>
-<div class="border-t border-[#292929] pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
-<span class="text-[12px] text-[#444444]">© 2020-2026 Amalfi Jets Inc. All rights reserved.</span>
-<div class="flex flex-wrap justify-center gap-x-8 gap-y-3">
-<a class="text-[12px] text-[#444444] hover:text-[#8c8c8c] transition-colors" href="#">Privacy Policy</a>
-<a class="text-[12px] text-[#444444] hover:text-[#8c8c8c] transition-colors" href="#">Terms of Service</a>
-</div>
-</div>
-</div>
-</footer>
+</section>
+</main>
+<footer class="bg-black border-t border-[#292929] pt-[80px] px-margin-mobile md:px-[40px] pb-unit-xl"><div class="max-w-[1280px] mx-auto">
+  <div class="flex flex-col lg:flex-row justify-between gap-unit-xl mb-unit-xl">
+    <div class="flex flex-col gap-unit-lg flex-1">
+      <a class="flex items-center gap-2" href="index.html">
+        <span class="material-symbols-outlined text-white text-xl">change_history</span>
+        <span class="text-[15px] font-bold tracking-[0.18em] text-white uppercase">Amalfi Jets</span>
+      </a>
+      <div class="flex gap-unit-sm">
+        <a class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black transition-all" href="#">
+          <span class="material-symbols-outlined text-sm">photo_camera</span>
+        </a>
+        <a class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black transition-all" href="#">
+          <span class="material-symbols-outlined text-sm">facebook</span>
+        </a>
+        <a class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black transition-all" href="#">
+          <span class="material-symbols-outlined text-sm">work</span>
+        </a>
+        <a class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:bg-white hover:text-black transition-all" href="#">
+          <span class="material-symbols-outlined text-sm">close</span>
+        </a>
+      </div>
+      <div class="flex gap-2">
+        <a class="bg-[#111] border border-white/10 rounded-lg px-3 py-1.5 flex items-center gap-2 hover:border-white/30 transition-all" href="#">
+          <span class="material-symbols-outlined text-white">apple</span>
+          <div class="text-left">
+            <p class="text-[8px] text-white/40 uppercase leading-none">Download on the</p>
+            <p class="text-[12px] text-white font-bold leading-none">App Store</p>
+          </div>
+        </a>
+        <a class="bg-[#111] border border-white/10 rounded-lg px-3 py-1.5 flex items-center gap-2 hover:border-white/30 transition-all" href="#">
+          <span class="material-symbols-outlined text-white">play_arrow</span>
+          <div class="text-left">
+            <p class="text-[8px] text-white/40 uppercase leading-none">Get it on</p>
+            <p class="text-[12px] text-white font-bold leading-none">Google Play</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="flex items-center justify-center lg:justify-center flex-1">
+      <a class="bg-white text-black px-unit-xl h-[44px] flex items-center rounded-full font-label-sm text-label-sm uppercase tracking-widest hover:opacity-90 transition-opacity" href="request-a-quote.html">Request a Quote</a>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-unit-lg flex-1">
+      <div>
+        <h5 class="text-white font-label-sm text-label-sm uppercase tracking-widest mb-unit-md">Programs</h5>
+        <ul class="space-y-2">
+          <li class=""><a class="text-gray-400 hover:text-white text-[13px] transition-colors" href="on-demand-charter.html">On-Demand</a></li>
+          <li class=""><a class="text-gray-400 hover:text-white text-[13px] transition-colors" href="amalfi-one-jet-card.html">Jet Card</a></li>
+          <li class=""><a class="text-gray-400 hover:text-white text-[13px] transition-colors" href="amalfi-exclusive-golf-experiences.html">Golf</a></li>
+          <li class=""><a class="text-gray-400 hover:text-white text-[13px] transition-colors" href="amalfi-reserve-membership.html">Reserve</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-white font-label-sm text-label-sm uppercase tracking-widest mb-unit-md">Aircraft</h5>
+        <ul class="space-y-2">
+          <li class=""><a class="text-gray-400 hover:text-white text-[13px] transition-colors" href="aircraft-comparison.html">Fleet</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-white font-label-sm text-label-sm uppercase tracking-widest mb-unit-md">Why Amalfi</h5>
+        <ul class="space-y-2">
+          <li class=""><a class="text-gray-400 hover:text-white text-[13px] transition-colors" href="amalfi-technology.html">Technology</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-white font-label-sm text-label-sm uppercase tracking-widest mb-unit-md">Company</h5>
+        <ul class="space-y-2">
+          <li class=""><a class="text-gray-400 hover:text-white text-[13px] transition-colors" href="leadership-team.html">Leadership</a></li>
+          <li class=""><a class="text-gray-400 hover:text-white text-[13px] transition-colors" href="request-a-quote.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-[#292929] py-unit-md">
+    <p class="text-[11px] text-[#3a3a3a] leading-relaxed">Amalfi Jets is an air charter broker and not a direct air carrier. All flights are operated by FAA Part 135 or foreign equivalent air carriers who maintain full operational control of each flight at all times. Amalfi Jets does not own or operate any aircraft.</p>
+  </div>
+  <div class="flex flex-col md:flex-row justify-between items-center gap-unit-sm pt-unit-sm pb-unit-md">
+    <p class="text-[12px] text-[#3a3a3a]">Â© 2024 Amalfi Jets. All Rights Reserved.</p>
+    <div class="flex gap-unit-md">
+      <a class="text-[12px] text-[#3a3a3a] hover:text-white transition-colors" href="privacy.html">Privacy Policy</a>
+      <a class="text-[12px] text-[#3a3a3a] hover:text-white transition-colors" href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+</div></footer>
 <script>
-        // Header Scroll Effect
-        const nav = document.getElementById('top-nav');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 40) {
-                nav.classList.add('scrolled-nav', 'py-4');
-                nav.classList.remove('py-6');
-            } else {
-                nav.classList.remove('scrolled-nav', 'py-4');
-                nav.classList.add('py-6');
+    function updateCount(delta) {
+        const el = document.getElementById('pax-count');
+        let val = parseInt(el.innerText);
+        val = Math.max(1, val + delta);
+        el.innerText = val;
+    }
+
+    function scrollCarousel(dir) {
+        const container = document.getElementById('carousel');
+        const amount = 680 + 24; // Width + Gutter
+        container.scrollBy({ left: dir * amount, behavior: 'smooth' });
+    }
+
+    // Header interaction and parallax
+    window.addEventListener('scroll', () => {
+        const header = document.getElementById('site-header');
+        if (window.scrollY > 20) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+        
+        // Atmosphere effect: Parallax on hero video
+        const scrolled = window.pageYOffset;
+        const heroVideo = document.querySelector('video');
+        if (heroVideo) {
+            heroVideo.style.transform = `translateY(${scrolled * 0.3}px)`;
+        }
+    });
+
+    // Simple active page logic for demo (normally handled by router)
+    document.addEventListener('DOMContentLoaded', () => {
+        const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+        const navLinks = document.querySelectorAll('header nav a, header .flex-1 a');
+        
+        navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href === currentPath) {
+                link.classList.add('active-link');
             }
-        }, { passive: true });
+        });
+    });
+</script>
 
-        // Mobile Drawer Logic
-        const drawer = document.getElementById('mobile-drawer');
-        const openBtn = document.getElementById('mobile-menu-open');
-        const closeBtn = document.getElementById('mobile-menu-close');
 
-        if(openBtn && drawer && closeBtn) {
-            openBtn.addEventListener('click', () => {
-                drawer.classList.add('active');
-                document.body.style.overflow = 'hidden';
-            });
-            
-            closeBtn.addEventListener('click', () => {
-                drawer.classList.remove('active');
-                document.body.style.overflow = '';
-            });
-        }
 
-        // Trip Type Toggle
-        const btnRoundTrip = document.getElementById('btn-roundtrip');
-        const btnOneWay = document.getElementById('btn-oneway');
-        const returnCol = document.getElementById('return-col');
 
-        if(btnRoundTrip && btnOneWay && returnCol) {
-            btnRoundTrip.addEventListener('click', () => {
-                btnRoundTrip.classList.add('text-white', 'border-b-2', 'border-white');
-                btnRoundTrip.classList.remove('text-muted-silver');
-                btnOneWay.classList.remove('text-white', 'border-b-2', 'border-white');
-                btnOneWay.classList.add('text-muted-silver');
-                returnCol.classList.remove('opacity-20', 'pointer-events-none');
-            });
-
-            btnOneWay.addEventListener('click', () => {
-                btnOneWay.classList.add('text-white', 'border-b-2', 'border-white');
-                btnOneWay.classList.remove('text-muted-silver');
-                btnRoundTrip.classList.remove('text-white', 'border-b-2', 'border-white');
-                btnRoundTrip.classList.add('text-muted-silver');
-                returnCol.classList.add('opacity-20', 'pointer-events-none');
-            });
-        }
-
-        // Passenger Counter
-        let passengers = 1;
-        const passengerText = document.getElementById('passenger-count');
-        const passengerToggle = document.getElementById('passenger-toggle');
-        if(passengerToggle && passengerText) {
-            passengerToggle.addEventListener('click', () => {
-                passengers = passengers >= 12 ? 1 : passengers + 1;
-                passengerText.textContent = `${passengers} Passenger${passengers > 1 ? 's' : ''}`;
-            });
-        }
-
-        // Carousel Logic
-        let currentSlide = 0;
-        const totalSlides = 3;
-        const track = document.getElementById('carousel-track');
-        const dots = [document.getElementById('dot-0'), document.getElementById('dot-1'), document.getElementById('dot-2')];
-
-        function goToSlide(index) {
-            if(!track) return;
-            currentSlide = index;
-            track.style.transform = `translateX(-${index * 100}%)`;
-            
-            dots.forEach((dot, i) => {
-                if(dot) {
-                    if(i === index) {
-                        dot.classList.replace('bg-[#d1d5d9]', 'bg-[#5d5d5d]');
-                    } else {
-                        dot.classList.replace('bg-[#5d5d5d]', 'bg-[#d1d5d9]');
-                    }
-                }
-            });
-        }
-    </script>
 </body></html>
